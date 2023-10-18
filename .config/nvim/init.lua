@@ -1,0 +1,6 @@
+require("settings.core.general")
+require("lazy_config")
+require("settings.core.appearence")
+require("settings.core.keymaps")
+require("settings.plugins")
+require("settings.core.lsps")

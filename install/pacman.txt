@@ -1,0 +1,12 @@
+htop
+neofetch
+ranger
+docker
+docker-compose
+git
+zsh
+stow
+kvantum-manjaro
+lazygit
+xclip
+unzip
