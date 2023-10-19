@@ -16,3 +16,8 @@ vim.keymap.set("n", "<leader>ta", ":TodoTelescope<CR>", { desc = "List all TODO 
 -- GIT
 
 vim.keymap.set("n", "<leader>gl", ":Gitsigns blame_line<CR>", { desc = "Show line git blame" })
+
+-- Session
+
+vim.keymap.set("n", "<leader>ss", ":SessionSave<CR>", { desc = "Save the session for the folder" })
+vim.keymap.set("n", "<leader>sl", ":SessionLoad<CR>", { desc = "Load the folder session" })
