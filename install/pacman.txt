@@ -11,3 +11,4 @@ lazygit
 xclip
 unzip
 ripgrep
+android-studio
