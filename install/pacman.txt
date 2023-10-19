@@ -10,3 +10,4 @@ kvantum-manjaro
 lazygit
 xclip
 unzip
+ripgrep
