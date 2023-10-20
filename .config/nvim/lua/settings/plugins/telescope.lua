@@ -8,6 +8,7 @@ require("telescope").setup({
       "build",
       "dist",
       "yarn.lock",
+      ".git",
     },
     vimgrep_arguments = {
       "rg",
