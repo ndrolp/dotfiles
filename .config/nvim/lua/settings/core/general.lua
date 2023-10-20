@@ -25,3 +25,4 @@ vim.o.termguicolors = true
 vim.o.spell = false
 vim.o.spelllang = "en_us"
 vim.o.cmdheight = 0
+vim.o.shell = "zsh"

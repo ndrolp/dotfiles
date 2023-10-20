@@ -16,10 +16,16 @@ local lazygit = Terminal:new({
     border = "none",
   },
 })
-local under = Terminal:new({ hidden = true, direction = "horizontal" })
+
+local under = Terminal:new({ hidden = true, direction = "horizontal", name = "terminal", size = 35 })
 
 function LazyGitToggle()
   lazygit:toggle()
 end
 
+function UnderToggle()
+  under:toggle()
+end
+
 vim.keymap.set("n", "<leader>gg", "<cmd>lua LazyGitToggle()<CR>")
+vim.keymap.set({ "n", "t" }, "<C-k>", "<cmd>lua UnderToggle()<CR>")
