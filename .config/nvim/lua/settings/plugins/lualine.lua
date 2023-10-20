@@ -3,7 +3,7 @@ require("lualine").setup({
     icons_enabled = true,
     theme = "catppuccin",
     section_separators = { left = "", right = "" },
-    component_separators = { left = "", right = "" },
+    component_separators = { left = "|", right = " " },
     disabled_filetypes = {
       statusline = {},
       winbar = {},
@@ -20,10 +20,32 @@ require("lualine").setup({
   },
   sections = {
     lualine_a = { "mode" },
-    lualine_b = { "branch", "diff", "diagnostics" },
+    lualine_b = {
+      "branch",
+      {
+        "diff",
+        symbols = { added = " ", modified = " ", removed = " " }, -- Changes the symbols used by the diff.
+      },
+      {
+        "diagnostics",
+        sources = { "nvim_diagnostic", "coc" },
+        sections = { "error", "warn", "info", "hint" },
+        symbols = { error = "󰅙 ", warn = " ", info = " ", hint = "󰞋 " },
+        colored = true, -- Displays diagnostics status in color if set to true.
+        update_in_insert = false, -- Update diagnostics in insert mode.
+        always_visible = false, -- Show diagnostics even if there are none.
+      },
+    },
     lualine_c = { "filename" },
-    lualine_x = { "encoding", "fileformat", "filetype" },
-    lualine_y = { "progress" },
+    lualine_x = {
+      {
+        "datetime",
+        style = "%H:%M",
+      },
+      "encoding",
+      "filetype",
+    },
+    lualine_y = { "progress", "searchcount" },
     lualine_z = { "location" },
   },
   inactive_sections = {
@@ -35,7 +57,9 @@ require("lualine").setup({
     lualine_z = {},
   },
   tabline = {},
-  winbar = {},
+  winbar = {
+    lualine_a = {},
+  },
   inactive_winbar = {},
-  extensions = {},
+  extensions = { "nvim-tree", "symbols-outline", "toggleterm" },
 })
