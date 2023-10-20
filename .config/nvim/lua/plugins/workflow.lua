@@ -56,4 +56,9 @@ return {
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = {},
   },
+  {
+    "simrat39/symbols-outline.nvim",
+    opts = {},
+  },
+  "kazhala/close-buffers.nvim",
 }

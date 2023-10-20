@@ -50,9 +50,16 @@ require("catppuccin").setup({
     cmp = true,
     barbar = true,
     gitsigns = true,
+    dashboard = true,
     nvimtree = true,
     treesitter = true,
-    notify = false,
+    mason = true,
+    notify = true,
+    indent_blankline = {
+      enabled = true,
+      scope_color = "", -- catppuccin color (eg. `lavender`) Default: text
+      colored_indent_levels = false,
+    },
     mini = {
       enabled = true,
       indentscope_color = "",

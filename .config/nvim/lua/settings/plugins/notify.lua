@@ -3,12 +3,13 @@ if not ok then
   return
 end
 ntfy.setup({
-  background_color = "#000",
+  background_colour = "#000",
 })
 if not Old_print then
   Old_print = _G.print
 end
 
+---@diagnostic disable-next-line: duplicate-set-field
 vim.notify = function(msg, level, opts)
   Old_print(tostring(level) .. ": " .. msg .. " : " .. vim.inspect(opts))
   ntfy(msg, level, opts)
