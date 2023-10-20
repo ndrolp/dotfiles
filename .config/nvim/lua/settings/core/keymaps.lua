@@ -22,7 +22,7 @@ vim.keymap.set("n", "<leader>ss", ":SessionSave<CR>", { desc = "Save the session
 vim.keymap.set("n", "<leader>sl", ":SessionLoad<CR>", { desc = "Load the folder session" })
 -- Buffer
 vim.keymap.set("n", "<leader>bq", ":bd<CR>", { desc = "Close the current buffer" })
-vim.keymap.set("n", "<leader>bn", ":bNext<CR>", { desc = "Go to next buffer" })
+vim.keymap.set("n", "<leader>bn", ":bnext<CR>", { desc = "Go to next buffer" })
 vim.keymap.set("n", "<leader>bb", ":bprevious<CR>", { desc = "Go to previus buffer" })
 vim.keymap.set("n", "<leader>bf", builtin.buffers, { desc = "Telescope opened buffers" })
 vim.keymap.set("n", "<leader>ba", ":BDelete all<CR>", { desc = "Close all buffers" })
