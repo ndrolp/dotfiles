@@ -27,7 +27,7 @@ return {
           "cssls",
           "emmet_ls",
           "pyright",
-          "bash-language-server",
+          "bashls",
         },
 
         automatic_installed = true,
