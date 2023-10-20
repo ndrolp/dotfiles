@@ -1,6 +1,24 @@
 local builtin = require("telescope.builtin")
 require("telescope").setup({
   defaults = {
+    prompt_prefix = "  ",
+
+    file_ignore_patterns = {
+      "node_modules",
+      "build",
+      "dist",
+      "yarn.lock",
+    },
+    vimgrep_arguments = {
+      "rg",
+      "--color=never",
+      "--no-heading",
+      "--with-filename",
+      "--line-number",
+      "--column",
+      "--smart-case",
+      "--hidden",
+    },
     -- Default configuration for telescope goes here:
     -- config_key = value,
     mappings = {
@@ -33,6 +51,11 @@ require("telescope").setup({
   },
 })
 
-vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Telescop find files" })
+vim.keymap.set(
+  "n",
+  "<leader>ff",
+  ":Telescope find_files find_command=rg,--ignore,--hidden,--files<CR>",
+  { desc = "Telescope find files" }
+)
 vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live grep" })
 vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Telescope hel tags" })

@@ -117,6 +117,7 @@ source $ZSH/oh-my-zsh.sh
 alias zshrestart="source ~/.zshrc"
 alias zshconfig="nvim ~/.zshrc"
 alias nvimconfig="cd ~/.dotfiles/.config/nvim;nvim"
+alias dotfiles="cd ~/.dotfiles;nvim"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
