@@ -1,7 +1,7 @@
 local builtin = require("telescope.builtin")
 require("telescope").setup({
   defaults = {
-    prompt_prefix = "  ",
+    prompt_prefix = "    ",
 
     file_ignore_patterns = {
       "node_modules",
@@ -32,6 +32,9 @@ require("telescope").setup({
   },
   pickers = {
     find_files = {
+      theme = "dropdown",
+    },
+    live_grep = {
       theme = "dropdown",
     },
     -- Default configuration for builtin pickers goes here:

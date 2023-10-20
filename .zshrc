@@ -6,7 +6,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH="/opt/flutter/bin:$PATH"
+PATH="/opt/flutter/bin:$PATH"
+PATH="$HOME/Android/Sdk/platform-tools:$PATH"
+export PATH
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
@@ -118,6 +120,7 @@ alias zshrestart="source ~/.zshrc"
 alias zshconfig="nvim ~/.zshrc"
 alias nvimconfig="cd ~/.dotfiles/.config/nvim;nvim"
 alias dotfiles="cd ~/.dotfiles;nvim"
+alias home="cd ~/"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

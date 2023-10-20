@@ -5,6 +5,7 @@ vim.keymap.set("n", "<leader>vs", ":vs<CR>", { desc = "Vertical Split" })
 vim.keymap.set("n", "<leader>vv", ":split<CR>", { desc = "Horizontal Split" })
 vim.keymap.set("n", "<leader>w", ":w<CR>", { desc = "Save File" })
 vim.keymap.set("n", "<leader>q", ":q<CR>", { desc = "Close" })
+vim.keymap.set("n", "<leader>Q", ":qa<CR>", { desc = "Close All" })
 
 vim.keymap.set("n", "<leader>tn", ":tabnew %<CR>", { desc = "Open File in new tab" })
 vim.keymap.set("n", "t", function()
@@ -28,6 +29,15 @@ vim.keymap.set("n", "<leader>bf", builtin.buffers, { desc = "Telescope opened bu
 vim.keymap.set("n", "<leader>ba", ":BDelete all<CR>", { desc = "Close all buffers" })
 vim.keymap.set("n", "<leader>bh", ":BDelete hidden<CR>", { desc = "Close non visible buffers" })
 vim.keymap.set("n", "<leader>bo", ":BDelete other<CR>", { desc = "Close all buffers except current" })
--- Workflow
+-- WORKFLOW
 vim.keymap.set("n", "<leader>ll", ":Telescope filetypes<CR>", { desc = "Select Filetype" })
 vim.keymap.set("n", "<leader>lo", ":SymbolsOutline<CR>", { desc = "Open symbols outline" })
+vim.keymap.set({ "n", "v" }, "<leader>la", vim.lsp.buf.code_action, { desc = "Open code actions" })
+-- FLUTTER
+vim.keymap.set("n", "<leader>Fr", ":FlutterRun<CR>", { desc = "Run flutter app" })
+vim.keymap.set("n", "<leader>Fo", ":FlutterOutlineToggle<CR>", { desc = "Toggle Flutter Outline" })
+vim.keymap.set("n", "<leader>Fd", ":FlutterDevices<CR>", { desc = "Toggle Flutter Outline" })
+vim.keymap.set("n", "<leader>FR", ":FlutterRestart<CR>", { desc = "Restart Flutter app" })
+vim.keymap.set("n", "<leader>FQ", ":FlutterQuit<CR>", { desc = "Close Flutter app" })
+vim.keymap.set("n", "<leader>FD", ":FlutterDetach<CR>", { desc = "Ends session local but keep on device" })
+vim.keymap.set("n", "<leader>FL", ":FlutterLspRestart<CR>", { desc = "Flutter restart lsp" })

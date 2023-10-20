@@ -1,9 +1,15 @@
 local term = require("toggleterm")
 
 term.setup({
+  size = function(terminal)
+    if terminal.direction == "horizontal" then
+      return 20
+    elseif terminal.direction == "vertical" then
+      return vim.o.columns * 0.4
+    end
+  end,
   open_mapping = "<C-j>",
   direction = "float",
-  command = "zsh",
 })
 
 local Terminal = require("toggleterm.terminal").Terminal
@@ -17,7 +23,7 @@ local lazygit = Terminal:new({
   },
 })
 
-local under = Terminal:new({ hidden = true, direction = "horizontal", name = "terminal", size = 35 })
+local under = Terminal:new({ hidden = true, direction = "horizontal", name = "terminal", size = 30 })
 
 function LazyGitToggle()
   lazygit:toggle()
