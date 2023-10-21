@@ -1,5 +1,5 @@
 return {
-  "easymotion/vim-easymotion",
+  { "ggandor/leap.nvim", dependencies = { "tpope/vim-repeat" } },
   {
 
     "nvim-telescope/telescope.nvim",
