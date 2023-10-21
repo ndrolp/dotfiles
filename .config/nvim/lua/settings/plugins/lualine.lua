@@ -1,3 +1,6 @@
+local function test()
+  return [[]]
+end
 require("lualine").setup({
   options = {
     icons_enabled = true,
@@ -21,7 +24,7 @@ require("lualine").setup({
   sections = {
     lualine_a = { "mode" },
     lualine_b = {
-      "branch",
+      { "branch", icon = "" },
       {
         "diff",
         symbols = { added = " ", modified = " ", removed = " " }, -- Changes the symbols used by the diff.
@@ -36,7 +39,19 @@ require("lualine").setup({
         always_visible = false, -- Show diagnostics even if there are none.
       },
     },
-    lualine_c = { "filename" },
+    lualine_c = {
+      {
+        "filename",
+        path = 1,
+        symbols = {
+          modified = "  ", -- Text to show when the file is modified.
+          readonly = "  ", -- Text to show when the file is non-modifiable or readonly.
+          unnamed = " No Name ", -- Text to show for unnamed buffers.
+          newfile = " 󰝒 ", -- Text to show for newly created file before first write
+        },
+        { test },
+      },
+    },
     lualine_x = {
       {
         "datetime",

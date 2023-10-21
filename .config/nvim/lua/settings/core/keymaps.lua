@@ -32,6 +32,18 @@ vim.keymap.set("n", "<leader>bo", ":BDelete other<CR>", { desc = "Close all buff
 -- WORKFLOW
 vim.keymap.set("n", "<leader>ll", ":Telescope filetypes<CR>", { desc = "Select Filetype" })
 vim.keymap.set("n", "<leader>lo", ":SymbolsOutline<CR>", { desc = "Open symbols outline" })
+local function showFileName()
+  local function bufferName()
+    vim.cmd("echo expand('%:p')")
+    vim.cmd("let @+ = expand('%:p')")
+    vim.cmd('echo "Full path of " . expand(\'%:t\') . " was copied to system clipboard"')
+  end
+  bufferName()
+  local file = vim.fn.expand("%:t")
+  local path = vim.fn.expand("%")
+  vim.notify(path, "info", { title = "Coppied path of " .. file .. " to clipboard", render = "compact" })
+end
+vim.keymap.set("n", "<leader>lF", showFileName, { desc = "Open symbols outline" })
 vim.keymap.set({ "n", "v" }, "<leader>la", vim.lsp.buf.code_action, { desc = "Open code actions" })
 -- FLUTTER
 vim.keymap.set("n", "<leader>Fr", ":FlutterRun<CR>", { desc = "Run flutter app" })

@@ -4,6 +4,8 @@ if not ok then
 end
 ntfy.setup({
   background_colour = "#000",
+  top_down = true,
+  fps = 60,
 })
 if not Old_print then
   Old_print = _G.print
