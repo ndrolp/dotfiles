@@ -8,6 +8,10 @@ term.setup({
       return vim.o.columns * 0.4
     end
   end,
+  float_opts = {
+    height = 50,
+    width = math.ceil(vim.o.columns * 0.8),
+  },
   open_mapping = "<C-j>",
   direction = "float",
 })

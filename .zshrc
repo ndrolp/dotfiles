@@ -11,6 +11,7 @@ PATH="$HOME/Android/Sdk/platform-tools:$PATH"
 export PATH
 export VISUAL=nvim
 export EDITOR="$VISUAL"
+export FZF_TMUX_OPTS='-p80%,60%'
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -92,7 +93,10 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search history)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#363a4f,bg:#24273a,spinner:#f4dbd6,hl:#ed8796 \
+--color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6 \
+--color=marker:#f4dbd6,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -121,6 +125,7 @@ alias zshconfig="nvim ~/.zshrc"
 alias nvimconfig="cd ~/.dotfiles/.config/nvim;nvim"
 alias dotfiles="cd ~/.dotfiles;nvim"
 alias home="cd ~/"
+alias fv="fd --type f --hidden --exclude .git | fzf | xargs nvim"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
