@@ -1,6 +1,5 @@
 ranger
 neovim-git
-alacritty-git
 nvm
 visual-studio-code-bin
 auto-cpufreq

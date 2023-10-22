@@ -34,11 +34,14 @@ return {
       "hrsh7th/cmp-nvim-lsp-signature-help",
       "hrsh7th/cmp-buffer",
       "hrsh7th/cmp-path",
+      "saadparwaiz1/cmp_luasnip",
       {
         "L3MON4D3/LuaSnip",
         build = "make install_jsregexp",
+        dependencies = {
+          "rafamadriz/friendly-snippets",
+        },
       },
-      "rafamadriz/friendly-snippets",
     },
     config = function()
       local cmp = require("cmp")

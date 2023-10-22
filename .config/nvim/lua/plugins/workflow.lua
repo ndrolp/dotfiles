@@ -22,7 +22,7 @@ return {
         block = "gbc",
       },
       opleader = {
-        line = "gc",
+        line = "<leader>lc",
         block = "gb",
       },
       extra = {

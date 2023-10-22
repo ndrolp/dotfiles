@@ -104,6 +104,9 @@ return {
         },
       })
 
+      require("luasnip").filetype_extend("javascript", { "javascriptreact" })
+      require("luasnip").filetype_extend("javascript", { "html" })
+
       lspconfig["lua_ls"].setup({
         capabilities = capabilities,
         on_attach = on_attach,

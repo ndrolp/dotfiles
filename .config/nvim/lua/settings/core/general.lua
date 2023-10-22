@@ -26,3 +26,17 @@ vim.o.spell = false
 vim.o.spelllang = "en_us"
 vim.o.cmdheight = 0
 vim.o.shell = "zsh"
+
+vim.cmd([[
+    augroup filetype_jsx
+        autocmd!
+        autocmd FileType javascript set filetype=javascriptreact
+    augroup end
+]])
+
+vim.cmd([[
+    augroup filetype_tsx
+        autocmd!
+        autocmd FileType typescript set filetype=typescriptreact
+    augroup end
+]])
