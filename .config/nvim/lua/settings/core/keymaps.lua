@@ -1,4 +1,5 @@
 local builtin = require("telescope.builtin")
+vim.keymap.del("n", "<leader>d")
 
 vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>", { desc = "Hide search highlight" })
 vim.keymap.set("n", "<leader>vs", ":vs<CR>", { desc = "Vertical Split" })
@@ -6,7 +7,6 @@ vim.keymap.set("n", "<leader>vv", ":split<CR>", { desc = "Horizontal Split" })
 vim.keymap.set("n", "<leader>w", ":w<CR>", { desc = "Save File" })
 vim.keymap.set("n", "<leader>q", ":q<CR>", { desc = "Close" })
 vim.keymap.set("n", "<leader>Q", ":qa<CR>", { desc = "Close All" })
-
 vim.keymap.set("n", "<leader>tn", ":tabnew %<CR>", { desc = "Open File in new tab" })
 vim.keymap.set("n", "t", function()
   vim.cmd(":tabn " .. vim.v.count1)
@@ -55,3 +55,5 @@ vim.keymap.set("n", "<leader>FR", ":FlutterRestart<CR>", { desc = "Restart Flutt
 vim.keymap.set("n", "<leader>FQ", ":FlutterQuit<CR>", { desc = "Close Flutter app" })
 vim.keymap.set("n", "<leader>FD", ":FlutterDetach<CR>", { desc = "Ends session local but keep on device" })
 vim.keymap.set("n", "<leader>FL", ":FlutterLspRestart<CR>", { desc = "Flutter restart lsp" })
+-- Documentation
+vim.keymap.set("n", "<leader>dg", ":DogeGenerate<CR>", { desc = "Generate documentation for current line" })

@@ -8,6 +8,7 @@ require("nvim-treesitter.configs").setup({
     "query",
     "javascript",
     "typescript",
+    "jsdoc",
     "html",
     "css",
     "yaml",

@@ -5,6 +5,13 @@ return {
       require("nvim-autopairs").setup({})
     end,
   },
+
+  {
+    "kkoomen/vim-doge",
+    build = function()
+      vim.cmd(":call doge#install()")
+    end,
+  },
   {
     "nvim-treesitter/nvim-treesitter",
   },
