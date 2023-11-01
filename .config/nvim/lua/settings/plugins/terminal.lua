@@ -27,7 +27,7 @@ local lazygit = Terminal:new({
   },
 })
 
-local under = Terminal:new({ hidden = true, direction = "horizontal", name = "terminal", size = 30 })
+local under = Terminal:new({ hidden = true, direction = "horizontal", name = "terminal", size = 30, count = 10 })
 
 function LazyGitToggle()
   lazygit:toggle()
