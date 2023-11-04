@@ -55,7 +55,6 @@ return {
 
         opt.desc = "Go to previus diagnostic"
         keymap.set("n", "[d", vim.diagnostic.goto_prev, opt)
-
         opt.desc = "Go to next diagnostic"
         keymap.set("n", "]d", vim.diagnostic.goto_prev, opt)
 
@@ -79,6 +78,11 @@ return {
         on_attach = on_attach,
       })
 
+      lspconfig["jsonls"].setup({
+        capabilities = capabilities,
+        on_attach = on_attach,
+      })
+
       lspconfig["bashls"].setup({
         capabilities = capabilities,
         on_attach = on_attach,
@@ -90,6 +94,11 @@ return {
       })
 
       lspconfig["tsserver"].setup({
+        capabilities = capabilities,
+        on_attach = on_attach,
+      })
+
+      lspconfig["volar"].setup({
         capabilities = capabilities,
         on_attach = on_attach,
       })

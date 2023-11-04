@@ -21,6 +21,7 @@ return {
           lua = { "stylua" },
           python = { "isort", "black" },
           bash = { "beautysh" },
+          vue = { "prettier" },
         },
         format_on_save = {
           lsp_fallback = true,

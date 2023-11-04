@@ -28,6 +28,8 @@ return {
           "emmet_ls",
           "pyright",
           "bashls",
+          "jsonls",
+          "volar",
         },
 
         automatic_installed = true,
@@ -41,6 +43,7 @@ return {
           "black", -- python formatter
           "flake8", -- python linter
           "eslint_d", -- js linter
+          "eslint",
         },
       })
     end,
