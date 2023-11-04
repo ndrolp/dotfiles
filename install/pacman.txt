@@ -16,3 +16,5 @@ polybar
 dmenu
 bob
 i3-wm
+polybar
+kitty
