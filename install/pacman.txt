@@ -14,3 +14,5 @@ ripgrep
 android-studio
 polybar
 dmenu
+bob
+i3-wm
