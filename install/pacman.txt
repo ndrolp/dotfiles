@@ -18,3 +18,6 @@ bob
 i3-wm
 polybar
 kitty
+feh
+dmenu
+cmake
