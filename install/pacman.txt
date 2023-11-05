@@ -6,12 +6,10 @@ docker-compose
 git
 zsh
 stow
-kvantum-manjaro
 lazygit
 xclip
 unzip
 ripgrep
-android-studio
 polybar
 dmenu
 bob
