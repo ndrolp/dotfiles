@@ -7,6 +7,10 @@ CON=$(echo $QUERY | tr " " "+" )
 if [[ $(echo $CON | wc -c) -gt 1 ]]
 then
     xdg-open https://www.google.com/search?q=$CON
-    wmctrl -a CHROME
-    wmctrl -a FIREFOX
+    ps aux | grep "Chrome" | grep -v "grep"
+    if [ $? -eq 0 ]; then
+        wmctrl -a CHROME
+    else
+        wmctrl -a FIREFOX
+    fi
 fi
