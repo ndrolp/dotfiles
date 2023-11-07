@@ -19,3 +19,4 @@ kitty
 feh
 dmenu
 cmake
+fd
