@@ -11,6 +11,7 @@ include theme
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod1
+set $win Mod4
 set $TERMINAL kitty
 
 gaps inner 10
@@ -55,6 +56,9 @@ tiling_drag modifier titlebar
 
 # start a terminal
 bindsym $mod+Return exec kitty 
+bindsym $win+e exec nemo
+bindsym $win+Shift+e exec kitty -e ranger
+bindsym $mod+Shift+Escape exec kitty -e htop
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -170,10 +174,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
         bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym ntilde resize grow width 10 px or 10 ppt
+        bindsym j resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
