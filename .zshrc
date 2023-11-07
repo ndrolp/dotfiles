@@ -127,6 +127,7 @@ alias nvimconfig="cd ~/.dotfiles/.config/nvim;nvim"
 alias dotfiles="cd ~/.dotfiles;nvim"
 alias home="cd ~/"
 alias fv="fd --type f --hidden --exclude .git | fzf | xargs nvim"
+alias lg="lazygit"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

@@ -25,9 +25,9 @@ set $mantle    #1e2030
 set $crust     #181926
 
 
-client.focused           $lavender $base $text  $rosewater $lavender
+client.focused           $lavender $lavender $base  $rosewater $lavender
 client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
-client.unfocused         $overlay0 $base $text  $rosewater $overlay0
+client.unfocused         $lavender $base $text  $rosewater $overlay0
 client.urgent            $peach    $base $peach $overlay0  $peach
 client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
 client.background        $base
