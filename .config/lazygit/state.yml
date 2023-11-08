@@ -3,6 +3,7 @@ recentrepos:
 - /home/ndrolp/.dotfiles
 - /home/ndrolp/tabger
 startuppopupversion: 5
-customcommandshistory: []
+customcommandshistory:
+- q
 hidecommandlog: false
 ignorewhitespaceindiffview: false
