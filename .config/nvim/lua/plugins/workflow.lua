@@ -59,6 +59,7 @@ return {
   },
   {
     "simrat39/symbols-outline.nvim",
+    event = { "BufReadPre", "BufNewFile" },
     opts = {},
   },
   "kazhala/close-buffers.nvim",

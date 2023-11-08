@@ -4,7 +4,10 @@ return {
     requires = { "nvim-tree/nvim-web-devicons", opt = true },
   },
   "navarasu/onedark.nvim",
-  "HiPhish/rainbow-delimiters.nvim",
+  {
+    "HiPhish/rainbow-delimiters.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+  },
   {
     "kdheepak/tabline.nvim",
     config = function()

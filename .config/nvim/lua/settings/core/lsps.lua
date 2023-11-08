@@ -38,6 +38,13 @@ local on_attach = function(_, bufnr)
 
   opt.desc = "Restart LSP"
   keymap.set("n", "<leader>rs", ":LspRestart<CR>", opt)
+
+  if vim.lsp.inlay_hint then
+    opt.desc = "Toggle Inline hint"
+    vim.keymap.set("n", "<leader>li", function()
+      vim.lsp.inlay_hint(0, nil)
+    end, opt)
+  end
 end
 
 mason_lspconfig.setup_handlers({
@@ -45,6 +52,7 @@ mason_lspconfig.setup_handlers({
     require("lspconfig")[server_name].setup({
       capabilities = capabilities,
       on_attach = on_attach,
+      hint = { enable = true },
     })
   end,
   -- Next, you can provide a dedicated handler for specific servers.
@@ -57,6 +65,37 @@ mason_lspconfig.setup_handlers({
       root_dir = lspconfig.util.root_pattern("Cargo.toml"),
       cargo = {
         allFeatures = true,
+      },
+    })
+  end,
+
+  ["tsserver"] = function()
+    local hints = {
+      includeInlayEnumMemberValueHints = true,
+      includeInlayFunctionLikeReturnTypeHints = true,
+      includeInlayFunctionParameterTypeHints = true,
+      includeInlayParameterNameHints = "all",
+      includeInlayParameterNameHintsWhenArgumentMatchesName = true,
+      includeInlayPropertyDeclarationTypeHints = true,
+      includeInlayVariableTypeHints = true,
+    }
+
+    lspconfig["tsserver"].setup({
+      inlayHints = hints,
+      settings = {
+        inlayHints = hints,
+        javascript = {
+          inlayHints = hints,
+        },
+        typescript = {
+          inlayHints = hints,
+        },
+        javascriptreact = {
+          inlayHints = hints,
+        },
+        typescriptreact = {
+          inlayHints = hints,
+        },
       },
     })
   end,
