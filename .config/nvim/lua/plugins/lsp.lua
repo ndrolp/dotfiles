@@ -73,10 +73,10 @@ return {
         vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
       end
 
-      lspconfig["cssls"].setup({
-        capabilities = capabilities,
-        on_attach = on_attach,
-      })
+      -- lspconfig["cssls"].setup({
+      --   capabilities = capabilities,
+      --   on_attach = on_attach,
+      -- })
 
       lspconfig["jsonls"].setup({
         capabilities = capabilities,
@@ -101,6 +101,16 @@ return {
       lspconfig["volar"].setup({
         capabilities = capabilities,
         on_attach = on_attach,
+      })
+
+      lspconfig["rust_analyzer"].setup({
+        capabilities = capabilities,
+        on_attach = on_attach,
+        filetypes = { "rust" },
+        root_dir = lspconfig.util.root_pattern("Cargo.toml"),
+        cargo = {
+          allFeatures = true,
+        },
       })
 
       lspconfig["emmet_ls"].setup({
