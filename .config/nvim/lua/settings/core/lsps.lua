@@ -52,7 +52,6 @@ mason_lspconfig.setup_handlers({
     require("lspconfig")[server_name].setup({
       capabilities = capabilities,
       on_attach = on_attach,
-      hint = { enable = true },
     })
   end,
   -- Next, you can provide a dedicated handler for specific servers.
@@ -125,6 +124,7 @@ mason_lspconfig.setup_handlers({
       on_attach = on_attach,
       settings = {
         Lua = {
+          hint = { enable = true },
           diagnostics = {
             globals = { "vim" },
           },
