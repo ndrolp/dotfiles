@@ -1,5 +1,7 @@
-require("settings.core.general")
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 require("lazy_config")
+require("settings.core.general")
 require("settings.core.appearence")
 require("settings.core.keymaps")
 require("settings.plugins")

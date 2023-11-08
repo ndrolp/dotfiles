@@ -1,7 +1,5 @@
 vim.wo.number = true
 vim.wo.relativenumber = true
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
 
 vim.o.pumheight = 15
 vim.o.scrolloff = 5
