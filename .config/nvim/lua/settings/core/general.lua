@@ -4,6 +4,7 @@ vim.wo.relativenumber = true
 vim.o.pumheight = 15
 vim.o.scrolloff = 5
 vim.o.ignorecase = true
+vim.opt.encoding = "utf-8"
 
 vim.opt.backspace = "2"
 vim.opt.showcmd = true

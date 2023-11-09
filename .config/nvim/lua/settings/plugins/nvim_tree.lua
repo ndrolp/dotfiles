@@ -1,7 +1,29 @@
+require("nvim-web-devicons").setup({
+  -- override_by_extension = {
+  --   ["vue"] = {
+  --     icon = "",
+  --     color = "#fefefe",
+  --     name = "Vue",
+  --   },
+  -- },
+  override_by_filename = {
+    ["LICENSE"] = {
+      icon = "󰿃",
+      color = "#6e8eeb",
+      name = "LICENSE",
+    },
+    ["tsconfig.json"] = {
+      icon = "󰛦",
+      color = "#6e8eeb",
+      name = "Tsconfig",
+    },
+  },
+})
+
 require("nvim-tree").setup({
   sort_by = "case_sensitive",
   view = {
-    width = 35,
+    width = 40,
   },
   renderer = {
     group_empty = true,
