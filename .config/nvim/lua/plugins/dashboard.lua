@@ -41,7 +41,16 @@ return {
               key = "s",
               key_hl = "Number",
               key_format = " %s", -- remove default surrounding `[]`
-              action = "SessionLoad",
+              action = "NeovimProjectLoadRecent",
+            },
+            {
+              icon = " ",
+              desc = "Projects",
+              desc_hl = "String",
+              key = "p",
+              key_hl = "Number",
+              key_format = " %s", -- remove default surrounding `[]`
+              action = "Telescope neovim-project discover",
             },
             {
               icon = " ",
