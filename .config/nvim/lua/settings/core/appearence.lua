@@ -46,6 +46,11 @@ require("catppuccin").setup({
   },
   color_overrides = {},
   custom_highlights = {},
+  indent_blankline = {
+    enabled = true,
+    scope_color = "", -- catppuccin color (eg. `lavender`) Default: text
+    colored_indent_levels = false,
+  },
   integrations = {
     cmp = true,
     barbar = true,
