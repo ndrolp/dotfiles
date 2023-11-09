@@ -65,6 +65,7 @@ require("catppuccin").setup({
       scope_color = "", -- catppuccin color (eg. `lavender`) Default: text
       colored_indent_levels = false,
     },
+    noice = { enabled = true },
     mini = {
       enabled = true,
       indentscope_color = "",
