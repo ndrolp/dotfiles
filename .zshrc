@@ -88,7 +88,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search history)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search history fzf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -126,8 +126,11 @@ alias zshconfig="nvim ~/.zshrc"
 alias nvimconfig="cd ~/.dotfiles/.config/nvim;nvim"
 alias dotfiles="cd ~/.dotfiles;nvim"
 alias home="cd ~/"
-alias fv="fd --type f --hidden --exclude .git | fzf | xargs nvim"
+alias fv="fd --type f --hidden --exclude .git | fzf --preview 'bat --style=numbers --color=always --line-range :500 {}' | xargs nvim"
 alias lg="lazygit"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# bun completions
+[ -s "/home/ndrolp/.bun/_bun" ] && source "/home/ndrolp/.bun/_bun"
