@@ -80,7 +80,7 @@ mason_lspconfig.setup_handlers({
     }
 
     lspconfig["tsserver"].setup({
-      root_dir = lspconfig.util.root_pattern("deno.js tsconfig.ts jsconfig.js package.json"),
+      root_dir = lspconfig.util.root_pattern("deno.js tsconfig.json jsconfig.json package.json"),
       inlayHints = hints,
       settings = {
         inlayHints = hints,

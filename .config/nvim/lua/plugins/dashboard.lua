@@ -53,6 +53,15 @@ return {
               action = "Telescope neovim-project discover",
             },
             {
+              icon = "󰆼 ",
+              desc = "Database Mode",
+              desc_hl = "String",
+              key = "d",
+              key_hl = "Number",
+              key_format = " %s", -- remove default surrounding `[]`
+              action = "tabnew | DBUIToggle",
+            },
+            {
               icon = " ",
               desc = "Recent Files",
               desc_hl = "String",
@@ -68,11 +77,11 @@ return {
     end,
     requires = { "nvim-tree/nvim-web-devicons" },
   },
-  {
-    "glepnir/dbsession.nvim",
-    cmd = { "SessionSave", "SessionDelete", "SessionLoad" },
-    opts = { --config --}
-      auto_save_on_exit = true,
-    },
-  },
+  -- {
+  --   "glepnir/dbsession.nvim",
+  --   cmd = { "SessionSave", "SessionDelete", "SessionLoad" },
+  --   opts = { --config --}
+  --     auto_save_on_exit = true,
+  --   },
+  -- },
 }

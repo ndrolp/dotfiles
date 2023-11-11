@@ -1,14 +1,14 @@
 return {
   "coffebar/neovim-project",
   opts = {
-    last_session_on_startup = false,
     projects = { -- define project roots
       "~/projects/*",
-      "~/.config/*",
+      -- "~/.config/*",
       "~/Development/*",
       "~/Development/projects/",
       "~/Development/Projects/",
     },
+    last_session_on_startup = false,
   },
   init = function()
     -- enable saving the state of plugins in the session

@@ -67,3 +67,5 @@ vim.keymap.set(
   ":DogeGenerate<CR>",
   { desc = "Generate documentation for current line", silent = true }
 )
+
+vim.keymap.set("n", "<leader>Bo", ":tabnew | DBUIToggle<CR>", { desc = "Toggle DBUI", silent = true })

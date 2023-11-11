@@ -27,6 +27,16 @@ local lazygit = Terminal:new({
   },
 })
 
+local neovim = Terminal:new({
+  cmd = "nvim",
+  hidden = true,
+  float_opts = {
+    height = 1000,
+    width = 1000,
+    border = "none",
+  },
+})
+
 local under = Terminal:new({ hidden = true, direction = "horizontal", name = "terminal", size = 30, count = 10 })
 
 function LazyGitToggle()
@@ -37,5 +47,10 @@ function UnderToggle()
   under:toggle()
 end
 
-vim.keymap.set("n", "<leader>gg", "<cmd>lua LazyGitToggle()<CR>")
-vim.keymap.set({ "n", "t" }, "<C-k>", "<cmd>lua UnderToggle()<CR>")
+function NvimToggle()
+  neovim:toggle()
+end
+
+vim.keymap.set("n", "<leader>gg", "<cmd>lua LazyGitToggle()<CR>", { desc = "Toggle LazyGit", silent = true })
+vim.keymap.set({ "n", "t" }, "<C-k>", "<cmd>lua UnderToggle()<CR>", { desc = "Toggle Under Terminal", silent = true })
+vim.keymap.set({ "n", "t" }, "<C-b>", "<cmd>lua NvimToggle()<CR>", { desc = "Toggle Nvim Instance", silent = true })
