@@ -4,3 +4,23 @@ set $win Mod4
 bindsym $win+p exec "arandr"
 bindsym $win+b exec "blueman-manager"
 bindsym $win+n exec "nm-connection-editor"
+
+bindsym $win+s exec --no-startup-id "maim -i $(xdotool getactivewindow) ~/mypicture.jpg"
+
+bindsym $win+x exec "\
+    echo 1 > /sys/class/leds/platform\:\:micmute/brightness; \
+    sleep 5; \
+    maim --hidecursor ~/screenshots/$(date +%Y-%b-%d--%H-%M-%S_maim | tr A-Z a-z).png; \
+    echo 0 > /sys/class/leds/platform\:\:micmute/brightness; \
+    i3-nagbar --message 'Screenshot created' --type warning & \
+    sleep 3; pkill i3-nagbar"
+
+# Screenshots
+bindsym Print exec --no-startup-id maim "/home/$USER/$(date)"
+bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/$(date)"
+bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/$(date)"
+
+## Clipboard Screenshots
+bindsym Ctrl+Print exec --no-startup-id maim | xclip -selection clipboard -t image/png
+bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
