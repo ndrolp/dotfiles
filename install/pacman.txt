@@ -20,3 +20,6 @@ feh
 dmenu
 cmake
 fd
+arandr
+autorandr
+vlc

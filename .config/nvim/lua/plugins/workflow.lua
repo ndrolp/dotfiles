@@ -9,7 +9,7 @@ return {
     dependencies = { "nvim-lua/plenary.nvim" },
   },
   { "nvim-focus/focus.nvim", version = "*" },
-  { "stevearc/dressing.nvim" },
+  -- { "stevearc/dressing.nvim" },
   "rcarriga/nvim-notify",
   {
     "numToStr/Comment.nvim",

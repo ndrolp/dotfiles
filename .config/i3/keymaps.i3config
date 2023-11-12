@@ -1,0 +1,6 @@
+set $mod Mod1
+set $win Mod4
+
+bindsym $win+p exec "arandr"
+bindsym $win+b exec "blueman-manager"
+bindsym $win+n exec "nm-connection-editor"
