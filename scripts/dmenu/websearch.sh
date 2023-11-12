@@ -4,6 +4,7 @@ GITHUB=" Github"
 YOUTUBE=" Youtube"
 NERD_FONT=" NerdFont"
 ANIME_FLV="󰿎 Anime FLV"
+WALLHAVEN="󰋩 Wallhaven"
 GMAIL="󰊫 Gmail"
 
 BROWSER=$(xdg-settings get default-web-browser)
@@ -14,6 +15,7 @@ ${YOUTUBE}\n\
 ${GITHUB}\n\
 ${NERD_FONT}\n\
 ${ANIME_FLV}\n\
+${WALLHAVEN}\n\
 ${GMAIL}\n\
 " | dmenu -p "   " -fn "Hasklug Nerd Font-9" -h 27 -i -sb '#f5a97f')
 
@@ -25,6 +27,7 @@ then
     case $QUERY in 
     $NERD_FONT ) xdg-open https://www.nerdfonts.com/cheat-sheet; ;;
     $ANIME_FLV ) xdg-open https://www3.animeflv.net/; ;;
+    $WALLHAVEN ) xdg-open https://wallhaven.cc/; ;;
     $GMAIL ) xdg-open https://mail.google.com/; ;;
     $YOUTUBE ) xdg-open https://youtube.com; ;;
     $GITHUB ) xdg-open https://github.com/; ;;
