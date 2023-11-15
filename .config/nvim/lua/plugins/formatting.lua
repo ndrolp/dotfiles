@@ -22,6 +22,7 @@ return {
           python = { "isort", "black" },
           bash = { "beautysh" },
           vue = { "prettier" },
+          rust = { "ast-grep" },
         },
         format_on_save = {
           lsp_fallback = true,
