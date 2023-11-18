@@ -69,3 +69,5 @@ vim.keymap.set(
 )
 
 vim.keymap.set("n", "<leader>Bo", ":tabnew | DBUIToggle<CR>", { desc = "Toggle DBUI", silent = true })
+
+vim.keymap.set("n", "<leader>fr", ":%s/", { desc = "Find and replace", silent = true })
