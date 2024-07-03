@@ -4,4 +4,3 @@ nvm
 visual-studio-code-bin
 auto-cpufreq
 bat-cat-git
-deadd-notification-center

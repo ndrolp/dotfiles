@@ -1,4 +1,4 @@
-require("settings.plugins.nvim_tree")
+-- require("settings.plugins.nvim_tree")
 require("settings.plugins.lualine")
 require("settings.plugins.gitsigns")
 require("settings.plugins.telescope")

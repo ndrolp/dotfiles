@@ -17,7 +17,7 @@ ${NERD_FONT}\n\
 ${ANIME_FLV}\n\
 ${WALLHAVEN}\n\
 ${GMAIL}\n\
-" | dmenu -p "   " -fn "Hasklug Nerd Font-9" -h 27 -i -sb '#f5a97f')
+" | dmenu -p "   " -fn "Hasklug Nerd Font-9" -h 28 -i -sb '#f5a97f')
 
 CON=$(echo $QUERY | tr " " "+" )
 
