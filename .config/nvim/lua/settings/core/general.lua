@@ -1,5 +1,6 @@
 vim.wo.number = true
 vim.wo.relativenumber = true
+vim.lsp.inlay_hint.enable(true)
 
 vim.o.pumheight = 15
 vim.o.scrolloff = 5
