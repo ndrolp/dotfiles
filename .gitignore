@@ -1,3 +1,4 @@
 __pycache__
 .vscode
-.config/ranger/plugins&/
+.config/ranger/plugins/
+.config/ranger/plugins/*
