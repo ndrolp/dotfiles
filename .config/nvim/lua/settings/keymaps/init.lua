@@ -1,0 +1,5 @@
+require("settings.keymaps.general")
+require("settings.keymaps.split")
+require("settings.keymaps.tabs")
+require("settings.keymaps.todo")
+require("settings.keymaps.git")

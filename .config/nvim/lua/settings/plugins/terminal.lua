@@ -51,6 +51,5 @@ function NvimToggle()
   neovim:toggle()
 end
 
-vim.keymap.set("n", "<leader>gg", "<cmd>lua LazyGitToggle()<CR>", { desc = "Toggle LazyGit", silent = true })
 vim.keymap.set({ "n", "t" }, "<C-k>", "<cmd>lua UnderToggle()<CR>", { desc = "Toggle Under Terminal", silent = true })
 vim.keymap.set({ "n", "t" }, "<C-b>", "<cmd>lua NvimToggle()<CR>", { desc = "Toggle Nvim Instance", silent = true })

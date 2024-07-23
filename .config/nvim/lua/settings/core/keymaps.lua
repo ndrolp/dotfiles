@@ -1,23 +1,8 @@
 local builtin = require("telescope.builtin")
 vim.keymap.del("n", "<leader>d")
 
-vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>", { desc = "Hide search highlight", silent = true })
-vim.keymap.set("n", "<leader>vs", ":vs<CR>", { desc = "Vertical Split", silent = true })
-vim.keymap.set("n", "<leader>vv", ":split<CR>", { desc = "Horizontal Split", silent = true })
-vim.keymap.set("n", "<leader>w", ":w<CR>", { desc = "Save File", silent = true })
-vim.keymap.set("n", "<leader>q", ":q<CR>", { desc = "Close", silent = true })
-vim.keymap.set("n", "<leader>Q", ":qa<CR>", { desc = "Close All", silent = true })
-vim.keymap.set("n", "<leader>tn", ":tabnew %<CR>", { desc = "Open File in new tab", silent = true })
-vim.keymap.set("n", "t", function()
-  vim.cmd(":tabn " .. vim.v.count1)
-end, { desc = "Go to tab with v:count1", silent = true })
 -- To Do comments
-vim.keymap.set("n", "<leader>tt", ":TodoTelescope keywords=TODO,FIX<CR>", { desc = "Open TODO, Fix", silent = true })
-vim.keymap.set("n", "<leader>ta", ":TodoTelescope<CR>", { desc = "List all TODO in telescope", silent = true })
-vim.keymap.set("n", "<leader>tc", ":tabclose<CR>", { desc = "List all TODO in telescope", silent = true })
 -- GIT
-vim.keymap.set("n", "<leader>gl", ":Gitsigns blame_line<CR>", { desc = "Show line git blame", silent = true })
-vim.keymap.set("n", "<leader>gb", ":Telescope git_branches<CR>", { desc = "Change git branch", silent = true })
 -- Session
 vim.keymap.set("n", "<leader>ss", ":SessionSave<CR>", { desc = "Save the session for the folder", silent = true })
 vim.keymap.set("n", "<leader>sl", ":SessionLoad<CR>", { desc = "Load the folder session", silent = true })

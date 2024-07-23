@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SHUTDOWN="⏻ Shutdown"
+SHUTDOWN="⏻ Poweroff"
 REBOOT=" Reboot"
 LOGOUT=" Logout"
 

@@ -1,15 +1,16 @@
 local wk = require("which-key")
 
-wk.register({
-  ["<leader>"] = {
-    ["F"] = {
-      name = "Flutter",
-    },
-    ["b"] = {
-      name = "Buffer",
-    },
-    ["t"] = {
-      name = "ToDo",
-    },
+wk.add({
+  {
+    { "<leader>F", group = "Flutter" },
+    { "<leader>f", group = "Find" },
+    { "<leader>s", group = "Session" },
+    { "<leader>l", group = "LSP" },
+    { "<leader>v", group = "Split" },
+    { "<leader>B", group = "DBUI" },
+    { "<leader>g", group = "Go" },
+    { "<leader>d", group = "Document" },
+    { "<leader>b", group = "Buffer" },
+    { "<leader>t", group = "ToDo" },
   },
 })
