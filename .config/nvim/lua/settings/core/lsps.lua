@@ -73,10 +73,10 @@ mason_lspconfig.setup_handlers({
             includeInlayEnumMemberValueHints = true,
             includeInlayFunctionLikeReturnTypeHints = true,
             includeInlayFunctionParameterTypeHints = true,
-            includeInlayParameterNameHints = "all",
+            includeInlayParameterNameHints = "all", -- 'none' | 'literals' | 'all';
             includeInlayParameterNameHintsWhenArgumentMatchesName = true,
             includeInlayPropertyDeclarationTypeHints = true,
-            includeInlayVariableTypeHints = true,
+            includeInlayVariableTypeHints = false,
         }
 
         lspconfig["tsserver"].setup({
