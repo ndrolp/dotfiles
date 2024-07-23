@@ -26,11 +26,22 @@ return {
             { "antosha417/nvim-lsp-file-operations", config = true },
         },
         config = function()
-            local signals = { Error = "󰅙 ", Info = " ", Hint = "󰰁 ", Warn = " " }
-            for type, icon in pairs(signals) do
-                local hl = "DiagnosticSign" .. type
-                vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
-            end
+            vim.diagnostic.config({
+                signs = {
+                    text = {
+                        [vim.diagnostic.severity.ERROR] = "󰅙",
+                        [vim.diagnostic.severity.WARN] = "",
+                        [vim.diagnostic.severity.INFO] = "󰰁",
+                        [vim.diagnostic.severity.HINT] = "󰰁",
+                    },
+                    linehl = {
+                        [vim.diagnostic.severity.ERROR] = "ErrorMsg",
+                    },
+                    numhl = {
+                        [vim.diagnostic.severity.WARN] = "WarningMsg",
+                    },
+                },
+            })
 
             require("luasnip").filetype_extend("javascript", { "javascriptreact" })
             require("luasnip").filetype_extend("javascript", { "html" })
