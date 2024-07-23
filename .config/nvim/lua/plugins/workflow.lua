@@ -1,66 +1,61 @@
 return {
-  { "ggandor/leap.nvim", dependencies = { "tpope/vim-repeat" } },
-  {
+    { "ggandor/leap.nvim",     dependencies = { "tpope/vim-repeat" } },
+    {
 
-    "nvim-telescope/telescope.nvim",
-    "BurntSushi/ripgrep",
-    tag = "0.1.4",
-    -- or                              , branch = '0.1.x',
-    dependencies = { "nvim-lua/plenary.nvim" },
-  },
-  { "nvim-focus/focus.nvim", version = "*" },
-  -- { "stevearc/dressing.nvim" },
-  "rcarriga/nvim-notify",
-  {
-    "numToStr/Comment.nvim",
-    opts = {
-      padding = true,
-      sticky = true,
-      ignore = nil,
-      toggler = {
-        line = "<leader>lc",
-        block = "gbc",
-      },
-      opleader = {
-        line = "<leader>lc",
-        block = "gb",
-      },
-      extra = {
-        above = "gcO",
-        below = "gco",
-        eol = "gcA",
-      },
-      mappings = {
-        basic = true,
-        extra = true,
-      },
-      pre_hook = nil,
-      post_hook = nil,
+        "nvim-telescope/telescope.nvim",
+        "BurntSushi/ripgrep",
+        tag = "0.1.4",
+        -- or                              , branch = '0.1.x',
+        dependencies = { "nvim-lua/plenary.nvim" },
     },
-    lazy = false,
-  },
-  {
-    "folke/which-key.nvim",
-    event = "VeryLazy",
-    init = function()
-      vim.o.timeout = true
-      vim.o.timeoutlen = 300
-    end,
-    opts = {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
+    { "nvim-focus/focus.nvim", version = "*" },
+    -- { "stevearc/dressing.nvim" },
+    "rcarriga/nvim-notify",
+    {
+        "numToStr/Comment.nvim",
+        opts = {
+            padding = true,
+            sticky = true,
+            ignore = nil,
+            toggler = {
+                line = "<leader>lc",
+                block = "gbc",
+            },
+            opleader = {
+                line = "<leader>lc",
+                block = "gb",
+            },
+            extra = {
+                above = "gcO",
+                below = "gco",
+                eol = "gcA",
+            },
+            mappings = {
+                basic = true,
+                extra = true,
+            },
+            pre_hook = nil,
+            post_hook = nil,
+        },
+        lazy = false,
     },
-  },
-  {
-    "folke/todo-comments.nvim",
-    dependencies = { "nvim-lua/plenary.nvim" },
-    opts = {},
-  },
-  {
-    "simrat39/symbols-outline.nvim",
-    event = { "BufReadPre", "BufNewFile" },
-    opts = {},
-  },
-  "kazhala/close-buffers.nvim",
+    {
+        "folke/which-key.nvim",
+        event = "VeryLazy",
+        init = function()
+            vim.o.timeout = true
+            vim.o.timeoutlen = 300
+        end,
+        opts = {
+            -- your configuration comes here
+            -- or leave it empty to use the default settings
+            -- refer to the configuration section below
+        },
+    },
+    {
+        "folke/todo-comments.nvim",
+        dependencies = { "nvim-lua/plenary.nvim" },
+        opts = {},
+    },
+    "kazhala/close-buffers.nvim",
 }
