@@ -1,15 +1,15 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/ndro/.dotfiles
-    - /home/ndro/Development/Projects/calci
 startuppopupversion: 5
-lastversion: 0.42.0
+lastversion: 0.43.1
 customcommandshistory:
     - qa
     - q
 hidecommandlog: false
 ignorewhitespaceindiffview: false
 diffcontextsize: 3
+renamesimilaritythreshold: 50
 localbranchsortorder: recency
 remotebranchsortorder: alphabetical
 gitlogorder: topo-order

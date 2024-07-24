@@ -4,3 +4,5 @@ nvm
 visual-studio-code-bin
 auto-cpufreq
 bat-cat-git
+google-chrome
+picom

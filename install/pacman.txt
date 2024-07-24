@@ -23,3 +23,8 @@ fd
 arandr
 autorandr
 vlc
+xorg-server
+fzf
+rofi
+starship
+zellij
