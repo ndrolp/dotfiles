@@ -1,11 +1,35 @@
 #/bin/bash
 #
+#
+# PS3="Select AUR helper: "  # Prompt for the select menu
+#
+# options=("Paru" "Yay" )  # Array of options
+#
+# select opt in "${options[@]}"
+# do
+#     case $opt in
+#         "Paru")
+#             ;;
+#         "Yay")
+#             echo "You chose Yay i havent implemented it"
+#             exit -1
+#             ;;
+#         *)
+#             echo "Invalid option $REPLY"  # Handle invalid input
+#             exit -1
+#             ;;
+#     esac
+# done
 
-#sudo pacman -S --needed base-devel git
-#git clone https://aur.archlinux.org/paru.git
-#cd paru
-#makepkg -si
-#cd ..
+if ! command -v paru &> /dev/null
+then
+    sudo pacman -S --needed base-devel git
+    git clone https://aur.archlinux.org/paru.git
+    cd paru
+    makepkg -si
+    cd ..
+    rm -rf paru
+fi
 
 
 echo "··································································";
