@@ -161,3 +161,5 @@ export ZELLIJ_CONFIG_DIR="$HOME/.config/zellij"
 eval "$(zellij setup --generate-auto-start zsh)"
 # eval "$(starship init zsh)"
 
+fastfetch
+
