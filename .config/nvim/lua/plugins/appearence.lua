@@ -1,7 +1,6 @@
 return {
     {
         "nvim-lualine/lualine.nvim",
-        requires = { "nvim-tree/nvim-web-devicons", opt = true },
     },
     "navarasu/onedark.nvim",
     {
@@ -34,7 +33,7 @@ return {
         set sessionoptions+=tabpages,globals " store tabpages and globals in session
         ]])
         end,
-        requires = { { "hoob3rt/lualine.nvim", opt = true }, { "kyazdani42/nvim-web-devicons", opt = true } },
+        requires = { { "hoob3rt/lualine.nvim", opt = true } },
     },
     {
         "kylechui/nvim-surround",
