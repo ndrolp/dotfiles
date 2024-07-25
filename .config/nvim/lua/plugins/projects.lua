@@ -7,6 +7,7 @@ return {
                 "~/.dotfiles/.config/*",
                 "~/.dotfiles/",
                 "~/Development/Projects/*",
+                "~/Documentos/Projects/*",
             },
             last_session_on_startup = false,
         },

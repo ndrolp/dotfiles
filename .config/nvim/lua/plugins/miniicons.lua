@@ -11,7 +11,14 @@ return {
         extension = {
             -- ["lua"] = { glyph = "󰻲", hl = "MiniIconsRed" },
         },
-        file = {},
+        file = {
+            ["docker-compose.dev.yml"] = { glyph = "󰡨", hl = "MiniIconsBlue" },
+            ["docker-compose.*.yml"] = { glyph = "󰡨", hl = "MiniIconsBlue" },
+            [".dockerignore"] = { glyph = "󰡨", hl = "MiniIconsBlue" },
+            [".env"] = { glyph = "", hl = "MiniIconsWhite" },
+            [".env.dev"] = { glyph = "", hl = "MiniIconsWhite" },
+            [".env.dev.sample"] = { glyph = "", hl = "MiniIconsWhite" },
+        },
         filetype = {
             -- ["javascript"] = { glyph = "󰻲", hl = "MiniIconsRed" },
         },
