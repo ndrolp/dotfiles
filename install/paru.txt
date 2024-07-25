@@ -6,3 +6,5 @@ auto-cpufreq
 bat-cat-git
 google-chrome
 picom
+arc-icon-theme
+arc-gtk-theme
