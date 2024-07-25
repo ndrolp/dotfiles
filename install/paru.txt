@@ -8,3 +8,4 @@ google-chrome
 picom
 arc-icon-theme
 arc-gtk-theme
+ristretto
