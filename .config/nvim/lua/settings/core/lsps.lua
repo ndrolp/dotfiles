@@ -7,27 +7,6 @@ local lspconfig = require("lspconfig")
 local on_attach = function(_, bufnr)
     opt.buffer = bufnr
 
-    opt.desc = "Show LSP references "
-    keymap.set("n", "gr", ":Telescope lsp_references<CR>", opt)
-
-    opt.desc = "Go to declaration"
-    keymap.set("n", "gd", ":Telescope lsp_definitions<CR>", opt)
-
-    opt.desc = "Show LSP implementations"
-    keymap.set("n", "gi", ":Telescope lsp_implementations<CR>", opt)
-
-    opt.desc = "Show LSP type definition"
-    keymap.set("n", "gt", ":Telescope lsp_type_definition<CR>", opt)
-
-    opt.desc = "Smart rename"
-    keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opt)
-
-    opt.desc = "Show buffer diagnostic"
-    keymap.set("n", "<leader>D", ":Telescope diagnostics buffnr=0<CR>", opt)
-
-    opt.desc = "Show line diagnostics"
-    keymap.set("n", "gl", vim.diagnostic.open_float, opt)
-
     opt.desc = "Go to previus diagnostic"
     keymap.set("n", "[d", vim.diagnostic.goto_prev, opt)
     opt.desc = "Go to next diagnostic"
@@ -35,9 +14,6 @@ local on_attach = function(_, bufnr)
 
     opt.desc = "Show documentation for what is under the cursor"
     keymap.set("n", "K", vim.lsp.buf.hover, opt)
-
-    opt.desc = "Restart LSP"
-    keymap.set("n", "<leader>rs", ":LspRestart<CR>", opt)
 
     if vim.lsp.inlay_hint then
         opt.desc = "Toggle Inline hint"

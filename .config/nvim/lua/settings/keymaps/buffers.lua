@@ -1,0 +1,11 @@
+local builtin = require("telescope.builtin")
+
+vim.keymap.set("n", "<leader>bq", ":bd<CR>", { desc = "Close the current buffer", silent = true })
+vim.keymap.set("n", "<leader>bn", ":bnext<CR>", { desc = "Go to next buffer", silent = true })
+vim.keymap.set("n", "<leader>bb", ":bprevious<CR>", { desc = "Go to previus buffer", silent = true })
+vim.keymap.set("n", "<C-l>", ":bnext<CR>", { desc = "Go to next buffer", silent = true })
+vim.keymap.set("n", "<C-h>", ":bprevious<CR>", { desc = "Go to previus buffer", silent = true })
+vim.keymap.set("n", "<leader>bf", builtin.buffers, { desc = "Telescope opened buffers", silent = true })
+vim.keymap.set("n", "<leader>ba", ":BDelete all<CR>", { desc = "Close all buffers", silent = true })
+vim.keymap.set("n", "<leader>bh", ":BDelete hidden<CR>", { desc = "Close non visible buffers", silent = true })
+vim.keymap.set("n", "<leader>bo", ":BDelete other<CR>", { desc = "Close all buffers except current", silent = true })
