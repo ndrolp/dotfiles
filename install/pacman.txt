@@ -28,3 +28,4 @@ fzf
 rofi
 starship
 zellij
+maim

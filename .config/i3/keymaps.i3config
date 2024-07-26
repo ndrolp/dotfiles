@@ -4,6 +4,7 @@ set $win Mod4
 bindsym $win+o exec --no-startup-id "rofi -show drun"
 bindsym $win+p exec "arandr"
 bindsym $win+b exec "blueman-manager"
+bindsym $win+Shift+m exec "alacritty -e cava"
 bindsym $win+n exec "nm-connection-editor"
 bindsym $mod+n exec --no-startup-id "kill -s USR1 $(pidof deadd-notification-center)"
 

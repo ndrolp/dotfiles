@@ -10,3 +10,6 @@ for_window [class="firefox"] move to workspace 2
 for_window [class="Nemo"] move to workspace 4
 for_window [class="Docker Desktop"] move to workspace 5
 for_window [class="Postman"] move to workspace 6
+for_window [class="Spotify"] move to workspace 8
+for_window [class="^Alacritty$"] floating enable
+for_window [class="^Alacritty$"] resize set 600 200

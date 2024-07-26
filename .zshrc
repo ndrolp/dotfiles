@@ -168,7 +168,7 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export ZELLIJ_CONFIG_DIR="$HOME/.config/zellij"
 
-eval "$(zellij setup --generate-auto-start zsh)"
+# eval "$(zellij setup --generate-auto-start zsh)"
 # eval "$(starship init zsh)"
 
 fastfetch
