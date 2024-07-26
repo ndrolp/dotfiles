@@ -10,3 +10,4 @@ arc-icon-theme
 arc-gtk-theme
 ristretto
 cava
+playerctl

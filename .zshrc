@@ -173,3 +173,5 @@ export ZELLIJ_CONFIG_DIR="$HOME/.config/zellij"
 
 fastfetch
 
+
+export PATH=$PATH:/home/ndro/.spicetify
