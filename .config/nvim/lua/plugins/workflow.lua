@@ -19,11 +19,11 @@ return {
             ignore = nil,
             toggler = {
                 line = "<leader>lc",
-                block = "gbc",
+                block = "<leader>lb",
             },
             opleader = {
                 line = "<leader>lc",
-                block = "gb",
+                block = "<leader>lb",
             },
             extra = {
                 above = "gcO",

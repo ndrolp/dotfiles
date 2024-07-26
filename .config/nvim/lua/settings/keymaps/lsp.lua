@@ -7,6 +7,9 @@ keymap.set("n", "<leader>lr", vim.lsp.buf.rename, opt)
 opt.desc = "Show buffer diagnostic"
 keymap.set("n", "<leader>lD", ":Telescope diagnostics buffnr=0<CR>", opt)
 
+opt.desc = "Show line diagnostics"
+keymap.set("n", "<leader>ld", vim.diagnostic.open_float, opt)
+
 opt.desc = "Restart LSP"
 keymap.set("n", "<leader>rs", ":LspRestart<CR>", opt)
 

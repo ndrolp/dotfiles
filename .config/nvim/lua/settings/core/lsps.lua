@@ -48,10 +48,10 @@ mason_lspconfig.setup_handlers({
         local hints = {
             includeInlayEnumMemberValueHints = true,
             includeInlayFunctionLikeReturnTypeHints = true,
-            includeInlayFunctionParameterTypeHints = true,
+            -- includeInlayFunctionParameterTypeHints = true,
             includeInlayParameterNameHints = "all", -- 'none' | 'literals' | 'all';
             includeInlayParameterNameHintsWhenArgumentMatchesName = true,
-            includeInlayPropertyDeclarationTypeHints = true,
+            -- includeInlayPropertyDeclarationTypeHints = true,
             includeInlayVariableTypeHints = false,
         }
 

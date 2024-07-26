@@ -9,7 +9,7 @@
     grey: #6c7086;
 
     width: 600;
-    font: "JetBrainsMono Nerd Font 14";
+    font: "Hasklug Nerd Font Mono Nerd Font 11";
 }
 
 element-text, element-icon , mode-switcher {
@@ -59,8 +59,8 @@ listview {
     border: 0px 0px 0px;
     padding: 6px 0px 0px;
     margin: 10px 0px 0px 20px;
-    columns: 2;
-    lines: 5;
+    columns: 3;
+    lines: 9;
     background-color: @bg-col;
 }
 
