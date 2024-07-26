@@ -29,3 +29,4 @@ rofi
 starship
 zellij
 maim
+alacritty
