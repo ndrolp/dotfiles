@@ -1,3 +1,5 @@
+![alt text](https://github.com/ndrolp/dotfiles/blob/main/screenshot.jpg?raw=true)
+
 ```scss
 $text: #e2e7f4;
 $background: #030508;
