@@ -1,4 +1,12 @@
+# Ndrolp dotfiles
+
+## Screenshot
+
 ![alt text](https://github.com/ndrolp/dotfiles/blob/main/screenshot.jpg?raw=true)
+
+## Colors
+
+This are the colors used for the theme
 
 ```scss
 $text: #e2e7f4;
