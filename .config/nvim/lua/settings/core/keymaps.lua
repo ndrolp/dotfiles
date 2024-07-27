@@ -1,10 +1,13 @@
 vim.keymap.del("n", "<leader>d")
+vim.keymap.set("n", "s", "<NOP>")
+vim.keymap.set("x", "s", "<NOP>")
+-- vim.keymap.del("n", "s")
 
 -- To Do comments
 -- GIT
 -- Session
-vim.keymap.set("n", "<leader>ss", ":SessionSave<CR>", { desc = "Save the session for the folder", silent = true })
-vim.keymap.set("n", "<leader>sl", ":SessionLoad<CR>", { desc = "Load the folder session", silent = true })
+vim.keymap.set("n", "<leader>Ss", ":SessionSave<CR>", { desc = "Save the session for the folder", silent = true })
+vim.keymap.set("n", "<leader>Sl", ":SesionLoad<CR>", { desc = "Load the folder session", silent = true })
 -- Buffer
 -- WORKFLOW
 -- FLUTTER
