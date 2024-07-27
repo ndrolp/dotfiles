@@ -17,6 +17,7 @@ return {
         "nvim-tree/nvim-tree.lua",
         keys = { { "<leader>e", ":NvimTreeFindFileToggle<CR>", desc = "Toggle NvimTree" } },
         opts = {
+            update_cwd = true,
             sort_by = "case_sensitive",
             view = {
                 width = 40,

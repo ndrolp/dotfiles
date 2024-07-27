@@ -12,3 +12,6 @@ keymap.set("n", "gi", ":Telescope lsp_implementations<CR>", opt)
 
 opt.desc = "Show LSP type definition"
 keymap.set("n", "gt", ":Telescope lsp_type_definition<CR>", opt)
+
+opt.desc = "Show LSP type definition"
+keymap.set("n", "gp", ":Telescope neovim-project discover<CR>", opt)
