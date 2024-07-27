@@ -8,20 +8,21 @@
 # If you come from bash you might have to change your $PATH.
 PATH="/opt/flutter/bin:$PATH"
 PATH="$HOME/Android/Sdk/platform-tools:$PATH"
+PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
 PATH="/usr/bin/flutter/bin:$PATH"
 export PATH
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 export FZF_TMUX_OPTS='-p80%,60%'
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 CHROME_EXECUTABLE=/bin/google-chrome-stable
 export CHROME_EXECUTABLE
+. "$HOME/.cargo/env"
 
 export NVM_DIR=~/.nvm
  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-source /usr/share/nvm/init-nvm.sh
+#source /usr/share/nvm/init-nvm.sh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -175,3 +176,4 @@ fastfetch
 
 
 export PATH=$PATH:/home/ndro/.spicetify
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
