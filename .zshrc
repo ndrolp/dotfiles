@@ -19,7 +19,6 @@ export FZF_TMUX_OPTS='-p80%,60%'
 export ZSH="$HOME/.oh-my-zsh"
 CHROME_EXECUTABLE=/bin/google-chrome-stable
 export CHROME_EXECUTABLE
-. "$HOME/.cargo/env"
 
 export NVM_DIR=~/.nvm
  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
