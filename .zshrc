@@ -9,6 +9,7 @@
 PATH="/opt/flutter/bin:$PATH"
 PATH="$HOME/Android/Sdk/platform-tools:$PATH"
 PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
+PATH="$HOME/go/bin:$PATH"
 PATH="/usr/bin/flutter/bin:$PATH"
 export PATH
 export VISUAL=nvim

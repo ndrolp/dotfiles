@@ -14,9 +14,11 @@ return {
         file = {
             ["docker-compose.dev.yml"] = { glyph = "󰡨", hl = "MiniIconsBlue" },
             ["docker-compose.*.yml"] = { glyph = "󰡨", hl = "MiniIconsBlue" },
+            ["docker-compose.test.yml"] = { glyph = "󰡨", hl = "MiniIconsBlue" },
             [".dockerignore"] = { glyph = "󰡨", hl = "MiniIconsBlue" },
             [".env"] = { glyph = "", hl = "MiniIconsWhite" },
             [".env.dev"] = { glyph = "", hl = "MiniIconsWhite" },
+            [".env.test"] = { glyph = "", hl = "MiniIconsWhite" },
             [".env.dev.sample"] = { glyph = "", hl = "MiniIconsWhite" },
         },
         filetype = {
@@ -27,7 +29,7 @@ return {
     },
     lazy = true,
     specs = {
-        -- { "nvim-tree/nvim-web-devicons", enabled = false, optional = true },
+        -- { "nvim-tree/nvim-web-devicons", enabled = false, optional = true },devicon
     },
     init = function()
         package.preload["nvim-web-devicons"] = function()

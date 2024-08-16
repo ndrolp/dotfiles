@@ -13,7 +13,7 @@ local on_attach = function(_, bufnr)
     keymap.set("n", "]d", vim.diagnostic.goto_prev, opt)
 
     opt.desc = "Show documentation for what is under the cursor"
-    keymap.set("n", "K", vim.lsp.buf.hover, opt)
+    -- keymap.set("n", "K", vim.lsp.buf.hover, opt)
 
     if vim.lsp.inlay_hint then
         opt.desc = "Toggle Inline hint"
@@ -47,7 +47,7 @@ mason_lspconfig.setup_handlers({
     ["tsserver"] = function()
         local hints = {
             includeInlayEnumMemberValueHints = true,
-            includeInlayFunctionLikeReturnTypeHints = true,
+            -- includeInlayFunctionLikeReturnTypeHints = true,
             -- includeInlayFunctionParameterTypeHints = true,
             includeInlayParameterNameHints = "all", -- 'none' | 'literals' | 'all';
             includeInlayParameterNameHintsWhenArgumentMatchesName = true,
