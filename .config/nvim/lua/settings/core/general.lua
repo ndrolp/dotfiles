@@ -2,6 +2,7 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 vim.lsp.inlay_hint.enable(true)
 
+vim.o.timeoutlen = 200
 vim.o.pumheight = 15
 vim.o.scrolloff = 5
 vim.o.ignorecase = true
