@@ -20,6 +20,12 @@ return {
                         end,
                     }),
                 },
+                filter_dirs = function(name, rel_path, root)
+                    if name == "dist" then
+                        return false
+                    end
+                    return true
+                end,
             })
         end,
     },
