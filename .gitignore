@@ -8,4 +8,5 @@ __pycache__
 .local/state
 lazygit
 lazygit.tar.gz
+.config/go/*
 
