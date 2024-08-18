@@ -157,6 +157,7 @@ alias dotfiles="cd ~/.dotfiles;nvim"
 alias home="cd ~/"
 alias fv="fd --type f --hidden --exclude .git | fzf --preview 'bat --style=numbers --color=always --line-range :500 {}' | xargs nvim"
 alias lg="lazygit"
+alias ff="fastfetch"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -172,7 +173,6 @@ export ZELLIJ_CONFIG_DIR="$HOME/.config/zellij"
 # eval "$(zellij setup --generate-auto-start zsh)"
 # eval "$(starship init zsh)"
 
-fastfetch
 if [ "$TMUX" = "" ]; then
 if tmux has-session -t "Main" 2>/dev/null; then
     tmux;
