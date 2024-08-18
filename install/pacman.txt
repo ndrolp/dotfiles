@@ -30,3 +30,5 @@ starship
 zellij
 maim
 alacritty
+highlight
+w3m
