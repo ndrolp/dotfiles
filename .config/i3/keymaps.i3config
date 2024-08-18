@@ -39,3 +39,5 @@ bindsym XF86AudioPause exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+bindsym Ctrl+Shift+Escape exec --no-startup-id kitty --class floating-term -e btm
+for_window [class="floating-term"] floating enable, resize set 80 ppt 70 ppt, move position center

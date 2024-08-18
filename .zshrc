@@ -173,13 +173,13 @@ export ZELLIJ_CONFIG_DIR="$HOME/.config/zellij"
 # eval "$(zellij setup --generate-auto-start zsh)"
 # eval "$(starship init zsh)"
 
-if [ "$TMUX" = "" ]; then
-if tmux has-session -t "Main" 2>/dev/null; then
-    tmux;
-else
-    tmux new-session -s "Main"
-fi
-fi
+# if [ "$TMUX" = "" ]; then
+# if tmux has-session -t "Main" 2>/dev/null; then
+#     tmux;
+# else
+#     tmux new-session -s "Main"
+# fi
+# fi
 
 export PATH=$PATH:/home/ndro/.spicetify
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
