@@ -1,5 +1,5 @@
 #!/bin/sh
-
+clear
 projects=`ls ~/Documentos/Projects | tr ' ' '\n'`
 config=`ls ~/.dotfiles/.config | tr ' ' '\n'`
 # $projects | fzf
@@ -7,7 +7,8 @@ config=`ls ~/.dotfiles/.config | tr ' ' '\n'`
 selected=`printf "$projects\n$config\ndotfiles" | fzf --prompt="󰃖 Go to: " --border`
 
 if [ -z "$selected" ]; then
-    exit 0
+    clear
+    return 0
 fi
 
 if printf $projects | grep -qs $selected; then
