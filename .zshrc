@@ -117,7 +117,7 @@ SPACESHIP_CHAR_SUFFIX=" "
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions history fzf )
+plugins=(git zsh-autosuggestions history fzf zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -158,6 +158,7 @@ alias home="cd ~/"
 alias fv="fd --type f --hidden --exclude .git | fzf --preview 'bat --style=numbers --color=always --line-range :500 {}' | xargs nvim"
 alias lg="lazygit"
 alias ff="fastfetch"
+alias p="source ~/.dotfiles/scripts/tmux/projects.sh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
