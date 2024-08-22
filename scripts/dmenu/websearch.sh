@@ -6,6 +6,7 @@ NERD_FONT=" NerdFont"
 ANIME_FLV="󰿎 Anime FLV"
 WALLHAVEN="󰋩 Wallhaven"
 GMAIL="󰊫 Gmail"
+CHATGPT="󰭻 ChatGPT"
 
 BROWSER=$(xdg-settings get default-web-browser)
 
@@ -16,6 +17,7 @@ ${GITHUB}\n\
 ${NERD_FONT}\n\
 ${ANIME_FLV}\n\
 ${WALLHAVEN}\n\
+${CHATGPT}\n\
 ${GMAIL}\n\
 " | dmenu -p "   " -fn "Hasklug Nerd Font-9" -h 28 -i -sb '#f5a97f')
 
@@ -30,6 +32,7 @@ then
     $WALLHAVEN ) xdg-open https://wallhaven.cc/; ;;
     $GMAIL ) xdg-open https://mail.google.com/; ;;
     $YOUTUBE ) xdg-open https://youtube.com; ;;
+    $CHATGPT ) xdg-open https://chatgpt.com; ;;
     $GITHUB ) xdg-open https://github.com/; ;;
     * ) xdg-open https://www.google.com/search?q=$CON
     esac
