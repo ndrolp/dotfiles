@@ -3,12 +3,14 @@
 sessions=`tmux ls`
 
 prompt="  Swap Session: "
+color="prompt:blue"
 
 if [ "$1" = "--kill" ]; then
     prompt="  Kill Session: "
+    color="prompt:yellow"
 fi
 
-selected=`printf "$sessions" | fzf --prompt="$prompt" --layout=reverse-list`
+selected=`printf "$sessions" | fzf --prompt="$prompt" --layout="reverse" --color="$color"`
 session_name=`echo "$selected" | cut -d':' -f1`
 
 if [ -z "$selected" ]; then
