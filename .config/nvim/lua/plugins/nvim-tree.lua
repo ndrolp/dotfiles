@@ -1,21 +1,8 @@
-local function get_custom_folder_icon(name)
-    local icons = require("nvim-web-devicons")
-    if name == "src" then
-        return {
-            icon = "󰻲", -- Custom glyph for src folder
-            color = "#ff5f5f", -- Custom color for src folder
-            cterm_color = "9", -- Terminal color for src folder
-        }
-    else
-        -- Return the default folder icon
-        return icons.get_icon("folder")
-    end
-end
-
 return {
     {
         "nvim-tree/nvim-tree.lua",
-        keys = { { "<leader>e", ":NvimTreeFindFileToggle<CR>", desc = "Toggle NvimTree" } },
+        -- keys = { { "<leader>e", ":NvimTreeFindFileToggle<CR>", desc = "Toggle NvimTree" } },
+        enabled = false,
         opts = {
             update_cwd = true,
             sort_by = "case_sensitive",
