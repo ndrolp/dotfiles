@@ -2,7 +2,7 @@
 
 sessions=`tmux ls`
 
-prompt="  Swap Session: "
+prompt="  Switch Session: "
 color="prompt:blue"
 
 if [ "$1" = "--kill" ]; then
@@ -10,7 +10,7 @@ if [ "$1" = "--kill" ]; then
     color="prompt:yellow"
 fi
 
-selected=`printf "$sessions" | fzf --prompt="$prompt" --layout="reverse" --color="$color"`
+selected=`printf "$sessions" | fzf --prompt="$prompt" --layout="reverse" --no-sort --color="$color"`
 session_name=`echo "$selected" | cut -d':' -f1`
 
 if [ -z "$selected" ]; then
