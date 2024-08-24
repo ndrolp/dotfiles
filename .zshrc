@@ -13,7 +13,7 @@ PATH="$HOME/go/bin:$PATH"
 PATH="/usr/bin/flutter/bin:$PATH"
 export PATH
 export VISUAL=nvim
-export EDITOR="$VISUAL"
+export EDITOR=nvim
 export FZF_TMUX_OPTS='-p80%,60%'
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"

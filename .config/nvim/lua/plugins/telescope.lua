@@ -3,7 +3,18 @@ return {
     tag = "0.1.8",
     opts = {
         defaults = {
-            file_ignore_patterns = { "node_modules" },
+            prompt_prefix = "    ",
+            file_ignore_patterns = { "node_modules", ".git", "build", "dist" },
+        },
+        vimgrep_arguments = {
+            "rg",
+            "--color=never",
+            "--no-heading",
+            "--with-filename",
+            "--line-number",
+            "--column",
+            "--smart-case",
+            "--hidden",
         },
     },
     -- or                              , branch = '0.1.x',

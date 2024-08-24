@@ -10,5 +10,5 @@ vim.keymap.set("", "F", function()
     hop.hint_char1({ direction = directions.BEFORE_CURSOR, current_line_only = true })
 end, { remap = true })
 
-vim.keymap.set("", "<leader>fw", ":HopWord<CR>", { remap = true, silent = true, desc = "Find Word" })
-vim.keymap.set("", "<leader>fW", ":HopCamelCase<CR>", { remap = true, silent = true, desc = "Find Word" })
+vim.keymap.set("", "<leader>fw", ":HopWordMW<CR>", { remap = true, silent = true, desc = "Find Word" })
+vim.keymap.set("", "<leader>fW", ":HopCamelCaseMW<CR>", { remap = true, silent = true, desc = "Find Word Camel Case" })

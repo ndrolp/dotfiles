@@ -16,7 +16,12 @@ vim.keymap.set("n", "<leader>Fo", ":FlutterOutlineToggle<CR>", { desc = "Toggle 
 vim.keymap.set("n", "<leader>Fd", ":FlutterDevices<CR>", { desc = "Toggle Flutter Outline", silent = true })
 vim.keymap.set("n", "<leader>FR", ":FlutterRestart<CR>", { desc = "Restart Flutter app", silent = true })
 vim.keymap.set("n", "<leader>FQ", ":FlutterQuit<CR>", { desc = "Close Flutter app", silent = true })
-vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", { desc = "Open Telescope Find Files", silent = true })
+vim.keymap.set(
+    "n",
+    "<leader>ff",
+    ":Telescope find_files hidden=true<CR>",
+    { desc = "Open Telescope Find Files", silent = true }
+)
 vim.keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>", { desc = "Open Telescope Find Files", silent = true })
 vim.keymap.set(
     "n",
