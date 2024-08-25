@@ -2,7 +2,7 @@ return {
     {
         "nvim-neo-tree/neo-tree.nvim",
         branch = "v3.x",
-        keys = { { "<leader>e", ":Neotree toggle<CR>", desc = "Toggle Neo Tree" } },
+        keys = { { "<leader>e", ":Neotree filesystem left toggle<CR>", desc = "Toggle Neo Tree" } },
         dependencies = {
             "nvim-lua/plenary.nvim",
             "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
@@ -20,23 +20,30 @@ return {
                     leave_dirs_open = false, -- `false` closes auto expanded dirs, such as with `:Neotree reveal`
                 },
             },
-            git_status = {
-                symbols = {
-                    -- Change type
-                    added = "✚", -- or "✚", but this is redundant info if you use git_status_colors on the name
-                    modified = "", -- or "", but this is redundant info if you use git_status_colors on the name
-                    deleted = "✖", -- this can only be used in the git_status source
-                    renamed = "󰁕", -- this can only be used in the git_status source
-                    -- Status type
-                    untracked = "",
-                    ignored = "",
-                    unstaged = "󰄱",
-                    staged = "",
-                    conflict = "",
+            default_component_configs = {
+                file_size = {
+                    enabled = true,
+                    required_width = 50, -- min width of window required to show this column
+                },
+                git_status = {
+                    symbols = {
+                        -- Change type
+                        added = "✚", -- or "✚", but this is redundant info if you use git_status_colors on the name
+                        modified = "", -- or "", but this is redundant info if you use git_status_colors on the name
+                        deleted = "✖", -- this can only be used in the git_status source
+                        renamed = "󰁕", -- this can only be used in the git_status source
+                        -- Status type
+                        untracked = "",
+                        ignored = "",
+                        unstaged = "󰄱",
+                        staged = "",
+                        conflict = "",
+                    },
                 },
             },
-
             window = {
+                position = "left",
+                width = 40,
                 mappings = {
                     ["<space>"] = {
                         "toggle_node",
@@ -90,6 +97,13 @@ return {
                     ["<"] = "prev_source",
                     [">"] = "next_source",
                     ["i"] = "show_file_details",
+                },
+                fuzzy_finder_mappings = { -- define keymaps for filter popup window in fuzzy_finder_mode
+                    ["<down>"] = "move_cursor_down",
+                    ["<C-j>"] = "move_cursor_down",
+                    ["<up>"] = "move_cursor_up",
+                    ["<C-k>"] = "move_cursor_up",
+                    -- ['<key>'] = function(state, scroll_padding) ... end,
                 },
             },
         },
