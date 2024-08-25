@@ -7,6 +7,7 @@ require("lualine").setup({
         theme = "catppuccin",
         -- theme = "catppuccin",
         section_separators = { left = "", right = "" },
+        -- section_separators = { left = "", right = "" },
         component_separators = { left = "|", right = " " },
         disabled_filetypes = {
             statusline = {},
@@ -43,7 +44,7 @@ require("lualine").setup({
         lualine_c = {
             {
                 "filename",
-                path = 1,
+                path = 0,
                 symbols = {
                     modified = "  ", -- Text to show when the file is modified.
                     readonly = "  ", -- Text to show when the file is non-modifiable or readonly.
