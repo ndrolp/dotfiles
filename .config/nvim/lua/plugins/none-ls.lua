@@ -39,6 +39,6 @@ return {
         })
 
         vim.lsp.buf.format({ timeout_ms = 2000 })
-        vim.keymap.set("n", "<leader>GF", vim.lsp.buf.format, { desc = "Format Document" })
+        vim.keymap.set("n", "<leader>lF", vim.lsp.buf.format, { desc = "Format Document" })
     end,
 }

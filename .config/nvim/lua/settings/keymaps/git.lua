@@ -1,4 +1,6 @@
 vim.keymap.set("n", "<leader>gl", ":Gitsigns blame_line<CR>", { desc = "Show line git blame", silent = true })
+vim.keymap.set("n", "<leader>gB", ":Gitsigns blame<CR>", { desc = "Show file blame", silent = true })
 vim.keymap.set("n", "<leader>gb", ":Telescope git_branches<CR>", { desc = "Change git branch", silent = true })
 vim.keymap.set("n", "<leader>gg", "<cmd>lua LazyGitToggle()<CR>", { desc = "LazyGit", silent = true })
 vim.keymap.set("n", "<leader>gs", ":Neotree git_status float toggle<CR>", { desc = "Git Status", silent = true })
+vim.keymap.set("n", "<leader>gh", ":Gitsigns preview_hunk<CR>", { desc = "Current Hunk", silent = true })
