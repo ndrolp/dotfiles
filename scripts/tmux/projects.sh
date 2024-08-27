@@ -2,9 +2,10 @@
 clear
 projects=`ls ~/Documentos/Projects | tr ' ' '\n'`
 config=`ls ~/.dotfiles/.config | tr ' ' '\n'`
+work_projects=`ls ~/Development/Projects | tr ' ' \n`
 # $projects | fzf
 
-selected=`printf "$projects\n$config\ndotfiles" | fzf --prompt="󰃖 Go to: " --border`
+selected=`printf "$projects\n$config\n$work_projects\ndotfiles" | fzf --prompt="󰃖 Go to: " --border`
 
 if [ -z "$selected" ]; then
     clear
@@ -16,6 +17,9 @@ if printf $projects | grep -qs $selected; then
     clear
 elif printf $config | grep -qs $selected; then
     cd ~/.dotfiles/.config/"$selected"/
+    clear
+elif printf $work_projects | grep -qs $selected; then
+    cd ~/Development/Projects/"$selected"/
     clear
 else 
     cd ~/.dotfiles

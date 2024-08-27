@@ -56,7 +56,24 @@ mason_lspconfig.setup_handlers({
         }
 
         lspconfig["tsserver"].setup({
-            root_dir = lspconfig.util.root_pattern("deno.js tsconfig.json jsconfig.json package.json"),
+            root_dir = lspconfig.util.root_pattern(
+                ".prettierrc",
+                "deno.js",
+                "tsconfig.json",
+                "jsconfig.json",
+                "package.json"
+            ),
+            on_attach = function(client, bufnr)
+                -- Disable tsserver's formatting capabilities
+                client.server_capabilities.documentFormattingProvider = false
+                client.server_capabilities.documentRangeFormattingProvider = false
+
+                -- Optional: Set up additional LSP keybindings and configurations
+                -- local bufopts = { noremap = true, silent = true, buffer = bufnr }
+                -- vim.keymap.set("n", "gd", vim.lsp.buf.definition, bufopts)
+                -- vim.keymap.set("n", "K", vim.lsp.buf.hover, bufopts)
+                -- Add other keybindings as needed
+            end,
             inlayHints = hints,
             settings = {
                 inlayHints = hints,
