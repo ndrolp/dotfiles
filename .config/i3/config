@@ -1,7 +1,7 @@
-include theme.i3config
-include rules.i3config
-include workspaces.i3config
-include keymaps.i3config
+include theme.config
+include rules.config
+include workspaces.config
+include keymaps.config
 
 
 
