@@ -11,6 +11,7 @@ return {
                 null_ls.builtins.formatting.stylua,
                 null_ls.builtins.completion.spell,
                 null_ls.builtins.formatting.prettier,
+                null_ls.builtins.formatting.dart_format,
                 require("none-ls.diagnostics.eslint"),
                 require("none-ls.code_actions.eslint"),
                 null_ls.builtins.formatting.gofmt,
