@@ -1,12 +1,20 @@
 #!/bin/sh
 clear
-projects=`ls ~/Documentos/Projects | tr ' ' '\n'`
+# Personal projects
+projects=""
+if [ -d ~/Documentos/Projects  ]; then
+    projects=`ls ~/Documentos/Projects | tr ' ' '\n'`
+fi
+# Work Projects
+work_projects=""
+if [ -d ~/Development/Projects  ]; then
+    work_projects=`ls ~/Development/Projects | tr ' ' \n`
+fi
+# configuration folder
 config=`ls ~/.dotfiles/.config | tr ' ' '\n'`
-work_projects=`ls ~/Development/Projects | tr ' ' \n`
-# $projects | fzf
-
+# Prompt
 selected=`printf "$projects\n$config\n$work_projects\ndotfiles" | fzf --prompt="󰃖 Go to: " --border`
-
+# Cd to folder
 if [ -z "$selected" ]; then
     clear
     return 0
@@ -25,7 +33,4 @@ else
     cd ~/.dotfiles
     clear
 fi
-
-
-# ($projects & ls ~/.dotfiles/.config) | fzf
 
