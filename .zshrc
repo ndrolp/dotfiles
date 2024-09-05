@@ -159,6 +159,7 @@ alias fv="fd --type f --hidden --exclude .git | fzf --preview 'bat --style=numbe
 alias lg="lazygit"
 alias ff="fastfetch"
 alias p="source ~/.dotfiles/scripts/tmux/projects.sh"
+alias snvim="sudo -E nvim"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
