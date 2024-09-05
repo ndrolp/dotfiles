@@ -10,7 +10,7 @@ if [ "$1" = "--kill" ]; then
     color="prompt:yellow"
 fi
 
-selected=`printf "$sessions" | fzf --prompt="$prompt" --layout="reverse" --no-sort --color="$color"`
+selected=`printf "$sessions" | fzf --prompt="$prompt" --layout="reverse" --no-sort --color="$color" --exact`
 session_name=`echo "$selected" | cut -d':' -f1`
 
 if [ -z "$selected" ]; then
