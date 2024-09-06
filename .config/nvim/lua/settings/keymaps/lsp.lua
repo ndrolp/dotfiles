@@ -11,7 +11,7 @@ opt.desc = "Show line diagnostics"
 keymap.set("n", "<leader>ld", vim.diagnostic.open_float, opt)
 
 opt.desc = "Restart LSP"
-keymap.set("n", "<leader>rs", ":LspRestart<CR>", opt)
+keymap.set("n", "<leader>lR", ":LspRestart<CR>", opt)
 
 opt.desc = "Select Filetype"
 keymap.set("n", "<leader>ll", ":Telescope filetypes<CR>", opt)

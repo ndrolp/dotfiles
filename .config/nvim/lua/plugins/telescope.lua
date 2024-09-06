@@ -4,6 +4,9 @@ return {
     opts = {
         defaults = {
             prompt_prefix = "    ",
+            layout_config = {
+                vertical = { width = 0.5 },
+            },
             file_ignore_patterns = { "node_modules", ".git", "build", "dist" },
         },
         vimgrep_arguments = {

@@ -55,7 +55,7 @@ mason_lspconfig.setup_handlers({
             includeInlayVariableTypeHints = false,
         }
 
-        lspconfig["tsserver"].setup({
+        lspconfig["ts_ls"].setup({
             root_dir = lspconfig.util.root_pattern(
                 ".prettierrc",
                 "deno.js",

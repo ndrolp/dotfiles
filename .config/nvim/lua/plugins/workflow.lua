@@ -47,7 +47,7 @@ return {
             vim.o.timeoutlen = 100
         end,
         opts = {
-            preset = "helix",
+            preset = "helix", -- classic, modern, helix
             -- your configuration comes here
             -- or leave it empty to use the default settings
             -- refer to the configuration section below
