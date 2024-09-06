@@ -23,3 +23,6 @@ keymap.set("n", "<leader>oq", ":ObsidianQuickSwitch<CR> ", opt)
 
 opt.desc = "Open Obsidian App"
 keymap.set("n", "<leader>oo", ":ObsidianOpen<CR> ", opt)
+
+opt.desc = "Obsidian Tags"
+keymap.set("n", "<leader>ot", ":ObsidianTags<CR> ", opt)
