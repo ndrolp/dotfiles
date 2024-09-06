@@ -53,6 +53,33 @@ return {
                             action = "Telescope neovim-project discover",
                         },
                         {
+                            icon = " ",
+                            desc = "Find Files",
+                            desc_hl = "String",
+                            key = "f",
+                            key_hl = "Number",
+                            key_format = " %s", -- remove default surrounding `[]`
+                            action = "Telescope find_files hidden=true",
+                        },
+                        {
+                            icon = " ",
+                            desc = "Grep Files",
+                            desc_hl = "String",
+                            key = "g",
+                            key_hl = "Number",
+                            key_format = " %s", -- remove default surrounding `[]`
+                            action = "Telescope live_grep",
+                        },
+                        {
+                            icon = " ",
+                            desc = "Recent Files",
+                            desc_hl = "String",
+                            key = "r",
+                            key_hl = "Number",
+                            key_format = " %s", -- remove default surrounding `[]`
+                            action = "Telescope oldfiles",
+                        },
+                        {
                             icon = "󰆼 ",
                             desc = "Database Mode",
                             desc_hl = "String",
@@ -60,15 +87,6 @@ return {
                             key_hl = "Number",
                             key_format = " %s", -- remove default surrounding `[]`
                             action = "tabnew | DBUIToggle",
-                        },
-                        {
-                            icon = " ",
-                            desc = "Recent Files",
-                            desc_hl = "String",
-                            key = "f",
-                            key_hl = "Number",
-                            key_format = " %s", -- remove default surrounding `[]`
-                            action = "Telescope oldfiles",
                         },
                     },
                     footer = {}, --your footer

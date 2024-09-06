@@ -27,6 +27,7 @@ vim.o.spell = false
 vim.o.spelllang = "en_us"
 vim.o.cmdheight = 0
 vim.o.shell = "zsh"
+vim.opt.conceallevel = 1
 
 -- vim.cmd([[
 --     augroup filetype_jsx

@@ -150,8 +150,8 @@ export FZF_DEFAULT_OPTS=" \
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias zshrestart="source ~/.zshrc"
-alias zshconfig="nvim ~/.zshrc"
+alias zr="source ~/.zshrc"
+alias zc="nvim ~/.zshrc"
 alias nvimconfig="cd ~/.dotfiles/.config/nvim;nvim"
 alias dotfiles="cd ~/.dotfiles;nvim"
 alias home="cd ~/"
@@ -160,6 +160,7 @@ alias lg="lazygit"
 alias ff="fastfetch"
 alias p="source ~/.dotfiles/scripts/tmux/projects.sh"
 alias snvim="sudo -E nvim"
+alias pns="cd ~/Vaults/personal;nvim"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

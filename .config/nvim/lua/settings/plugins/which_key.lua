@@ -12,6 +12,7 @@ wk.add({
         { "<leader>d", group = "Document" },
         { "<leader>b", group = "Buffer" },
         { "<leader>t", group = "ToDo" },
+        { "<leader>o", group = "Obsidian Notes" },
         { "g",         group = "Go" },
     },
 })
