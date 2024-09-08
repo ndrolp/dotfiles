@@ -161,6 +161,7 @@ alias ff="fastfetch"
 alias p="source ~/.dotfiles/scripts/tmux/projects.sh"
 alias snvim="sudo -E nvim"
 alias pns="cd ~/Vaults/personal;nvim"
+alias open="xdg-open"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
