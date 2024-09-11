@@ -44,7 +44,7 @@ mason_lspconfig.setup_handlers({
         })
     end,
 
-    ["tsserver"] = function()
+    ["ts_ls"] = function()
         local hints = {
             includeInlayEnumMemberValueHints = true,
             -- includeInlayFunctionLikeReturnTypeHints = true,

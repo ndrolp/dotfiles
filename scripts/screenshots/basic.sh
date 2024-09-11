@@ -1,4 +1,4 @@
 #!/bin/sh
 
-mkdir -p ~/Images/Screenshots
-maim "$HOME/Images/Screenshots/$(date).png"
+mkdir -p ~/Pictures/Screenshots
+maim "$HOME/Pictures/Screenshots/$(date).png"
