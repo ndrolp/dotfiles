@@ -8,6 +8,23 @@ return {
             "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
             "MunifTanjim/nui.nvim",
             -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
+            {
+                "s1n7ax/nvim-window-picker",
+                -- version = "2.*",
+                opts = {
+
+                    filter_rules = {
+                        include_current_win = false,
+                        autoselect_one = true,
+                        bo = {
+                            -- if the file type is one of following, the window will be ignored
+                            filetype = { "neo-tree", "neo-tree-popup", "notify" },
+                            -- if the buffer type is one of following, the window will be ignored
+                            buftype = { "terminal", "quickfix" },
+                        },
+                    },
+                },
+            },
         },
         opts = {
             filesystem = {
@@ -50,14 +67,14 @@ return {
                         nowait = false, -- disable `nowait` if you have existing combos starting with this char that you want to use
                     },
                     ["<2-LeftMouse>"] = "open",
-                    ["<cr>"] = "open",
+                    ["<cr>"] = "open_with_window_picker",
                     ["<esc>"] = "cancel", -- close preview or floating neo-tree window
                     ["P"] = { "toggle_preview", config = { use_float = true, use_image_nvim = true } },
                     -- Read `# Preview Mode` for more information
-                    ["l"] = "open",
+                    ["l"] = "open_width_window_picker",
                     ["h"] = "close_node",
-                    ["s"] = "open_split",
-                    ["v"] = "open_vsplit",
+                    ["v"] = "vsplit_with_window_picker",
+                    ["s"] = "split_with_window_picker",
                     -- ["S"] = "split_with_window_picker",
                     -- ["s"] = "vsplit_with_window_picker",
                     ["t"] = "open_tabnew",
