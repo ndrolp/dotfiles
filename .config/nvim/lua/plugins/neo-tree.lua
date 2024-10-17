@@ -71,7 +71,7 @@ return {
                     ["<esc>"] = "cancel", -- close preview or floating neo-tree window
                     ["P"] = { "toggle_preview", config = { use_float = true, use_image_nvim = true } },
                     -- Read `# Preview Mode` for more information
-                    ["l"] = "open_width_window_picker",
+                    ["l"] = "open",
                     ["h"] = "close_node",
                     ["v"] = "vsplit_with_window_picker",
                     ["s"] = "split_with_window_picker",

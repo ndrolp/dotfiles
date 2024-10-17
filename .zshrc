@@ -45,12 +45,20 @@ SPACESHIP_PROMPT_ORDER=(
 SPACESHIP_RPROMPT_ORDER=(
   node
   package
+  venv 
+  python
 )
+
+SPACESHIP_VENV_GENERIC_NAMES=(virtualenv env venv .venv generic-name)
+SPACESHIP_PYTHON_SYMBOL=" "
 SPACESHIP_TIME_PREFIX=""
+SPACESHIP_PYTHON_SHOW=true
+SPACESHIP_PYTHON_COLOR="green"
 # SPACESHIP_TIME_SHOW=true
 SPACESHIP_USER_SHOW=always
 SPACESHIP_TIME_FORMAT="%t"
 SPACESHIP_BATTERY_SHOW=always
+SPACESHIP_VENV_SHOW=true
 SPACESHIP_DIR_PREFIX="󰉋 "
 SPACESHIP_USER_PREFIX=" "
 SPACESHIP_PROMPT_ADD_NEWLINE=false
@@ -117,7 +125,7 @@ SPACESHIP_CHAR_SUFFIX=" "
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions history fzf zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions history fzf zsh-syntax-highlighting pip)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -184,6 +192,8 @@ export ZELLIJ_CONFIG_DIR="$HOME/.config/zellij"
 #     tmux new-session -s "Main"
 # fi
 # fi
+#
+unalias pip
 
 export PATH=$PATH:/home/ndro/.spicetify
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
