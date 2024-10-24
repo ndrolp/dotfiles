@@ -1,5 +1,6 @@
 #!/bin/sh
 # Personal projects
+clear
 projects=""
 if [ -d ~/Documentos/Projects  ]; then
     projects=`ls ~/Documentos/Projects | tr ' ' '\n'`

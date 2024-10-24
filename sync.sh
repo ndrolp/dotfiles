@@ -122,4 +122,7 @@ git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
+git clone https://github.com/jimeh/tmuxifier.git ~/.tmuxifier
+
 gsettings set org.cinnamon.desktop.default-applications.terminal exec kitty
+
