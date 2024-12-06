@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Define options with icons
-GITHUB=" Github"
-YOUTUBE=" Youtube"
-NERD_FONT="  NerdFont"
-ANIME_FLV="󰿎  Anime FLV"
-WALLHAVEN="󰋩  Wallhaven"
-GMAIL="󰊫  Gmail"
-CHATGPT="󰭻  ChatGPT"
+GITHUB="   Github"
+YOUTUBE="    Youtube"
+NERD_FONT="    NerdFont"
+ANIME_FLV="󰿎    Anime FLV"
+WALLHAVEN="󰋩   Wallhaven"
+CHATGPT="󰭻    ChatGPT"
+GMAIL="󰊫     Gmail"
 
 # Get default browser
 BROWSER=$(xdg-settings get default-web-browser)
@@ -20,7 +20,7 @@ ${NERD_FONT}\n\
 ${ANIME_FLV}\n\
 ${WALLHAVEN}\n\
 ${CHATGPT}\n\
-${GMAIL}" | rofi -dmenu -p "  " -i -font "Hasklug Nerd Font 9")
+${GMAIL}" | wofi -i --dmenu --prompt "" )
 
 # Replace spaces with + for URL encoding
 CON=$(echo "$QUERY" | tr " " "+")

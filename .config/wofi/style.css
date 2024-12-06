@@ -36,7 +36,7 @@ window {
     background-color: @mantle;
     border-color: @mauve;
     border: none;
-    padding: 10px;
+    padding: 5px;
     font-size: 15pt;
     color: @tet;
     border-radius: 0px;
@@ -48,7 +48,7 @@ window {
 }
 
 #inner-box {
-    padding: 10px;
+    padding: 0px;
     background-color: @mauve;
     border-radius: 0px;
     background-color: @mantle;
@@ -61,7 +61,8 @@ window {
 }
 
 #entry {
-    margin: 4px
+    margin: 0px;
+    border-radius: 0;
 }
 
 #entry:nth-child(2) {
@@ -69,7 +70,7 @@ window {
 }
 
 #entry:selected {
-    background: linear-gradient(35deg, @lavender, @mauve , @red)
+    background: linear-gradient(90deg, @lavender, @mauve , @red)
 }
 
 #text:selected {
