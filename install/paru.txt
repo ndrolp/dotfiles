@@ -11,3 +11,4 @@ arc-gtk-theme
 ristretto
 cava
 playerctl
+waypaper

@@ -38,3 +38,4 @@ hyprland
 hyprpaper
 waybar
 nvidia
+swww
