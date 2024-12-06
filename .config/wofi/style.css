@@ -25,6 +25,10 @@
 @define-color mantle #292c3c;
 @define-color crust #232634;
 
+* {
+    border: none
+}
+
 window {
     border-radius: 15px;
     background-color: transparent;
@@ -36,7 +40,6 @@ window {
     background-color: @mantle;
     border-color: @mauve;
     border: none;
-    padding: 5px;
     font-size: 15pt;
     color: @tet;
     border-radius: 0px;
@@ -51,8 +54,9 @@ window {
     padding: 0px;
     background-color: @mauve;
     border-radius: 0px;
-    background-color: @mantle;
-    border: 1px solid @surface0;
+    /* background-color: @mantle; */
+    background-color: transparent;
+    border: none;
 }
 
 #outer-box {
@@ -61,16 +65,14 @@ window {
 }
 
 #entry {
-    margin: 0px;
+    margin: 2px;
     border-radius: 0;
 }
 
-#entry:nth-child(2) {
-    margin-top: 5px;
-}
 
 #entry:selected {
-    background: linear-gradient(90deg, @lavender, @mauve , @red)
+    background: linear-gradient(90deg, @lavender, @mauve , @red);
+    border-radius: 5px;
 }
 
 #text:selected {
@@ -79,7 +81,6 @@ window {
 }
 
 #scroll {
-    padding-bottom: 2px;
     margin: 5px;
     overflow: hidden;
     /* background-color: @base; */

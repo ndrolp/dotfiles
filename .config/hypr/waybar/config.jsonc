@@ -14,42 +14,18 @@
         "~/.config/hypr/waybar/modules.json"
     ],
     "modules-left": [
-        "hyprland/window",
-        "custom/spotify",
-        "custom/media"
+        "group/media"
     ],
     "modules-center": [
         "hyprland/workspaces",
         "sway/window"
     ],
     "modules-right": [
-        // "mpd",
-        // "idle_inhibitor",
-        // "network",
         "power-profiles-daemon",
         "group/hardware",
-        // "keyboard-state",
         "sway/language",
         "tray",
     ],
-    // Modules configuration
-    // "custom/power",
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -187,18 +163,6 @@
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
     },
-    "custom/media": {
-        "format": "{icon} {text}",
-        "return-type": "json",
-        "max-length": 40,
-        "format-icons": {
-            "spotify": "",
-            "default": "🎜",
-        },
-        "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null", // Script in resources folder
-        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
-    },
     "custom/power": {
         "format": "⏻ ",
         "tooltip": false,
@@ -222,19 +186,5 @@
             "pulseaudio",
             "clock",
         ],
-    },
-    "custom/spotify": {
-        "format": "{icon} {}",
-        "escape": true,
-        "return-type": "json",
-        "max-length": 40,
-        // "interval": 30, // Remove this if your script is endless and write in loop
-        "on-click": "playerctl -p spotify play-pause",
-        "on-click-right": "killall spotify",
-        "smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
-        "on-scroll-up": "playerctl -p spotify next",
-        "on-scroll-down": "playerctl -p spotify previous",
-        "exec": "$HOME/.config/hypr/waybar/custom/spotify.py", // Script in resources/custom_modules folder
-        "exec-if": "pgrep spotify",
     },
 }

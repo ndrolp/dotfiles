@@ -1,4 +1,5 @@
 @import "./catpuccin.css";
+
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
@@ -57,7 +58,7 @@ button:hover {
 #workspaces button {
     padding-right: 12px;
     background-color: transparent;
-    padding-top : 0;
+    padding-top: 0;
     padding-bottom: 0;
     border-radius: 1000px;
     color: @text;
@@ -98,10 +99,11 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #power-profiles-daemon,
-#mpd ,
+#mpd,
 #window,
 #workspaces,
 #hardware,
+#media,
 #pulseaudio {
     color: @text;
     margin-left: 0;
@@ -127,16 +129,13 @@ button:hover {
     margin: 0 0px;
 }
 
-#window{
-    color: @lavender;
-    padding: 0 20px;
-    font-size: 15pt;
-    background-color: @mantle
+#window {
+    color: @blue;
+    padding: 0 10px;
 }
 
-
-#pulseaudio{
-    color: @mauve
+#pulseaudio {
+    color: @mauve;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -154,11 +153,11 @@ button:hover {
 }
 
 #clock {
-    color: @sky
+    color: @sky;
 }
 
 #battery {
-    color: @peach
+    color: @peach;
 }
 
 #battery.charging,
@@ -207,24 +206,20 @@ label:focus {
     background-color: #000000;
 }
 
-#cpu {
-}
+#cpu {}
 
-#hardware{
+#hardware {
     padding: 0px 10px;
     background: @mantle;
 }
 
-
-
-#hardware #cpu{
+#hardware #cpu {
     background: transparent;
-    color: @yellow
+    color: @yellow;
 }
-      
 
 #memory {
-    color: @teal
+    color: @teal;
 }
 
 #disk {
@@ -232,7 +227,7 @@ label:focus {
 }
 
 #backlight {
-    color: @sky
+    color: @sky;
 }
 
 #network {
@@ -243,8 +238,7 @@ label:focus {
     background-color: #f53c3c;
 }
 
-#pulseaudio {
-}
+#pulseaudio {}
 
 #pulseaudio.muted {
     color: @red;
@@ -260,29 +254,26 @@ label:focus {
 }
 
 #custom-media {
-    background-color: #66cc99;
-    color: #2a5c45;
+    background-color: @mantle;
+    color: @green;
     min-width: 100px;
 }
 
-#custom-media.custom-spotify {
-    background-color: #66cc99;
-}
+#custom-media.custom-spotify {}
 
 #custom-media.custom-vlc {
-    background-color: #ffa000;
+    color: @peach;
 }
 
 #temperature {
-    color: @green
+    color: @green;
 }
 
 #temperature.critical {
     background-color: @red;
 }
 
-#tray {
-}
+#tray {}
 
 #tray>.passive {
     -gtk-icon-effect: dim;
