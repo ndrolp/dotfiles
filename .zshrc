@@ -15,6 +15,7 @@ export PATH
 export VISUAL=nvim
 export EDITOR=nvim
 export FZF_TMUX_OPTS='-p80%,60%'
+export FZF_DEFAULT_OPTS="--color=bg+:-1,bg:-1"  # Both bg and bg+ set to -1 for transparency
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 CHROME_EXECUTABLE=/bin/google-chrome-stable

@@ -32,3 +32,9 @@ maim
 alacritty
 highlight
 w3m
+cpio
+wofi
+hyprland
+hyprpaper
+waybar
+nvidia
