@@ -15,7 +15,8 @@
     ],
     "modules-left": [
         "hyprland/window",
-        "custom/spotify"
+        "custom/spotify",
+        "custom/media"
     ],
     "modules-center": [
         "hyprland/workspaces",

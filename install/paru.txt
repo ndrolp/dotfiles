@@ -12,3 +12,4 @@ ristretto
 cava
 playerctl
 waypaper
+pyprland

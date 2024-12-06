@@ -39,3 +39,5 @@ hyprpaper
 waybar
 nvidia
 swww
+grim
+slurp
