@@ -27,6 +27,16 @@ local lazygit = Terminal:new({
     },
 })
 
+local gh_dash = Terminal:new({
+    cmd = "gh dash",
+    hidden = true,
+    float_opts = {
+        height = 1000,
+        width = 1000,
+        border = "none",
+    },
+})
+
 local neovim = Terminal:new({
     cmd = "nvim",
     hidden = true,
@@ -56,6 +66,10 @@ end
 
 function NvimToggle()
     neovim:toggle()
+end
+
+function GhDashToggle()
+    gh_dash:toggle()
 end
 
 vim.keymap.set({ "n", "t" }, "<C-k>", "<cmd>lua UnderToggle()<CR>", { desc = "Toggle Under Terminal", silent = true })

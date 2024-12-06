@@ -32,17 +32,16 @@
 window {
     border-radius: 15px;
     background-color: transparent;
-    margin: 5px;
 }
 
 #input {
-    margin: 5px;
+    margin-bottom: 10px;
     background-color: @mantle;
     border-color: @mauve;
     border: none;
-    font-size: 15pt;
     color: @tet;
-    border-radius: 0px;
+    border-radius: 5px;
+    margin-top: 5px;
     border: 1px solid @surface0;
 }
 
@@ -52,10 +51,7 @@ window {
 
 #inner-box {
     padding: 0px;
-    background-color: @mauve;
     border-radius: 0px;
-    /* background-color: @mantle; */
-    background-color: transparent;
     border: none;
 }
 
@@ -81,10 +77,12 @@ window {
 }
 
 #scroll {
-    margin: 5px;
     overflow: hidden;
-    /* background-color: @base; */
+    padding: 5px;
+    background-color: @mantle;
+    border: 1px solid @surface0;
     border-radius: 10px;
+    margin-bottom: 5px;
 }
 
 #text {

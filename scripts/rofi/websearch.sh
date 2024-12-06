@@ -1,5 +1,6 @@
 #!/bin/bash
 
+killall wofi
 # Define options with icons
 GITHUB="   Github"
 YOUTUBE="    Youtube"

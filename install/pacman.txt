@@ -41,3 +41,4 @@ nvidia
 swww
 grim
 slurp
+github-cli
