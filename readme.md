@@ -2,7 +2,13 @@
 
 ## Screenshot
 
-![alt text](https://github.com/ndrolp/dotfiles/blob/main/screenshot.jpg?raw=true)
+### I3 Rice
+
+![i3 appearence](https://github.com/ndrolp/dotfiles/blob/main/screenshot.jpg?raw=true)
+
+### Hyprland Rice
+
+![Hyprland appearence](https://github.com/ndrolp/dotfiles/blob/main/wayland.jpg?raw=true)
 
 ## Colors
 
