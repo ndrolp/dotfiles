@@ -8,7 +8,7 @@
 
 ### Hyprland Rice
 
-![Hyprland appearence](https://github.com/ndrolp/dotfiles/blob/main/wayland.jpg?raw=true)
+![Hyprland appearence](https://github.com/ndrolp/dotfiles/blob/main/wayland.png?raw=true)
 
 ## Colors
 
