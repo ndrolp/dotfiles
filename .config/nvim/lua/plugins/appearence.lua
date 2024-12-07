@@ -9,6 +9,7 @@ return {
     },
     {
         "kdheepak/tabline.nvim",
+        enabled = true,
         config = function()
             require("tabline").setup({
                 -- Defaults configuration options

@@ -6,8 +6,8 @@ require("lualine").setup({
         icons_enabled = true,
         theme = "catppuccin",
         -- theme = "catppuccin",
-        section_separators = { left = "", right = "" },
-        -- section_separators = { left = "", right = "" },
+        -- section_separators = { left = "", right = "" },
+        section_separators = { left = "", right = "" },
         component_separators = { left = "|", right = " " },
         disabled_filetypes = {
             statusline = {},
@@ -15,7 +15,7 @@ require("lualine").setup({
             NvimTree = {},
         },
         ignore_focus = {},
-        always_divide_middle = true,
+        always_divide_middle = false,
         globalstatus = false,
         refresh = {
             statusline = 1000,
@@ -74,9 +74,9 @@ require("lualine").setup({
         lualine_z = {},
     },
     tabline = {},
-    winbar = {
-        lualine_a = {},
-    },
-    inactive_winbar = {},
+    -- winbar = {
+    --     -- lualine_a = {},
+    -- },
+    -- inactive_winbar = {},
     extensions = { "nvim-tree", "symbols-outline", "toggleterm" },
 })
