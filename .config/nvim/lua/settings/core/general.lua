@@ -10,7 +10,6 @@ vim.opt.encoding = "utf-8"
 
 vim.opt.backspace = "2"
 vim.opt.showcmd = true
-vim.opt.laststatus = 2
 vim.opt.autowrite = true
 vim.opt.cursorline = true
 vim.opt.clipboard = "unnamedplus"
@@ -28,6 +27,7 @@ vim.o.spelllang = "en_us"
 vim.o.cmdheight = 0
 vim.o.shell = "zsh"
 vim.opt.conceallevel = 1
+vim.o.laststatus = 3
 
 -- vim.cmd([[
 --     augroup filetype_jsx
