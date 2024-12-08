@@ -21,7 +21,7 @@ ${NERD_FONT}\n\
 ${ANIME_FLV}\n\
 ${WALLHAVEN}\n\
 ${CHATGPT}\n\
-${GMAIL}" | wofi -i --dmenu --prompt "" )
+${GMAIL}" | wofi -i --dmenu --prompt "" -b)
 
 # Replace spaces with + for URL encoding
 CON=$(echo "$QUERY" | tr " " "+")

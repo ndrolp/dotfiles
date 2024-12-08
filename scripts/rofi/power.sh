@@ -1,15 +1,14 @@
 #!/bin/bash
 
-SHUTDOWN="⏻ Poweroff"
-REBOOT=" Reboot"
-LOGOUT=" Logout"
+SHUTDOWN="⏻    Poweroff"
+REBOOT="    Reboot"
+LOGOUT="     Logout"
 
 
 QUERY=$(echo -e "\
 ${LOGOUT}\n\
 ${REBOOT}\n\
-${SHUTDOWN}\n\
-" | dmenu -p " ⭘  " -fn "Hasklug Nerd Font-9" -h 28 -i -sb '#f5a97f')
+${SHUTDOWN}" | wofi -i --dmenu --prompt "" --height 185 --width 240 -b)
 
 CON=$(echo $QUERY | tr " " "+" )
 
