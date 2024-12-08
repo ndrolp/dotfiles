@@ -16,7 +16,7 @@ CON=$(echo $QUERY | tr " " "+" )
 if [[ $(echo $CON | wc -c) -gt 1 ]]
 then
     case $QUERY in 
-    $LOGOUT ) i3 exit; ;;
+    $LOGOUT ) hyprctl dispatch exit; ;;
     $REBOOT ) reboot; ;;
     $SHUTDOWN ) poweroff; ;;
     * ) echo "NO SELECTED"
