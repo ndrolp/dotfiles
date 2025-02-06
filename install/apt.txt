@@ -1,0 +1,15 @@
+htop
+neofetch
+ranger
+git
+zsh
+stow
+xclip
+unzip
+python3-pip
+python3-venv
+rustup
+gh
+fzf
+fastfetch
+golang

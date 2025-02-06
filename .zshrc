@@ -10,27 +10,21 @@ PATH="/opt/flutter/bin:$PATH"
 PATH="$HOME/Android/Sdk/platform-tools:$PATH"
 PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
 PATH="$HOME/go/bin:$PATH"
+PATH="$HOME/.cargo/bin:$PATH"
 PATH="/usr/bin/flutter/bin:$PATH"
 export PATH
 export VISUAL=nvim
 export EDITOR=nvim
 export FZF_TMUX_OPTS='-p80%,60%'
 export FZF_DEFAULT_OPTS="--color=bg+:-1,bg:-1"  # Both bg and bg+ set to -1 for transparency
-# Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-CHROME_EXECUTABLE=/bin/google-chrome-stable
+export CHROME_EXECUTABLE=/bin/google-chrome-stable
 export CHROME_EXECUTABLE
 
 export NVM_DIR=~/.nvm
  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-#source /usr/share/nvm/init-nvm.sh
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="powerlevel10k/powerlevel10k"
-ZSH_THEME="spaceship"
+#ZSH_THEME="spaceship"
 SPACESHIP_PROMPT_ORDER=(
   user          # Username section
   dir           # Current directory section
@@ -201,6 +195,4 @@ unalias pip
 export PATH=$PATH:/home/ndro/.spicetify
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export PATH="$HOME/.tmuxifier/bin:$PATH"
-
-eval "$(tmuxifier init -)"
+source "$HOME/.zsh/spaceship/spaceship.zsh"

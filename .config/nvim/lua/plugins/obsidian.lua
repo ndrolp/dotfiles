@@ -14,6 +14,10 @@ return {
                     name = "personal",
                     path = "~/Vaults/personal",
                 },
+                {
+                    name = "Personal Vault",
+                    path = "~/Vaults/Personal Vault",
+                },
             },
 
             notes_subdir = "inbox",

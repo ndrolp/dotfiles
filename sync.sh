@@ -122,8 +122,6 @@ git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-git clone https://github.com/jimeh/tmuxifier.git ~/.tmuxifier
-
 mkdir -p ~/.config/tmux/plugins/catppuccin
 git clone -b v2.1.0 https://github.com/catppuccin/tmux.git ~/.config/tmux/plugins/catppuccin/tmux
 
