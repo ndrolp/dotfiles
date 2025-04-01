@@ -9,3 +9,4 @@ require("settings.core.lsps")
 require("settings.plugins.flutter")
 require("settings.plugins.devicons")
 require("settings.keymaps")
+

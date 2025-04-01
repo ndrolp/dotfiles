@@ -1,0 +1,4 @@
+vim.keymap.set("n", "<leader>w", ":w<CR>", {})
+vim.keymap.set("n", "<leader>q", ":q<CR>", {})
+vim.keymap.set("n", "<leader>vs", ":vs<CR>", {})
+vim.keymap.set("n", "<leader>vv", ":split<CR>", {})

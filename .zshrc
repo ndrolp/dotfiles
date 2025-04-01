@@ -18,13 +18,14 @@ export EDITOR=nvim
 export FZF_TMUX_OPTS='-p80%,60%'
 export FZF_DEFAULT_OPTS="--color=bg+:-1,bg:-1"  # Both bg and bg+ set to -1 for transparency
 export ZSH="$HOME/.oh-my-zsh"
+export ZSH_CUSTOM="$HOME/.config/zsh_custom"
 export CHROME_EXECUTABLE=/bin/google-chrome-stable
 export CHROME_EXECUTABLE
 
 export NVM_DIR=~/.nvm
  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
-#ZSH_THEME="spaceship"
+ZSH_THEME="spaceship"
 SPACESHIP_PROMPT_ORDER=(
   user          # Username section
   dir           # Current directory section
@@ -195,4 +196,9 @@ unalias pip
 export PATH=$PATH:/home/ndro/.spicetify
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-source "$HOME/.zsh/spaceship/spaceship.zsh"
+alias pvim='XDG_CONFIG_HOME="$HOME/.dotfiles/.config/nvim_new" nvim'
+# alias pv="XDG_CONFIG_HOME='$HOME/Documentos/nvim_new' nvim -u '$HOME/Documentos/new_nvim/nvim/init.lua'"
+# alias pv="nvim -u '$HOME/Documentos/new_nvim/nvim/init.lua'"
+alias pv="NVIM_APPNAME=nvim_new nvim"
+
+#source "$HOME/.zsh/spaceship/spaceship.zsh"
