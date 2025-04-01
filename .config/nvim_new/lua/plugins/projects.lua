@@ -10,6 +10,9 @@ return {
                 "~/Documentos/Projects/*",
             },
             last_session_on_startup = false,
+            picker = {
+                type = "telescope", -- or "fzf-lua"
+            }
         },
         init = function()
             -- enable saving the state of plugins in the session
@@ -20,10 +23,10 @@ return {
             { "nvim-telescope/telescope.nvim", tag = "0.1.4" },
             { "Shatur/neovim-session-manager" },
         },
-        config = function()
-            vim.keymap.set("n", "gp", ":Telescope neovim-project discover<CR>", {})
-        end,
         lazy = false,
         priority = 100,
+        keys = {
+            { "gp", ":Telescope neovim-project discover<CR>", "Open project" }
+        }
     },
 }

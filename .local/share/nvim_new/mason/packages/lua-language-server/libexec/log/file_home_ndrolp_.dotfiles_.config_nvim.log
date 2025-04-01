@@ -1,0 +1,798 @@
+[18:11:54.391][info] [#0:/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/main.lua:68]: Lua Lsp startup, root: 	/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec
+[18:11:54.391][info] [#0:/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/main.lua:69]: ROOT:	/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec
+[18:11:54.391][info] [#0:/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/main.lua:70]: LOGPATH:	/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/log
+[18:11:54.391][info] [#0:/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/main.lua:71]: METAPATH:	/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta
+[18:11:54.391][info] [#0:/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/main.lua:72]: VERSION:	3.13.9
+[18:11:54.419][info] [#0:script/proto/proto.lua:260]: Listen Mode: stdio
+[18:11:54.419][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 2.259 MB
+        # 00 : 2.259 MB
+        # 01 : 0.000 MB
+        # 02 : 0.000 MB
+        # 03 : 0.000 MB
+        # 04 : 0.000 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[18:11:54.527][info] [#0:script/client.lua:657]: Client init	{
+  capabilities = {
+    general = {
+      positionEncodings = { "utf-8", "utf-16", "utf-32" }
+    },
+    textDocument = {
+      callHierarchy = {
+        dynamicRegistration = false
+      },
+      codeAction = {
+        codeActionLiteralSupport = {
+          codeActionKind = {
+            valueSet = { "", "quickfix", "refactor", "refactor.extract", "refactor.inline", "refactor.rewrite", "source", "source.organizeImports" }
+          }
+        },
+        dataSupport = true,
+        dynamicRegistration = true,
+        isPreferredSupport = true,
+        resolveSupport = {
+          properties = { "edit", "command" }
+        }
+      },
+      codeLens = {
+        dynamicRegistration = false,
+        resolveSupport = {
+          properties = { "command" }
+        }
+      },
+      completion = {
+        completionItem = {
+          commitCharactersSupport = false,
+          deprecatedSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          insertReplaceSupport = true,
+          insertTextModeSupport = {
+            valueSet = { 1 }
+          },
+          labelDetailsSupport = true,
+          preselectSupport = false,
+          resolveSupport = {
+            properties = { "documentation", "detail", "additionalTextEdits", "command", "data" }
+          },
+          snippetSupport = true,
+          tagSupport = {
+            valueSet = { 1 }
+          }
+        },
+        completionItemKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 }
+        },
+        completionList = {
+          itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
+        },
+        contextSupport = true,
+        dynamicRegistration = false,
+        insertTextMode = 1
+      },
+      declaration = {
+        linkSupport = true
+      },
+      definition = {
+        dynamicRegistration = true,
+        linkSupport = true
+      },
+      diagnostic = {
+        dynamicRegistration = false
+      },
+      documentHighlight = {
+        dynamicRegistration = false
+      },
+      documentSymbol = {
+        dynamicRegistration = false,
+        hierarchicalDocumentSymbolSupport = true,
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        }
+      },
+      foldingRange = {
+        dynamicRegistration = false,
+        foldingRange = {
+          collapsedText = true
+        },
+        lineFoldingOnly = true
+      },
+      formatting = {
+        dynamicRegistration = true
+      },
+      hover = {
+        contentFormat = { "markdown", "plaintext" },
+        dynamicRegistration = true
+      },
+      implementation = {
+        linkSupport = true
+      },
+      inlayHint = {
+        dynamicRegistration = true,
+        resolveSupport = {
+          properties = { "textEdits", "tooltip", "location", "command" }
+        }
+      },
+      publishDiagnostics = {
+        dataSupport = true,
+        relatedInformation = true,
+        tagSupport = {
+          valueSet = { 1, 2 }
+        }
+      },
+      rangeFormatting = {
+        dynamicRegistration = true,
+        rangesSupport = true
+      },
+      references = {
+        dynamicRegistration = false
+      },
+      rename = {
+        dynamicRegistration = true,
+        prepareSupport = true
+      },
+      semanticTokens = {
+        augmentsSyntaxTokens = true,
+        dynamicRegistration = false,
+        formats = { "relative" },
+        multilineTokenSupport = false,
+        overlappingTokenSupport = true,
+        requests = {
+          full = {
+            delta = true
+          },
+          range = false
+        },
+        serverCancelSupport = false,
+        tokenModifiers = { "declaration", "definition", "readonly", "static", "deprecated", "abstract", "async", "modification", "documentation", "defaultLibrary" },
+        tokenTypes = { "namespace", "type", "class", "enum", "interface", "struct", "typeParameter", "parameter", "variable", "property", "enumMember", "event", "function", "method", "macro", "keyword", "modifier", "comment", "string", "number", "regexp", "operator", "decorator" }
+      },
+      signatureHelp = {
+        dynamicRegistration = false,
+        signatureInformation = {
+          activeParameterSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          parameterInformation = {
+            labelOffsetSupport = true
+          }
+        }
+      },
+      synchronization = {
+        didSave = true,
+        dynamicRegistration = false,
+        willSave = true,
+        willSaveWaitUntil = true
+      },
+      typeDefinition = {
+        linkSupport = true
+      }
+    },
+    window = {
+      showDocument = {
+        support = true
+      },
+      showMessage = {
+        messageActionItem = {
+          additionalPropertiesSupport = true
+        }
+      },
+      workDoneProgress = true
+    },
+    workspace = {
+      applyEdit = true,
+      configuration = true,
+      didChangeConfiguration = {
+        dynamicRegistration = false
+      },
+      didChangeWatchedFiles = {
+        dynamicRegistration = false,
+        relativePatternSupport = true
+      },
+      inlayHint = {
+        refreshSupport = true
+      },
+      semanticTokens = {
+        refreshSupport = true
+      },
+      symbol = {
+        dynamicRegistration = false,
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        }
+      },
+      workspaceEdit = {
+        resourceOperations = { "rename", "create", "delete" }
+      },
+      workspaceFolders = true
+    }
+  },
+  clientInfo = {
+    name = "Neovim",
+    version = "0.11.0+ga99c469e54"
+  },
+  initializationOptions = {},
+  processId = 67564,
+  rootPath = "/home/ndrolp/.dotfiles/.config/nvim",
+  rootUri = "file:///home/ndrolp/.dotfiles/.config/nvim",
+  trace = "off",
+  workDoneToken = "1",
+  workspaceFolders = { {
+      name = "/home/ndrolp/.dotfiles/.config/nvim",
+      uri = "file:///home/ndrolp/.dotfiles/.config/nvim"
+    } }
+}
+[18:11:54.528][info] [#0:script/language.lua:137]: VSC language: nil
+[18:11:54.528][info] [#0:script/language.lua:138]: LS  language: en-us
+[18:11:54.528][info] [#0:script/workspace/workspace.lua:38]: Workspace init root: 	file:///home/ndrolp/.dotfiles/.config/nvim
+[18:11:54.528][info] [#0:script/workspace/workspace.lua:42]: Log path: 	/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/log/file_home_ndrolp_.dotfiles_.config_nvim.log
+[18:11:54.531][info] [#0:script/workspace/workspace.lua:48]: Workspace create: 	file:///home/ndrolp/.dotfiles/.config/nvim
+[18:11:54.736][info] [#0:script/provider/provider.lua:49]: Load config from client	file:///home/ndrolp/.dotfiles/.config/nvim
+[18:11:54.736][info] [#0:script/provider/provider.lua:50]: {
+  Lua = {
+    runtime = {
+      path = { "?.lua", "?/init.lua" },
+      pathStrict = true,
+      version = "LuaJIT"
+    },
+    workspace = {
+      checkThirdParty = false,
+      ignoreDir = { "/lua" },
+      library = { "/home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua", "/home/ndrolp/.dotfiles/.config/nvim/lua", "/home/ndrolp/.dotfiles/.local/share/nvim_new/lazy/tabline.nvim/lua" }
+    }
+  }
+}
+[18:11:54.736][info] [#0:script/provider/provider.lua:49]: Load config from client	file:///home/ndrolp/.dotfiles/.config/nvim
+[18:11:54.737][info] [#0:script/provider/provider.lua:50]: {
+  Lua = {
+    runtime = {
+      path = { "?.lua", "?/init.lua" },
+      pathStrict = true,
+      version = "LuaJIT"
+    },
+    workspace = {
+      checkThirdParty = false,
+      ignoreDir = { "/lua" },
+      library = { "/home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua", "/home/ndrolp/.dotfiles/.config/nvim/lua", "/home/ndrolp/.dotfiles/.local/share/nvim_new/lazy/tabline.nvim/lua" }
+    }
+  }
+}
+[18:11:54.737][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[18:11:54.737][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
+[18:11:54.737][info] [#0:script/provider/provider.lua:66]: nil
+[18:11:54.737][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[18:11:54.738][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
+[18:11:54.738][info] [#0:script/provider/provider.lua:66]: nil
+[18:11:54.852][info] [#0:script/library.lua:212]: Init builtin library at:	file:///home/ndrolp/.dotfiles/.config/nvim
+[18:11:54.867][info] [#0:script/library.lua:212]: Init builtin library at:	nil
+[18:11:54.977][info] [#0:script/workspace/workspace.lua:324]: Preload start:	file:///home/ndrolp/.dotfiles/.config/nvim
+[18:11:54.982][info] [#0:script/workspace/workspace.lua:330]: Scan files at:	file:///home/ndrolp/.dotfiles/.config/nvim
+[18:11:54.983][info] [#0:script/workspace/workspace.lua:324]: Preload start:	<fallback>
+[18:11:54.984][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[18:11:54.985][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[18:11:54.986][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/string.lua
+[18:11:54.986][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/bit.lua
+[18:11:54.986][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/math.lua
+[18:11:54.986][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table/clear.lua
+[18:11:54.987][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[18:11:54.987][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table/new.lua
+[18:11:54.987][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[18:11:54.987][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit.lua
+[18:11:54.987][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/os.lua
+[18:11:54.988][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:54.990][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/table.lua
+[18:11:54.991][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[18:11:54.991][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/package.lua
+[18:11:54.991][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/io.lua
+[18:11:55.008][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/os.lua
+[18:11:55.008][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/lazy/tabline.nvim/lua
+[18:11:55.009][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/builtin.lua
+[18:11:55.009][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit/util.lua
+[18:11:55.009][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/basic.lua
+[18:11:55.010][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/debug.lua
+[18:11:55.010][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/string.lua
+[18:11:55.010][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table.lua
+[18:11:55.010][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/string/buffer.lua
+[18:11:55.010][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/math.lua
+[18:11:55.010][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/package.lua
+[18:11:55.010][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/ffi.lua
+[18:11:55.011][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit/profile.lua
+[18:11:55.011][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.018][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/coroutine.lua
+[18:11:55.019][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/io.lua
+[18:11:55.119][info] [#0:script/workspace/workspace.lua:379]: Found 11 files at:	<fallback>
+[18:11:55.119][info] [#0:script/workspace/loading.lua:160]: Load files from disk:	<fallback>
+[18:11:55.119][info] [#0:script/workspace/workspace.lua:379]: Found 208 files at:	file:///home/ndrolp/.dotfiles/.config/nvim
+[18:11:55.119][info] [#0:script/workspace/loading.lua:160]: Load files from disk:	file:///home/ndrolp/.dotfiles/.config/nvim
+[18:11:55.121][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/io.lua , size = 6.364 KB
+[18:11:55.125][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/io.lua
+[18:11:55.125][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/package.lua , size = 2.944 KB
+[18:11:55.129][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/package.lua
+[18:11:55.129][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/coroutine.lua , size = 2.541 KB
+[18:11:55.133][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/coroutine.lua
+[18:11:55.134][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/utf8.lua , size = 2.386 KB
+[18:11:55.135][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[18:11:55.135][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/lazy_config.lua , size = 0.981 KB
+[18:11:55.136][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.136][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/table.lua , size = 4.445 KB
+[18:11:55.139][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/table.lua
+[18:11:55.139][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/git.lua , size = 1.840 KB
+[18:11:55.140][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.140][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/os.lua , size = 5.611 KB
+[18:11:55.147][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/os.lua
+[18:11:55.147][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/io.lua , size = 6.364 KB
+[18:11:55.150][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/io.lua
+[18:11:55.150][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/appearence.lua
+[18:11:55.150][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.150][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/coroutine.lua , size = 2.590 KB
+[18:11:55.153][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[18:11:55.153][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/tmux-navigator.lua , size = 0.010 KB
+[18:11:55.153][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.153][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/builtin.lua , size = 0.302 KB
+[18:11:55.154][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[18:11:55.154][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/nvim-tree.lua , size = 2.199 KB
+[18:11:55.155][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.156][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/math.lua , size = 8.542 KB
+[18:11:55.165][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/math.lua
+[18:11:55.165][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/telescope.lua , size = 1.019 KB
+[18:11:55.165][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.166][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/string.lua , size = 5.260 KB
+[18:11:55.169][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/string.lua
+[18:11:55.169][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/dashboard.lua , size = 4.974 KB
+[18:11:55.169][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.170][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/basic.lua , size = 15.841 KB
+[18:11:55.181][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[18:11:55.182][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/test.lua , size = 1.000 KB
+[18:11:55.182][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.182][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/debug.lua , size = 7.637 KB
+[18:11:55.186][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[18:11:55.186][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/colorscheme.lua , size = 0.296 KB
+[18:11:55.187][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.187][info] [#0:script/workspace/loading.lua:172]: Loaded files takes [0.070] sec: <fallback>
+[18:11:55.187][info] [#0:script/workspace/loading.lua:181]: Compile files takes [0.000] sec: <fallback>
+[18:11:55.187][info] [#0:script/workspace/loading.lua:182]: Loaded finish:	<fallback>
+[18:11:55.187][info] [#0:script/workspace/workspace.lua:381]: Preload finish at:	<fallback>
+[18:11:55.191][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/dropbar.lua , size = 0.357 KB
+[18:11:55.196][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.196][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/hover.lua , size = 1.262 KB
+[18:11:55.197][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.198][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/ibl.lua , size = 1.372 KB
+[18:11:55.198][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.198][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/mason.lua , size = 1.643 KB
+[18:11:55.199][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.199][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/neo-tree.lua , size = 6.507 KB
+[18:11:55.200][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.201][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/rust.lua , size = 0.469 KB
+[18:11:55.201][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.201][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/workflow.lua , size = 1.650 KB
+[18:11:55.202][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.202][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/octo.lua , size = 0.326 KB
+[18:11:55.202][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.202][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/hop.lua , size = 0.116 KB
+[18:11:55.202][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.203][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/obsidian.lua , size = 15.256 KB
+[18:11:55.209][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.209][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/mini-icons.lua , size = 1.456 KB
+[18:11:55.210][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.211][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/none-ls.lua , size = 1.914 KB
+[18:11:55.212][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.212][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/nvim-cmp.lua , size = 3.080 KB
+[18:11:55.213][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.213][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/runner.lua , size = 0.205 KB
+[18:11:55.213][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.213][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/projects.lua , size = 0.866 KB
+[18:11:55.214][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.214][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/lsp.lua , size = 1.458 KB
+[18:11:55.215][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.215][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/flutter.lua , size = 0.224 KB
+[18:11:55.215][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.215][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/dadbot.lua , size = 0.381 KB
+[18:11:55.215][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.216][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/surround.lua , size = 0.300 KB
+[18:11:55.216][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.216][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/terminal.lua , size = 0.178 KB
+[18:11:55.216][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.216][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/init.lua , size = 0.010 KB
+[18:11:55.216][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.217][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/mini-surround.lua , size = 1.761 KB
+[18:11:55.217][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.217][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/noice.lua , size = 1.739 KB
+[18:11:55.218][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.218][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/plugins/notify.lua , size = 0.587 KB
+[18:11:55.219][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.219][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/plugins/gitsigns.lua , size = 2.663 KB
+[18:11:55.220][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.220][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/plugins/which_key.lua , size = 1.048 KB
+[18:11:55.221][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.221][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/plugins/leap.lua , size = 0.000 KB
+[18:11:55.221][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.221][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/plugins/treesitter.lua , size = 1.909 KB
+[18:11:55.222][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.222][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/plugins/devicons.lua , size = 0.000 KB
+[18:11:55.222][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.223][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/plugins/flutter.lua , size = 0.867 KB
+[18:11:55.223][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.223][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/plugins/lualine.lua , size = 2.627 KB
+[18:11:55.224][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.224][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/plugins/terminal.lua , size = 1.556 KB
+[18:11:55.225][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.225][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/plugins/focus.lua , size = 1.536 KB
+[18:11:55.226][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.226][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/plugins/init.lua , size = 0.325 KB
+[18:11:55.226][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.226][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/core/appearence.lua , size = 2.396 KB
+[18:11:55.227][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.227][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/core/lsps.lua , size = 4.515 KB
+[18:11:55.229][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.229][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/core/keymaps.lua , size = 0.756 KB
+[18:11:55.235][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.236][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/core/transparency.lua , size = 0.000 KB
+[18:11:55.236][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.236][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/core/general.lua , size = 0.930 KB
+[18:11:55.237][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.237][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/keymaps/git.lua , size = 2.069 KB
+[18:11:55.238][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.238][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/keymaps/file.lua , size = 0.000 KB
+[18:11:55.239][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.239][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/keymaps/tests.lua , size = 1.074 KB
+[18:11:55.240][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.240][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/keymaps/buffers.lua , size = 0.942 KB
+[18:11:55.241][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.241][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/keymaps/hop.lua , size = 0.632 KB
+[18:11:55.241][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.241][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/keymaps/obsidian.lua , size = 0.838 KB
+[18:11:55.242][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.242][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/keymaps/todo.lua , size = 0.225 KB
+[18:11:55.242][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.243][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/keymaps/lsp.lua , size = 1.153 KB
+[18:11:55.243][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.243][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/keymaps/options.lua , size = 0.809 KB
+[18:11:55.244][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.244][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/keymaps/split.lua , size = 0.179 KB
+[18:11:55.244][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.244][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/keymaps/tabs.lua , size = 0.330 KB
+[18:11:55.245][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.245][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/keymaps/flutter.lua , size = 0.761 KB
+[18:11:55.245][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.246][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/keymaps/general.lua , size = 0.549 KB
+[18:11:55.246][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.246][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/keymaps/init.lua , size = 0.438 KB
+[18:11:55.246][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.246][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/lua/settings/keymaps/movement.lua , size = 0.552 KB
+[18:11:55.247][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.config/nvim/lua
+[18:11:55.247][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit/profile.lua , size = 0.348 KB
+[18:11:55.248][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit/profile.lua
+[18:11:55.248][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/ffi.lua , size = 2.529 KB
+[18:11:55.250][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/ffi.lua
+[18:11:55.250][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/package.lua , size = 2.699 KB
+[18:11:55.251][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/package.lua
+[18:11:55.251][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/math.lua , size = 7.982 KB
+[18:11:55.255][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/math.lua
+[18:11:55.255][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/string/buffer.lua , size = 18.123 KB
+[18:11:55.266][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/string/buffer.lua
+[18:11:55.266][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table.lua , size = 4.445 KB
+[18:11:55.270][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table.lua
+[18:11:55.270][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/string.lua , size = 5.242 KB
+[18:11:55.273][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/string.lua
+[18:11:55.273][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/debug.lua , size = 7.310 KB
+[18:11:55.278][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/debug.lua
+[18:11:55.278][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/basic.lua , size = 15.443 KB
+[18:11:55.293][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/basic.lua
+[18:11:55.294][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit/util.lua , size = 1.984 KB
+[18:11:55.298][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit/util.lua
+[18:11:55.298][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/builtin.lua , size = 0.302 KB
+[18:11:55.300][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/builtin.lua
+[18:11:55.300][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/lazy/tabline.nvim/lua/tabline.lua , size = 28.408 KB
+[18:11:55.331][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/lazy/tabline.nvim/lua
+[18:11:55.332][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/lazy/tabline.nvim/lua/tabline/term.lua , size = 0.851 KB
+[18:11:55.334][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/lazy/tabline.nvim/lua
+[18:11:55.334][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/lazy/tabline.nvim/lua/tabline/color_utils.lua , size = 9.527 KB
+[18:11:55.347][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/lazy/tabline.nvim/lua
+[18:11:55.347][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/os.lua , size = 5.611 KB
+[18:11:55.351][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/os.lua
+[18:11:55.351][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/jit/p.lua , size = 8.874 KB
+[18:11:55.356][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.356][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/jit/dis_mips64r6el.lua , size = 0.711 KB
+[18:11:55.357][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.357][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/jit/bc.lua , size = 5.417 KB
+[18:11:55.360][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.360][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/jit/dis_mips64el.lua , size = 0.700 KB
+[18:11:55.361][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.361][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/jit/dis_arm64be.lua , size = 0.604 KB
+[18:11:55.361][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.361][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/jit/v.lua , size = 5.731 KB
+[18:11:55.364][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.365][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/jit/vmdef.lua , size = 7.920 KB
+[18:11:55.367][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.367][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/jit/dis_ppc.lua , size = 19.825 KB
+[18:11:55.400][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.401][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/jit/dis_arm.lua , size = 18.891 KB
+[18:11:55.414][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.415][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/jit/dis_x86.lua , size = 33.033 KB
+[18:11:55.432][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.432][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/jit/dis_mips.lua , size = 21.494 KB
+[18:11:55.444][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.444][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/jit/bcsave.lua , size = 17.090 KB
+[18:11:55.454][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.454][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/jit/dis_mips64r6.lua , size = 0.700 KB
+[18:11:55.454][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.454][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/jit/dis_arm64.lua , size = 29.971 KB
+[18:11:55.474][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.474][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/jit/dis_x64.lua , size = 0.695 KB
+[18:11:55.475][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.475][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/jit/zone.lua , size = 0.979 KB
+[18:11:55.476][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.477][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/jit/dis_mips64.lua , size = 0.689 KB
+[18:11:55.477][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.477][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/jit/dis_mipsel.lua , size = 0.698 KB
+[18:11:55.478][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.478][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/jit/dump.lua , size = 20.269 KB
+[18:11:55.512][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.512][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/editorconfig.lua , size = 11.254 KB
+[18:11:55.519][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.519][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/loader.lua , size = 14.564 KB
+[18:11:55.529][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.529][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/snippet.lua , size = 19.794 KB
+[18:11:55.539][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.540][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/secure.lua , size = 5.020 KB
+[18:11:55.543][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.543][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/filetype/options.lua , size = 2.559 KB
+[18:11:55.545][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.545][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/filetype/detect.lua , size = 61.322 KB
+[18:11:55.577][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.577][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/uri.lua , size = 3.614 KB
+[18:11:55.580][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.580][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_comment.lua , size = 8.967 KB
+[18:11:55.585][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.585][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/treesitter/languagetree.lua , size = 40.234 KB
+[18:11:55.607][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.607][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/treesitter/highlighter.lua , size = 14.278 KB
+[18:11:55.621][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.621][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/treesitter/query.lua , size = 37.908 KB
+[18:11:55.647][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.647][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/treesitter/language.lua , size = 5.382 KB
+[18:11:55.689][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.689][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/treesitter/_range.lua , size = 3.923 KB
+[18:11:55.697][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.698][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/treesitter/_meta/misc.lua , size = 2.733 KB
+[18:11:55.700][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.700][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/treesitter/_meta/tsquery.lua , size = 1.860 KB
+[18:11:55.701][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.702][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/treesitter/_meta/tsnode.lua , size = 5.839 KB
+[18:11:55.705][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.705][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/treesitter/_meta/tstree.lua , size = 1.234 KB
+[18:11:55.706][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.707][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/treesitter/dev.lua , size = 20.854 KB
+[18:11:55.721][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.721][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/treesitter/_query_linter.lua , size = 7.818 KB
+[18:11:55.727][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.727][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/treesitter/_headings.lua , size = 3.863 KB
+[18:11:55.732][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.732][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/treesitter/_fold.lua , size = 14.803 KB
+[18:11:55.740][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.740][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/treesitter/health.lua , size = 1.551 KB
+[18:11:55.741][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.742][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/func.lua , size = 1.950 KB
+[18:11:55.743][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.743][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_buf.lua , size = 0.764 KB
+[18:11:55.745][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.745][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_editor.lua , size = 44.635 KB
+[18:11:55.770][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.771][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_watch.lua , size = 9.718 KB
+[18:11:55.776][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.776][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/glob.lua , size = 3.312 KB
+[18:11:55.778][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.779][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/lsp/completion.lua , size = 26.967 KB
+[18:11:55.792][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.792][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/lsp/_folding_range.lua , size = 11.103 KB
+[18:11:55.798][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.799][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/lsp/client.lua , size = 40.437 KB
+[18:11:55.819][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.820][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/lsp/codelens.lua , size = 9.245 KB
+[18:11:55.826][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.826][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/lsp/_changetracking.lua , size = 11.493 KB
+[18:11:55.833][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.833][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/lsp/_snippet_grammar.lua , size = 6.228 KB
+[18:11:55.838][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.839][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/lsp/log.lua , size = 4.845 KB
+[18:11:55.842][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.843][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/lsp/protocol.lua , size = 44.826 KB
+[18:11:55.854][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.854][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/lsp/util.lua , size = 74.819 KB
+[18:11:55.903][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.904][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/lsp/buf.lua , size = 42.593 KB
+[18:11:55.989][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.990][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/lsp/_watchfiles.lua , size = 6.813 KB
+[18:11:55.994][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.994][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/lsp/_tagfunc.lua , size = 3.236 KB
+[18:11:55.998][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:55.998][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/lsp/_meta.lua , size = 0.585 KB
+[18:11:56.000][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.000][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/lsp/handlers.lua , size = 24.316 KB
+[18:11:56.012][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.012][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/lsp/sync.lua , size = 15.728 KB
+[18:11:56.019][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.019][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/lsp/rpc.lua , size = 22.153 KB
+[18:11:56.031][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.031][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/lsp/_meta/protocol.lua , size = 188.964 KB
+[18:11:56.095][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.096][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/lsp/semantic_tokens.lua , size = 27.239 KB
+[18:11:56.112][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.112][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/lsp/_transport.lua , size = 5.152 KB
+[18:11:56.117][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.117][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/lsp/diagnostic.lua , size = 11.717 KB
+[18:11:56.125][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.125][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/lsp/inlay_hint.lua , size = 11.911 KB
+[18:11:56.132][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.133][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/lsp/health.lua , size = 7.174 KB
+[18:11:56.137][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.138][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_system.lua , size = 9.580 KB
+[18:11:56.144][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.144][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_ftplugin/lua.lua , size = 0.481 KB
+[18:11:56.145][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.145][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/iter.lua , size = 25.875 KB
+[18:11:56.169][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.169][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/fs.lua , size = 23.587 KB
+[18:11:56.187][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.187][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_meta.lua , size = 1.002 KB
+[18:11:56.189][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.191][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/hl.lua , size = 5.653 KB
+[18:11:56.196][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.196][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_inspector.lua , size = 7.775 KB
+[18:11:56.201][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.202][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/ui/clipboard/osc52.lua , size = 2.146 KB
+[18:11:56.203][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.204][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/lsp.lua , size = 49.254 KB
+[18:11:56.241][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.242][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/deprecated/health.lua , size = 1.260 KB
+[18:11:56.244][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.245][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/provider.lua , size = 0.197 KB
+[18:11:56.246][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.246][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/health/health.lua , size = 12.863 KB
+[18:11:56.254][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.255][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/func/_memoize.lua , size = 1.979 KB
+[18:11:56.257][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.258][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/provider/python.lua , size = 4.210 KB
+[18:11:56.261][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.261][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/provider/ruby.lua , size = 1.563 KB
+[18:11:56.264][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.265][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/provider/perl.lua , size = 1.998 KB
+[18:11:56.266][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.267][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/provider/health.lua , size = 28.856 KB
+[18:11:56.290][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.291][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/treesitter.lua , size = 15.239 KB
+[18:11:56.304][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.305][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_meta/misc.lua , size = 0.291 KB
+[18:11:56.305][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.306][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_meta/vvars_extra.lua , size = 4.056 KB
+[18:11:56.308][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.308][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_meta/mpack.lua , size = 0.478 KB
+[18:11:56.309][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.309][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_meta/api_keysets.lua , size = 9.958 KB
+[18:11:56.320][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.320][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_meta/vvars.lua , size = 26.214 KB
+[18:11:56.431][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.431][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_meta/lpeg.lua , size = 15.348 KB
+[18:11:56.438][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.440][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_meta/api.lua , size = 106.049 KB
+[18:11:56.479][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.480][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_meta/spell.lua , size = 0.929 KB
+[18:11:56.481][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.481][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_meta/builtin_types.lua , size = 7.899 KB
+[18:11:56.485][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.485][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_meta/base64.lua , size = 0.307 KB
+[18:11:56.486][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.486][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_meta/regex.lua , size = 1.580 KB
+[18:11:56.487][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.487][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_meta/re.lua , size = 2.217 KB
+[18:11:56.488][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.489][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_meta/options.lua , size = 324.211 KB
+[18:11:56.595][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.598][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_meta/builtin.lua , size = 10.381 KB
+[18:11:56.602][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.603][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_meta/diff.lua , size = 2.493 KB
+[18:11:56.604][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.605][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_meta/vimfn.lua , size = 408.284 KB
+[18:11:56.754][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.758][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_meta/api_keysets_extra.lua , size = 6.957 KB
+[18:11:56.765][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.765][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_meta/json.lua , size = 1.537 KB
+[18:11:56.767][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.767][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_options.lua , size = 25.508 KB
+[18:11:56.780][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.782][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/re.lua , size = 6.527 KB
+[18:11:56.788][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.788][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/inspect.lua , size = 8.899 KB
+[18:11:56.796][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.797][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/shared.lua , size = 40.536 KB
+[18:11:56.822][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.823][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/termcap.lua , size = 2.952 KB
+[18:11:56.825][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.825][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/version.lua , size = 13.701 KB
+[18:11:56.942][warn] [#0:script/files.lua:704]: Compile [file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/version.lua] takes [0.116] sec, size [14.030] kb.
+[18:11:56.950][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:56.952][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/diagnostic.lua , size = 84.872 KB
+[18:11:57.030][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:57.032][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/F.lua , size = 1.076 KB
+[18:11:57.034][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:57.034][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/keymap.lua , size = 3.683 KB
+[18:11:57.037][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:57.038][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_init_packages.lua , size = 3.023 KB
+[18:11:57.041][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:57.041][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/text.lua , size = 4.512 KB
+[18:11:57.045][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:57.045][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/_defaults.lua , size = 32.247 KB
+[18:11:57.076][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:57.076][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/health.lua , size = 14.702 KB
+[18:11:57.090][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:57.091][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/ui.lua , size = 7.683 KB
+[18:11:57.095][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:57.095][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/vim/filetype.lua , size = 78.400 KB
+[18:11:57.142][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:57.143][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/_vim9script.lua , size = 15.423 KB
+[18:11:57.152][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:57.153][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/coxpcall.lua , size = 3.672 KB
+[18:11:57.155][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:57.155][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/man.lua , size = 23.099 KB
+[18:11:57.168][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:57.168][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua/tohtml.lua , size = 43.272 KB
+[18:11:57.196][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/bob/v0.11.0/share/nvim/runtime/lua
+[18:11:57.197][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit.lua , size = 0.884 KB
+[18:11:57.199][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/jit.lua
+[18:11:57.199][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table/new.lua , size = 0.642 KB
+[18:11:57.200][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table/new.lua
+[18:11:57.200][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table/clear.lua , size = 0.797 KB
+[18:11:57.200][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/table/clear.lua
+[18:11:57.200][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/bit.lua , size = 1.243 KB
+[18:11:57.202][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta/LuaJIT%20en-us%20utf8/bit.lua
+[18:11:57.202][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/ndrolp/.dotfiles/.config/nvim/init.lua , size = 0.326 KB
+[18:11:57.202][info] [#0:script/workspace/loading.lua:172]: Loaded files takes [2.090] sec: file:///home/ndrolp/.dotfiles/.config/nvim
+[18:11:57.202][info] [#0:script/workspace/loading.lua:181]: Compile files takes [0.000] sec: file:///home/ndrolp/.dotfiles/.config/nvim
+[18:11:57.202][info] [#0:script/workspace/loading.lua:182]: Loaded finish:	file:///home/ndrolp/.dotfiles/.config/nvim
+[18:11:57.202][info] [#0:script/workspace/workspace.lua:381]: Preload finish at:	file:///home/ndrolp/.dotfiles/.config/nvim
+[18:11:57.243][info] [#0:script/provider/diagnostic.lua:560]: Diagnostics scope [file:///home/ndrolp/.dotfiles/.config/nvim], files count:[208]
+[18:11:57.243][warn] [#0:script/proto/proto.lua:189]: Method [textDocument/didOpen] takes [2.200]sec. {
+  jsonrpc = "2.0",
+  method = "textDocument/didOpen",
+  params = {
+    textDocument = {
+      languageId = "lua",
+      text = '"***"',
+      uri = "file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/appearence.lua",
+      version = 0
+    }
+  }
+}
+[18:11:57.246][warn] [#0:script/proto/proto.lua:189]: Method [textDocument/semanticTokens/full] takes [2.160]sec. {
+  id = 11,
+  jsonrpc = "2.0",
+  method = "textDocument/semanticTokens/full",
+  params = {
+    textDocument = {
+      uri = "file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/appearence.lua"
+    }
+  }
+}
+[18:11:57.260][warn] [#0:script/proto/proto.lua:189]: Method [textDocument/documentSymbol] takes [2.211]sec. {
+  id = 2,
+  jsonrpc = "2.0",
+  method = "textDocument/documentSymbol",
+  params = {
+    textDocument = {
+      uri = "file:///home/ndrolp/.dotfiles/.config/nvim/lua/plugins/appearence.lua"
+    }
+  }
+}
+[18:11:57.325][info] [#0:script/provider/diagnostic.lua:577]: Diagnostics scope [file:///home/ndrolp/.dotfiles/.config/nvim] finished, takes [0.051] sec.
