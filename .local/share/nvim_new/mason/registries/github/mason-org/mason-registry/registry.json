@@ -459,7 +459,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:pypi/ansible-lint@25.1.3",
+      "id": "pkg:pypi/ansible-lint@25.2.0",
       "supported_platforms": [
         "unix"
       ]
@@ -935,6 +935,9 @@
     },
     "bin": {
       "bash-debug-adapter": "node:extension/out/bashDebug.js"
+    },
+    "opt": {
+      "bashdb/": "extension/bashdb_dir/"
     }
   },
   {
@@ -1641,7 +1644,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:npm/%40sap/cds-lsp@8.8.1"
+      "id": "pkg:npm/%40sap/cds-lsp@8.9.0"
     },
     "bin": {
       "cds-lsp": "npm:cds-lsp",
@@ -2364,6 +2367,9 @@
     },
     "bin": {
       "codelldb": "{{source.asset.bin}}"
+    },
+    "opt": {
+      "lldb/": "lldb/"
     }
   },
   {
@@ -2612,7 +2618,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:pypi/cpplint@2.0.0"
+      "id": "pkg:pypi/cpplint@2.0.1"
     },
     "bin": {
       "cpplint": "pypi:cpplint"
@@ -6114,7 +6120,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/elijah-potter/harper@v0.26.0",
+      "id": "pkg:github/elijah-potter/harper@v0.27.0",
       "asset": [
         {
           "target": "linux_x64_gnu",
@@ -6796,7 +6802,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:generic/eclipse/eclipse.jdt.ls@v1.46.0",
+      "id": "pkg:generic/eclipse/eclipse.jdt.ls@v1.46.1",
       "download": [
         {
           "target": [
@@ -6804,7 +6810,7 @@
             "darwin_arm64"
           ],
           "files": {
-            "jdtls.tar.gz": "https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix \"v\" }}/jdt-language-server-{{ version | strip_prefix \"v\" }}-202503271314.tar.gz",
+            "jdtls.tar.gz": "https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix \"v\" }}/jdt-language-server-{{ version | strip_prefix \"v\" }}-202504011455.tar.gz",
             "lombok.jar": "https://projectlombok.org/downloads/lombok.jar"
           },
           "config": "config_mac/"
@@ -6812,7 +6818,7 @@
         {
           "target": "linux",
           "files": {
-            "jdtls.tar.gz": "https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix \"v\" }}/jdt-language-server-{{ version | strip_prefix \"v\" }}-202503271314.tar.gz",
+            "jdtls.tar.gz": "https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix \"v\" }}/jdt-language-server-{{ version | strip_prefix \"v\" }}-202504011455.tar.gz",
             "lombok.jar": "https://projectlombok.org/downloads/lombok.jar"
           },
           "config": "config_linux/"
@@ -6820,7 +6826,7 @@
         {
           "target": "win",
           "files": {
-            "jdtls.tar.gz": "https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix \"v\" }}/jdt-language-server-{{ version | strip_prefix \"v\" }}-202503271314.tar.gz",
+            "jdtls.tar.gz": "https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix \"v\" }}/jdt-language-server-{{ version | strip_prefix \"v\" }}-202504011455.tar.gz",
             "lombok.jar": "https://projectlombok.org/downloads/lombok.jar"
           },
           "config": "config_win/"
@@ -6836,7 +6842,7 @@
     "share": {
       "jdtls/lombok.jar": "lombok.jar",
       "jdtls/plugins/": "plugins/",
-      "jdtls/plugins/org.eclipse.equinox.launcher.jar": "plugins/org.eclipse.equinox.launcher_1.6.1100.v20250306-0509.jar",
+      "jdtls/plugins/org.eclipse.equinox.launcher.jar": "plugins/org.eclipse.equinox.launcher_1.7.0.v20250331-1702.jar",
       "jdtls/config/": "{{source.download.config}}"
     }
   },
@@ -9248,7 +9254,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40nomicfoundation/solidity-language-server@0.8.12"
+      "id": "pkg:npm/%40nomicfoundation/solidity-language-server@0.8.13"
     },
     "schemas": {
       "lsp": "vscode:https://raw.githubusercontent.com/NomicFoundation/hardhat-vscode/v{{version}}/client/package.json"
@@ -12767,7 +12773,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:gem/sorbet@0.5.11971",
+      "id": "pkg:gem/sorbet@0.5.11980",
       "supported_platforms": [
         "unix"
       ]
@@ -13625,7 +13631,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40tailwindcss/language-server@0.14.12"
+      "id": "pkg:npm/%40tailwindcss/language-server@0.14.13"
     },
     "schemas": {
       "lsp": "https://raw.githubusercontent.com/tailwindlabs/tailwindcss-intellisense/v{{version}}/packages/vscode-tailwindcss/package.json"

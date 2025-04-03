@@ -8,6 +8,7 @@ return {
                 "~/.dotfiles/",
                 "~/Development/Projects/*",
                 "~/Documentos/Projects/*",
+                "~/Documents/Projects/*",
             },
             last_session_on_startup = false,
         },

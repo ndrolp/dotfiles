@@ -8,11 +8,12 @@ return {
                 "~/.dotfiles/",
                 "~/Development/Projects/*",
                 "~/Documentos/Projects/*",
+                "~/Documents/Projects/*",
             },
             last_session_on_startup = false,
             picker = {
                 type = "telescope", -- or "fzf-lua"
-            }
+            },
         },
         init = function()
             -- enable saving the state of plugins in the session
@@ -26,7 +27,7 @@ return {
         lazy = false,
         priority = 100,
         keys = {
-            { "gp", ":Telescope neovim-project discover<CR>", "Open project" }
-        }
+            { "gp", ":Telescope neovim-project discover<CR>", "Open project" },
+        },
     },
 }
