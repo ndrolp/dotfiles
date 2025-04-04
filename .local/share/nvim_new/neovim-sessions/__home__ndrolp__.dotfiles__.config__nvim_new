@@ -1,7 +1,7 @@
 let SessionLoad = 1
 let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
 let v:this_session=expand("<sfile>:p")
-let NeovimProjectPayload__session_restore = "return { neotree_opened_directories = nil, }"
+let NeovimProjectPayload__session_restore = "return { neotree_opened_directories = {\"~/.dotfiles/.config/nvim_new/plugin\"}, }"
 let Tabline_session_data = "[{\"show_all_buffers\": true, \"name\": \"1\", \"allowed_buffers\": []}]"
 silent only
 silent tabonly
@@ -15,17 +15,12 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +2 ~/.dotfiles/.config/nvim_new/lua/plugins/lualine.lua
-badd +5 lua/settings/core/keymaps.lua
-badd +1 ~/.dotfiles/.config/nvim_new/lua/plugins/hover.lua
-badd +3 ~/.dotfiles/.config/nvim_new/lua/plugins/snacks.lua
-badd +9 lua/plugins/projects.lua
-badd +4 lua/plugins/lsp-config.lua
-badd +47 lua/plugins/none-ls.lua
-badd +9 ~/.dotfiles/.config/nvim_new/lua/plugins/inline-diagnostics.lua
+badd +110 plugin/floaterminal.lua
+badd +5 term://~/.dotfiles/.config/nvim_new//36588:/usr/bin/zsh
+badd +2 term://~/.dotfiles/.config/nvim_new//38099:/usr/bin/zsh
 argglobal
 %argdel
-edit lua/plugins/none-ls.lua
+edit plugin/floaterminal.lua
 let s:save_splitbelow = &splitbelow
 let s:save_splitright = &splitright
 set splitbelow splitright
@@ -42,10 +37,9 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe 'vert 1resize ' . ((&columns * 134 + 134) / 268)
-exe 'vert 2resize ' . ((&columns * 133 + 134) / 268)
+exe 'vert 1resize ' . ((&columns * 116 + 117) / 234)
+exe 'vert 2resize ' . ((&columns * 117 + 117) / 234)
 argglobal
-balt ~/.dotfiles/.config/nvim_new/lua/plugins/snacks.lua
 setlocal foldmethod=manual
 setlocal foldexpr=v:lua.vim.treesitter.foldexpr()
 setlocal foldmarker={{{,}}}
@@ -56,19 +50,19 @@ setlocal foldnestmax=20
 setlocal foldenable
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 46 - ((45 * winheight(0) + 29) / 58)
+let s:l = 5 - ((0 * winheight(0) + 25) / 51)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 46
-normal! 0
+keepjumps 5
+normal! 09|
 wincmd w
 argglobal
-if bufexists(fnamemodify("~/.dotfiles/.config/nvim_new/lua/plugins/inline-diagnostics.lua", ":p")) | buffer ~/.dotfiles/.config/nvim_new/lua/plugins/inline-diagnostics.lua | else | edit ~/.dotfiles/.config/nvim_new/lua/plugins/inline-diagnostics.lua | endif
+if bufexists(fnamemodify("plugin/floaterminal.lua", ":p")) | buffer plugin/floaterminal.lua | else | edit plugin/floaterminal.lua | endif
 if &buftype ==# 'terminal'
-  silent file ~/.dotfiles/.config/nvim_new/lua/plugins/inline-diagnostics.lua
+  silent file plugin/floaterminal.lua
 endif
-balt lua/plugins/lsp-config.lua
+balt term://~/.dotfiles/.config/nvim_new//38099:/usr/bin/zsh
 setlocal foldmethod=manual
 setlocal foldexpr=v:lua.vim.treesitter.foldexpr()
 setlocal foldmarker={{{,}}}
@@ -79,15 +73,16 @@ setlocal foldnestmax=20
 setlocal foldenable
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 9 - ((8 * winheight(0) + 29) / 58)
+let s:l = 110 - ((49 * winheight(0) + 25) / 51)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 9
-normal! 0
+keepjumps 110
+normal! 033|
 wincmd w
-exe 'vert 1resize ' . ((&columns * 134 + 134) / 268)
-exe 'vert 2resize ' . ((&columns * 133 + 134) / 268)
+2wincmd w
+exe 'vert 1resize ' . ((&columns * 116 + 117) / 234)
+exe 'vert 2resize ' . ((&columns * 117 + 117) / 234)
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf

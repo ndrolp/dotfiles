@@ -1,5 +1,7 @@
 ~/.dotfiles/.config/cava
-~/.dotfiles/.config/nvim
 ~/.dotfiles
 ~/Documents/Projects/test
+~/.dotfiles/.config/neofetch
+~/.dotfiles/.config/nvim
+~/.dotfiles/.config/zellij
 ~/.dotfiles/.config/nvim_new

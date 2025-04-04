@@ -4,7 +4,7 @@ keybinds {
     unbind "Ctrl m"
     normal {
         unbind "Ctrl h"
-        bind "Ctrl m" { SwitchToMode "Normal"; }
+        bind "Ctrl m" { SwitchToMode "Move"; }
         // uncomment this and adjust key if using copy_on_select=false
         // bind "Alt c" { Copy; }
     }
@@ -73,7 +73,7 @@ keybinds {
         bind "Tab" { ToggleTab; }
     }
     scroll {
-        bind "Ctrl k" { SwitchToMode "Normal"; }
+        bind "Ctrl ñ" { SwitchToMode "Normal"; }
         bind "e" { EditScrollback; SwitchToMode "Normal"; }
         bind "s" { SwitchToMode "EnterSearch"; SearchInput 0; }
         bind "Ctrl c" { ScrollToBottom; SwitchToMode "Normal"; }
@@ -87,7 +87,7 @@ keybinds {
         // bind "Alt c" { Copy; }
     }
     search {
-        bind "Ctrl k" { SwitchToMode "Normal"; }
+        bind "Ctrl ñ" { SwitchToMode "Normal"; }
         bind "Ctrl c" { ScrollToBottom; SwitchToMode "Normal"; }
         bind "j" "Down" { ScrollDown; }
         bind "k" "Up" { ScrollUp; }
@@ -115,7 +115,7 @@ keybinds {
     }
     session {
         bind "Ctrl o" { SwitchToMode "Normal"; }
-        bind "Ctrl k" { SwitchToMode "Scroll"; }
+        bind "Ctrl ñ" { SwitchToMode "Scroll"; }
         bind "d" { Detach; }
         bind "w" {
             LaunchOrFocusPlugin "session-manager" {
@@ -173,7 +173,7 @@ keybinds {
         bind "Ctrl n" { SwitchToMode "Resize"; }
     }
     shared_except "scroll" "locked" {
-        bind "Ctrl k" { SwitchToMode "Scroll"; }
+        bind "Ctrl ñ" { SwitchToMode "Scroll"; }
     }
     shared_except "session" "locked" {
         bind "Ctrl o" { SwitchToMode "Session"; }

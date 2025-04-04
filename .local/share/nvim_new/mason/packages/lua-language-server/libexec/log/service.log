@@ -1,10 +1,10 @@
-[04:09:09.843][info] [#0:/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/main.lua:68]: Lua Lsp startup, root: 	/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec
-[04:09:09.844][info] [#0:/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/main.lua:69]: ROOT:	/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec
-[04:09:09.844][info] [#0:/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/main.lua:70]: LOGPATH:	/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/log
-[04:09:09.844][info] [#0:/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/main.lua:71]: METAPATH:	/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta
-[04:09:09.845][info] [#0:/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/main.lua:72]: VERSION:	3.13.9
-[04:09:09.916][info] [#0:script/proto/proto.lua:260]: Listen Mode: stdio
-[04:09:09.916][info] [#0:script/service/service.lua:145]: 
+[23:16:41.973][info] [#0:/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/main.lua:68]: Lua Lsp startup, root: 	/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec
+[23:16:41.973][info] [#0:/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/main.lua:69]: ROOT:	/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec
+[23:16:41.973][info] [#0:/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/main.lua:70]: LOGPATH:	/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/log
+[23:16:41.973][info] [#0:/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/main.lua:71]: METAPATH:	/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/meta
+[23:16:41.973][info] [#0:/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/main.lua:72]: VERSION:	3.13.9
+[23:16:41.994][info] [#0:script/proto/proto.lua:260]: Listen Mode: stdio
+[23:16:41.994][info] [#0:script/service/service.lua:145]: 
 ========= Medical Examination Report =========
     --------------- Memory ---------------
         Total: 2.259 MB
@@ -26,7 +26,7 @@
         Holdon:   0
         Waiting:  0
 ==============================================
-[04:09:10.029][info] [#0:script/client.lua:657]: Client init	{
+[23:16:42.098][info] [#0:script/client.lua:657]: Client init	{
   capabilities = {
     general = {
       positionEncodings = { "utf-8", "utf-16", "utf-32" }
@@ -224,7 +224,7 @@
     version = "0.11.0+ga99c469e54"
   },
   initializationOptions = {},
-  processId = 17308,
+  processId = 49562,
   rootPath = "/home/ndrolp/.dotfiles",
   rootUri = "file:///home/ndrolp/.dotfiles",
   trace = "off",
@@ -234,7 +234,7 @@
       uri = "file:///home/ndrolp/.dotfiles"
     } }
 }
-[04:09:10.029][info] [#0:script/language.lua:137]: VSC language: nil
-[04:09:10.029][info] [#0:script/language.lua:138]: LS  language: en-us
-[04:09:10.029][info] [#0:script/workspace/workspace.lua:38]: Workspace init root: 	file:///home/ndrolp/.dotfiles
-[04:09:10.030][info] [#0:script/workspace/workspace.lua:42]: Log path: 	/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/log/file_home_ndrolp_.dotfiles.log
+[23:16:42.098][info] [#0:script/language.lua:137]: VSC language: nil
+[23:16:42.098][info] [#0:script/language.lua:138]: LS  language: en-us
+[23:16:42.098][info] [#0:script/workspace/workspace.lua:38]: Workspace init root: 	file:///home/ndrolp/.dotfiles
+[23:16:42.098][info] [#0:script/workspace/workspace.lua:42]: Log path: 	/home/ndrolp/.dotfiles/.local/share/nvim_new/mason/packages/lua-language-server/libexec/log/file_home_ndrolp_.dotfiles.log
