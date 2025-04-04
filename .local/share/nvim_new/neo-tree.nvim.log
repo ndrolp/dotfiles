@@ -8,3 +8,18 @@
 [INFO  Thu Apr  3 04:12:30 2025] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
 [INFO  Thu Apr  3 04:12:33 2025] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
 [INFO  Thu Apr  3 04:12:34 2025] ...ree.nvim/lua/neo-tree/sources/filesystem/lib/fs_scan.lua:110: No items, skipping git ignored/status lookups
+[INFO  Fri Apr  4 00:50:30 2025] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:252: Cut NewTab.tsx to clipboard
+[INFO  Fri Apr  4 00:50:38 2025] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:252: Cut PopUp.tsx to clipboard
+[INFO  Fri Apr  4 01:07:30 2025] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:577: Deleted directory  /mnt/c/Users/Ndrolp/Documents/WindowsProjects/remarks/src/assets
+[INFO  Fri Apr  4 01:08:26 2025] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:652: Renamed index.tsx successfully
+[INFO  Fri Apr  4 01:14:53 2025] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:252: Cut manifest.json to clipboard
+[INFO  Fri Apr  4 01:24:22 2025] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:252: Cut index.css to clipboard
+[INFO  Fri Apr  4 01:25:03 2025] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:252: Cut index.css to clipboard
+[INFO  Fri Apr  4 01:25:37 2025] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:652: Renamed Bookmarks.ts successfully
+[INFO  Fri Apr  4 01:35:00 2025] ...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:252: Cut background.ts to clipboard
+[INFO  Fri Apr  4 02:04:10 2025] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:243: Toggling hidden files: true
+[INFO  Fri Apr  4 02:04:11 2025] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:243: Toggling hidden files: false
+[INFO  Fri Apr  4 02:04:12 2025] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:243: Toggling hidden files: true
+[INFO  Fri Apr  4 02:04:14 2025] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:243: Toggling hidden files: false
+[INFO  Fri Apr  4 02:04:17 2025] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:243: Toggling hidden files: true
+[INFO  Fri Apr  4 02:04:18 2025] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:243: Toggling hidden files: false

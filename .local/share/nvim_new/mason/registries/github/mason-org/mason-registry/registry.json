@@ -80,7 +80,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/AdaCore/ada_language_server@26.0.202502240",
+      "id": "pkg:github/AdaCore/ada_language_server@26.0.202504012",
       "asset": [
         {
           "target": "darwin_x64",
@@ -354,7 +354,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40angular/language-server@19.2.2",
+      "id": "pkg:npm/%40angular/language-server@19.2.3",
       "extra_packages": [
         "typescript@5.5.4"
       ],
@@ -459,7 +459,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:pypi/ansible-lint@25.2.0",
+      "id": "pkg:pypi/ansible-lint@25.2.1",
       "supported_platforms": [
         "unix"
       ]
@@ -502,7 +502,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/forcedotcom/salesforcedx-vscode@v63.6.0",
+      "id": "pkg:github/forcedotcom/salesforcedx-vscode@v63.7.0",
       "asset": {
         "file": "salesforcedx-vscode-apex-{{ version | strip_prefix \"v\" }}.vsix"
       }
@@ -1287,7 +1287,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/brighterscript@0.69.4"
+      "id": "pkg:npm/brighterscript@0.69.5"
     },
     "bin": {
       "bsc": "npm:bsc"
@@ -1667,7 +1667,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:pypi/cfn-lint@1.32.1"
+      "id": "pkg:pypi/cfn-lint@1.32.3"
     },
     "bin": {
       "cfn-lint": "pypi:cfn-lint"
@@ -2369,7 +2369,7 @@
       "codelldb": "{{source.asset.bin}}"
     },
     "opt": {
-      "lldb/": "lldb/"
+      "lldb/": "extension/lldb/"
     }
   },
   {
@@ -2386,7 +2386,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/github/codeql-cli-binaries@v2.20.7",
+      "id": "pkg:github/github/codeql-cli-binaries@v2.21.0",
       "asset": [
         {
           "target": [
@@ -2552,7 +2552,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40github/copilot-language-server@1.294.0"
+      "id": "pkg:npm/%40github/copilot-language-server@1.296.0"
     },
     "bin": {
       "copilot-language-server": "npm:copilot-language-server"
@@ -3128,7 +3128,7 @@
       "DAP"
     ],
     "source": {
-      "id": "pkg:github/Dart-Code/Dart-Code@v3.106.0",
+      "id": "pkg:github/Dart-Code/Dart-Code@v3.108.2",
       "asset": {
         "file": "dart-code-{{ version | strip_prefix \"v\" }}.vsix"
       }
@@ -4089,7 +4089,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/WhatsApp/erlang-language-platform@2025-02-13",
+      "id": "pkg:github/WhatsApp/erlang-language-platform@2025-04-02",
       "asset": [
         {
           "target": "linux_x64_gnu",
@@ -7505,7 +7505,7 @@
       "MIT"
     ],
     "languages": [
-      "Bitbake"
+      "BitBake"
     ],
     "categories": [
       "LSP"
@@ -9254,7 +9254,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40nomicfoundation/solidity-language-server@0.8.13"
+      "id": "pkg:npm/%40nomicfoundation/solidity-language-server@0.8.16"
     },
     "schemas": {
       "lsp": "vscode:https://raw.githubusercontent.com/NomicFoundation/hardhat-vscode/v{{version}}/client/package.json"
@@ -9372,7 +9372,7 @@
       "BSD-2-Clause"
     ],
     "languages": [
-      "Bitbake"
+      "BitBake"
     ],
     "categories": [
       "Linter"
@@ -10124,7 +10124,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/supabase-community/postgres-language-server@0.2.1",
+      "id": "pkg:github/supabase-community/postgres-language-server@0.3.0",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -11541,7 +11541,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:gem/rubocop@1.75.1"
+      "id": "pkg:gem/rubocop@1.75.2"
     },
     "bin": {
       "rubocop": "gem:rubocop"
@@ -11667,7 +11667,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:pypi/ruff@0.11.2"
+      "id": "pkg:pypi/ruff@0.11.3"
     },
     "bin": {
       "ruff": "pypi:ruff"
@@ -11971,7 +11971,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:pypi/semgrep@1.116.0",
+      "id": "pkg:pypi/semgrep@1.117.0",
       "supported_platforms": [
         "unix"
       ]
@@ -12773,7 +12773,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:gem/sorbet@0.5.11980",
+      "id": "pkg:gem/sorbet@0.5.11984",
       "supported_platforms": [
         "unix"
       ]
@@ -14515,7 +14515,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/trufflesecurity/trufflehog@v3.88.20",
+      "id": "pkg:github/trufflesecurity/trufflehog@v3.88.22",
       "asset": [
         {
           "target": "darwin_x64",
@@ -15268,7 +15268,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/errata-ai/vale@v3.10.0",
+      "id": "pkg:github/errata-ai/vale@v3.11.1",
       "asset": [
         {
           "target": "darwin_x64",
@@ -15542,7 +15542,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/forcedotcom/salesforcedx-vscode@v63.6.0",
+      "id": "pkg:github/forcedotcom/salesforcedx-vscode@v63.7.0",
       "asset": {
         "file": "salesforcedx-vscode-visualforce-{{ version | strip_prefix \"v\" }}.vsix"
       }

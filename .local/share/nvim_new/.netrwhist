@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =7
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/ndrolp/.dotfiles/.config/zellij'
+let g:netrw_dirhist_9='/home/ndrolp/.config/zellij/layouts'
+let g:netrw_dirhist_8='/home/ndrolp/.config/zellij'
 let g:netrw_dirhist_7='/mnt/c/Users/Ndrolp/Documents/WindowsProjects/remarks/src'
 let g:netrw_dirhist_6='/mnt/c/Users/Ndrolp/Documents/WindowsProjects/remarks'
 let g:netrw_dirhist_5='/home/ndrolp/.config/nvim_new/lua/plugins'
@@ -7,6 +10,3 @@ let g:netrw_dirhist_4='/home/ndrolp/.config/nvim_new/lua'
 let g:netrw_dirhist_3='/home/ndrolp/.config/nvim_new'
 let g:netrw_dirhist_2='/home/ndrolp/.config/nvim_new/lua/plugins'
 let g:netrw_dirhist_1='/home/ndrolp/.config/nvim_new/lua'
-let g:netrw_dirhist_0='/home/ndrolp/.config/nvim_new'
-let g:netrw_dirhist_9='/home/ndrolp/.config/nvim_new/lua/plugins'
-let g:netrw_dirhist_8='/home/ndrolp/.config/nvim_new/lua'
