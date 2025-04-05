@@ -2,6 +2,9 @@ let SessionLoad = 1
 let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
 let v:this_session=expand("<sfile>:p")
 let NeovimProjectPayload__session_restore = "return { neotree_opened_directories = nil, }"
+let NetrwTopLvlMenu = "Netrw."
+let NetrwMenuPriority =  80 
+let Tabline_session_data = "[{\"show_all_buffers\": true, \"name\": \"1\", \"allowed_buffers\": []}]"
 silent only
 silent tabonly
 cd ~/.dotfiles
@@ -14,10 +17,14 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
+badd +2 term://~/.dotfiles//164560:/usr/bin/zsh
 argglobal
 %argdel
 argglobal
-enew
+if bufexists(fnamemodify("term://~/.dotfiles//164560:/usr/bin/zsh", ":p")) | buffer term://~/.dotfiles//164560:/usr/bin/zsh | else | edit term://~/.dotfiles//164560:/usr/bin/zsh | endif
+if &buftype ==# 'terminal'
+  silent file term://~/.dotfiles//164560:/usr/bin/zsh
+endif
 setlocal foldmethod=manual
 setlocal foldexpr=0
 setlocal foldmarker={{{,}}}
@@ -26,6 +33,12 @@ setlocal foldlevel=0
 setlocal foldminlines=1
 setlocal foldnestmax=20
 setlocal foldenable
+let s:l = 2 - ((1 * winheight(0) + 26) / 52)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 2
+normal! 01|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
