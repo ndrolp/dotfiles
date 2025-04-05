@@ -1,7 +1,7 @@
 let SessionLoad = 1
 let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
 let v:this_session=expand("<sfile>:p")
-let NeovimProjectPayload__session_restore = "return { neotree_opened_directories = nil, }"
+let NeovimProjectPayload__session_restore = "return { neotree_opened_directories = {\"~/.dotfiles/.config/zellij/layouts\"}, }"
 let Tabline_session_data = "[{\"show_all_buffers\": true, \"name\": \"1\", \"allowed_buffers\": []}]"
 silent only
 silent tabonly
@@ -15,16 +15,13 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +176 ~/.dotfiles/.config/zellij/config.kdl
-badd +7 term://~/.dotfiles/.config/zellij//43185:/usr/bin/zsh
+badd +1 ~/.dotfiles/.config/zellij/config.kdl
+badd +2 ~/.dotfiles/.config/zellij/layouts/default.kdl
 argglobal
 %argdel
+edit ~/.dotfiles/.config/zellij/config.kdl
 argglobal
-if bufexists(fnamemodify("term://~/.dotfiles/.config/zellij//43185:/usr/bin/zsh", ":p")) | buffer term://~/.dotfiles/.config/zellij//43185:/usr/bin/zsh | else | edit term://~/.dotfiles/.config/zellij//43185:/usr/bin/zsh | endif
-if &buftype ==# 'terminal'
-  silent file term://~/.dotfiles/.config/zellij//43185:/usr/bin/zsh
-endif
-balt ~/.dotfiles/.config/zellij/config.kdl
+balt ~/.dotfiles/.config/zellij/layouts/default.kdl
 setlocal foldmethod=manual
 setlocal foldexpr=0
 setlocal foldmarker={{{,}}}
@@ -33,12 +30,14 @@ setlocal foldlevel=0
 setlocal foldminlines=1
 setlocal foldnestmax=20
 setlocal foldenable
-let s:l = 7 - ((6 * winheight(0) + 26) / 52)
+silent! normal! zE
+let &fdl = &fdl
+let s:l = 1 - ((0 * winheight(0) + 26) / 52)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 7
-normal! 04|
+keepjumps 1
+normal! 023|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf

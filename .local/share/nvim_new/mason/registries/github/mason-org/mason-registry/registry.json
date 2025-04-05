@@ -1667,7 +1667,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:pypi/cfn-lint@1.32.3"
+      "id": "pkg:pypi/cfn-lint@1.32.4"
     },
     "bin": {
       "cfn-lint": "pypi:cfn-lint"
@@ -2640,7 +2640,7 @@
       "DAP"
     ],
     "source": {
-      "id": "pkg:github/microsoft/vscode-cpptools@v1.23.6",
+      "id": "pkg:github/microsoft/vscode-cpptools@v1.24.5",
       "asset": [
         {
           "target": "darwin_x64",
@@ -3238,7 +3238,7 @@
       "Runtime"
     ],
     "source": {
-      "id": "pkg:github/denoland/deno@v2.2.6",
+      "id": "pkg:github/denoland/deno@v2.2.8",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -4194,7 +4194,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/CppCXY/emmylua-analyzer-rust@0.6.0",
+      "id": "pkg:github/CppCXY/emmylua-analyzer-rust@0.7.0",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -6120,7 +6120,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/elijah-potter/harper@v0.27.0",
+      "id": "pkg:github/elijah-potter/harper@v0.28.0",
       "asset": [
         {
           "target": "linux_x64_gnu",
@@ -7233,7 +7233,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:pypi/jupytext@1.16.7"
+      "id": "pkg:pypi/jupytext@1.17.0"
     },
     "bin": {
       "jupytext": "pypi:jupytext"
@@ -7832,7 +7832,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/ltex-plus/ltex-ls-plus@18.4.0",
+      "id": "pkg:github/ltex-plus/ltex-ls-plus@18.5.0",
       "asset": [
         {
           "target": "linux_arm64_gnu",
@@ -9254,7 +9254,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40nomicfoundation/solidity-language-server@0.8.16"
+      "id": "pkg:npm/%40nomicfoundation/solidity-language-server@0.8.17"
     },
     "schemas": {
       "lsp": "vscode:https://raw.githubusercontent.com/NomicFoundation/hardhat-vscode/v{{version}}/client/package.json"
@@ -9933,7 +9933,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:github/PHPCSStandards/PHP_CodeSniffer@3.12.0",
+      "id": "pkg:github/PHPCSStandards/PHP_CodeSniffer@3.12.1",
       "asset": {
         "file": "phpcbf.phar"
       }
@@ -9956,7 +9956,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/PHPCSStandards/PHP_CodeSniffer@3.12.0",
+      "id": "pkg:github/PHPCSStandards/PHP_CodeSniffer@3.12.1",
       "asset": {
         "file": "phpcs.phar"
       }
@@ -10124,7 +10124,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/supabase-community/postgres-language-server@0.3.0",
+      "id": "pkg:github/supabase-community/postgres-language-server@0.3.1",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -11667,7 +11667,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:pypi/ruff@0.11.3"
+      "id": "pkg:pypi/ruff@0.11.4"
     },
     "bin": {
       "ruff": "pypi:ruff"
@@ -12773,7 +12773,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:gem/sorbet@0.5.11984",
+      "id": "pkg:gem/sorbet@0.5.11989",
       "supported_platforms": [
         "unix"
       ]
@@ -12997,10 +12997,37 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:cargo/sqruff@0.25.24"
+      "id": "pkg:github/quarylabs/sqruff@v0.25.24",
+      "asset": [
+        {
+          "target": "linux_x64",
+          "file": "sqruff-linux-x86_64-musl.tar.gz",
+          "bin": "sqruff"
+        },
+        {
+          "target": "linux_arm64",
+          "file": "sqruff-linux-aarch64-musl.tar.gz",
+          "bin": "sqruff"
+        },
+        {
+          "target": "win_x64",
+          "file": "sqruff-windows-x86_64.zip",
+          "bin": "sqruff.exe"
+        },
+        {
+          "target": "darwin_x64",
+          "file": "sqruff-darwin-x86_64.tar.gz",
+          "bin": "sqruff"
+        },
+        {
+          "target": "darwin_arm64",
+          "file": "sqruff-darwin-aarch64.tar.gz",
+          "bin": "sqruff"
+        }
+      ]
     },
     "bin": {
-      "sqruff": "cargo:sqruff"
+      "sqruff": "{{source.asset.bin}}"
     }
   },
   {
@@ -13541,7 +13568,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/realm/SwiftLint@0.58.2",
+      "id": "pkg:github/realm/SwiftLint@0.59.0",
       "asset": [
         {
           "target": "linux_x64_gnu",
@@ -14266,7 +14293,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/tilt-dev/tilt@v0.34.0",
+      "id": "pkg:github/tilt-dev/tilt@v0.34.1",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -14515,7 +14542,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/trufflesecurity/trufflehog@v3.88.22",
+      "id": "pkg:github/trufflesecurity/trufflehog@v3.88.23",
       "asset": [
         {
           "target": "darwin_x64",
