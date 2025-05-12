@@ -2,7 +2,7 @@
 {
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 10, // Waybar height (to be removed for auto height)
+    "height": 8, // Waybar height (to be removed for auto height)
     "margin-right": 10,
     "margin-left": 10,
     "margin-top": 5,
@@ -21,7 +21,7 @@
         "sway/window"
     ],
     "modules-right": [
-        "power-profiles-daemon",
+        //"power-profiles-daemon",
         "group/hardware",
         "sway/language",
         "tray",
@@ -178,11 +178,10 @@
     "group/hardware": {
         "orientation": "horizontal",
         "modules": [
-            "cpu",
+           "cpu",
             "memory",
             "temperature",
             "backlight",
-            "battery",
             "pulseaudio",
             "clock",
         ],

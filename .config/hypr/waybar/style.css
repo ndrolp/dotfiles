@@ -59,18 +59,18 @@ button:hover {
     background-color: transparent;
     padding-top: 0;
     padding-bottom: 0;
-    border-radius: 1000px;
     color: @text;
     transition: 0.3s;
 }
 
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
+    background-color: @surface0 ;
 }
 
 #workspaces button.active {
     /* background-color: @lavender; */
-    color: @yellow;
+    background-color: @surface0;
+    color: @yellow
 }
 
 #workspaces button.urgent {
@@ -100,31 +100,27 @@ button:hover {
 #power-profiles-daemon,
 #mpd,
 #window,
-#workspaces,
-#hardware,
-#media,
 #pulseaudio {
     color: @text;
     margin-left: 0;
     margin-right: 10px;
-    border-radius: 1000px;
-    background-color: @mantle;
     padding: 4px 4px;
     padding-left: 10px;
     padding-right: 10px;
     margin: 0 0px;
 }
 
+
 #window,
 #workspaces,
 #pulseaudio {
     margin-left: 0;
     margin-right: 10px;
-    border-radius: 1000px;
     background-color: @mantle;
-    padding: 4px 4px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 5px 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+
     margin: 0 0px;
 }
 
@@ -141,7 +137,6 @@ button:hover {
 .modules-left>widget:first-child>#workspaces {
     margin-left: 0;
     margin-right: 10px;
-    border-radius: 1000px;
     background-color: @mantle;
     padding: 4px 4px;
 }
@@ -210,6 +205,18 @@ label:focus {
 #hardware {
     padding: 0px 10px;
     background: @mantle;
+}
+
+#media,
+#workspaces,
+#hardware {
+    border: 1px solid @mauve;
+    background-color: @mantle;
+}
+
+#media {
+    padding: 3px 0px;
+    padding-bottom: 0px;
 }
 
 #hardware #cpu {

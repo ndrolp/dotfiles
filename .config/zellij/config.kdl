@@ -133,8 +133,12 @@ keybinds {
         bind "%" { NewPane "Right"; SwitchToMode "Normal"; }
         bind "z" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
         bind "c" { NewTab; SwitchToMode "Normal"; }
+        bind "p" {
+            WriteChars "source ~/.dotfiles/scripts/tmux/projects.sh\n";
+            SwitchToMode "Normal";
+        }
         bind "," { SwitchToMode "RenameTab"; }
-        bind "p" { GoToPreviousTab; SwitchToMode "Normal"; }
+        bind "a" { GoToPreviousTab; SwitchToMode "Normal"; }
         bind "n" { GoToNextTab; SwitchToMode "Normal"; }
         bind "Left" { MoveFocus "Left"; SwitchToMode "Normal"; }
         bind "Right" { MoveFocus "Right"; SwitchToMode "Normal"; }
@@ -290,7 +294,7 @@ theme "catppuccin-frappe" // or latte, frappe and macchiato mocha
 // Default: "default"
 //
 //default_layout "compact"
-default_layout "default"
+default_layout "statusbar"
 
 // Choose the mode that zellij uses when starting up.
 // Default: normal
