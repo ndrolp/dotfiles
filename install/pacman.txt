@@ -42,3 +42,5 @@ swww
 grim
 slurp
 github-cli
+hyprpicker
+wl-clipboard 
