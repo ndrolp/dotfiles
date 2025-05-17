@@ -4,6 +4,7 @@
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 12px;
+    transition: 0.3s ease-in-out;
 }
 
 window#waybar {
@@ -21,22 +22,25 @@ window#waybar.hidden {
     /**opacity: 0.2;**/
 }
 
-#custom-screenshot,
-#custom-colorpicker {
-    color: @blue;
-    padding-right: 8px;
-}
-
-#custom-colorpicker {
-    padding-right: 5px;
-    margin-left: 2px
-}
-
 #scripts {
     background-color: alpha(@surface0, 0.2);
     border-radius: 2px;
     margin: 5px;
     padding: 2px 5px;
+}
+
+#scripts #custom-screenshot,
+#scripts #custom-colorpicker {
+    color: @blue;
+    padding: 0px 5px;
+    padding-right: 9px;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+#scripts #custom-screenshot:hover,
+#scripts #custom-colorpicker:hover {
+    background-color: alpha(@blue, 0.2);
 }
 
 #clock {
@@ -45,6 +49,10 @@ window#waybar.hidden {
     border-radius: 2px;
     color: @blue;
     background-color: alpha(@surface0, 0.2);
+}
+
+#clock:hover {
+    background-color: alpha(@blue, 0.2);
 }
 
 window#waybar.termite {
@@ -70,9 +78,6 @@ button:hover {
 }
 
 /* you can set a style on hover for any module like this */
-#pulseaudio:hover {
-    background-color: #a37800;
-}
 
 #workspaces button {
     padding-right: 12px;
@@ -91,8 +96,8 @@ button:hover {
 #workspaces button.active {
     /* background-color: @lavender; */
     background-color: @surface0;
-    background-color: alpha(@surface0, 0.4);
-    color: @yellow
+    background-color: alpha(@surface0, 0.5);
+    color: @yellow;
 }
 
 #workspaces button.urgent {
@@ -128,25 +133,36 @@ button:hover {
     margin: 0 0px;
 }
 
-
 #window,
 #workspaces,
 #pulseaudio {
     margin-left: 0;
-    margin-right: 10px;
     padding: 5px 4px;
     padding-left: 5px;
-    padding-right: 5px;
 
     margin: 0 0px;
 }
 
 #window {
-    padding-top: 8px;
+    padding: 0px 10px;
+    padding-top: 6px;
+    color: @text;
+}
+
+#pulseaudio,
+#memory,
+#cpu {
+    padding: 0px 10px;
+    border-radius: 3px;
 }
 
 #pulseaudio {
+    border-radius: 3px;
     color: @mauve;
+}
+
+#pulseaudio:hover {
+    background-color: alpha(@mauve, 0.2);
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -220,7 +236,6 @@ label:focus {
     background-color: alpha(@surface0, 0.2);
 }
 
-
 #kedia {
     padding: 3px 0px;
     padding-bottom: 0px;
@@ -269,6 +284,11 @@ label:focus {
 #custom-media {
     color: @green;
     min-width: 100px;
+}
+
+#media {
+    background-color: alpha(@surface0, 0.2);
+    margin: 5px;
 }
 
 #custom-media.custom-spotify {}
