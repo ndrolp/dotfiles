@@ -44,3 +44,5 @@ slurp
 github-cli
 hyprpicker
 wl-clipboard 
+bluez
+bluez-utils

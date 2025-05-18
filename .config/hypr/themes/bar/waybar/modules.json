@@ -1,22 +1,23 @@
 {
+  "include": ["~/.config/hypr/themes/bar/waybar/modules/custom_modules.json"],
   "hyprland/workspaces": {
     "active-only": false,
     "all-outputs": false,
     "format": "{icon}",
     "format-icons": {
       "1": "",
-      "2": "",
+      "2": "",
       "3": "󱃷",
       "4": "",
       "5": "󰊖",
-      "6": "",
+      "6": "󰒓",
       "7": "󰖟",
       "8": "󰝚",
-      "9": "",
+      "9": "󰡨",
       "10": "",
-      "11": "",
-      "12": "",
-      "13": "",
+      "11": "",
+      "12": "",
+      "13": "󰆼",
       "14": "",
       "15": "",
       "16": "",
@@ -24,6 +25,10 @@
       "18": "",
       "19": "",
       "20": ""
+    },
+    "persistent-workspaces": {
+      "DP-3": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "HDMI-A-1": [11, 12, 13]
     }
   },
   "pulseaudio": {
@@ -43,6 +48,11 @@
       "default": ["", "", ""]
     },
     "on-click": "pavucontrol"
+  },
+  "pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal"
   },
   "hyprland/window": {
     "max-length": 50,

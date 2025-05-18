@@ -16,6 +16,7 @@
   "modules-right": [
     //"power-profiles-daemon",
     "tray",
+    "group/networking",
     "group/hardware",
     "sway/language",
     "clock",
