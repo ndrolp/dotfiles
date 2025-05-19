@@ -6,6 +6,8 @@
     font-size: 12px;
 }
 
+@import "./modules/scripts/script-style.css";
+
 window#waybar {
     background-color: transparent;
     background-color: @mantle;
@@ -107,8 +109,6 @@ button:hover {
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
-    background-color: alpha(@red, 0.8);
     color: @red;
 }
 

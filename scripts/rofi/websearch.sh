@@ -9,6 +9,8 @@ ANIME_FLV="󰿎    Anime FLV"
 WALLHAVEN="󰋩   Wallhaven"
 CHATGPT="󰭻    ChatGPT"
 GMAIL="󰊫     Gmail"
+NETFLIX="󰝆     Netflix"
+
 
 # Get default browser
 BROWSER=$(xdg-settings get default-web-browser)
@@ -21,6 +23,7 @@ ${NERD_FONT}\n\
 ${ANIME_FLV}\n\
 ${WALLHAVEN}\n\
 ${CHATGPT}\n\
+${NETFLIX}\n\
 ${GMAIL}" | wofi -i --dmenu --prompt "" -b)
 
 # Replace spaces with + for URL encoding
@@ -36,6 +39,8 @@ if [[ $(echo "$CON" | wc -c) -gt 1 ]]; then
         "$YOUTUBE" ) xdg-open https://youtube.com ;;
         "$CHATGPT" ) xdg-open https://chatgpt.com ;;
         "$GITHUB" ) xdg-open https://github.com/ ;;
+        "$NETFLIX" ) xdg-open https://www.netflix.com/ ;;
         * ) xdg-open "https://www.google.com/search?q=$CON" ;;
     esac
 fi
+
