@@ -17,8 +17,8 @@ return {
             require("telescope").load_extension("ui-select")
         end,
         keys = {
-            {"<leader>ff", ":Telescope find_files theme=dropdown<CR>", desc = "Find files"},
-            {"<leader>fg", ":Telescope live_grep<CR>", desc = "Find grep"}
+            { "<leader>ff", ":Telescope find_files theme=dropdown<CR>", desc = "Find files" },
+            { "<leader>fg", ":Telescope live_grep<CR>",                 desc = "Find grep" }
         }
     },
     {

@@ -28,3 +28,19 @@ vim.o.cmdheight = 0
 vim.o.shell = "zsh"
 vim.opt.conceallevel = 1
 vim.o.laststatus = 3
+
+local _border = "single"
+
+local orig_util_open_floating_preview = vim.lsp.util.open_floating_preview
+
+function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
+    opts = opts or {}
+    opts.border = opts.border or _border
+    return orig_util_open_floating_preview(contents, syntax, opts, ...)
+end
+
+vim.diagnostic.config({
+    float = {
+        border = _border,
+    },
+})

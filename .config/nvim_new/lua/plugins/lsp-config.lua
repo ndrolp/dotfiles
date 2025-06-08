@@ -15,7 +15,15 @@ return {
         opts = {
 
             servers = {
-                lua_ls = {},
+                lua_ls = {
+                    settings = {
+                        Lua = {
+                            workspace = {
+                                preloadFileSize = 500
+                            }
+                        }
+                    }
+                },
                 ts_ls = {
 
                     on_attach = function(client, bufnr)

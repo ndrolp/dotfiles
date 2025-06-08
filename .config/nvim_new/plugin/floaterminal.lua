@@ -107,41 +107,10 @@ local toggle_bottom_terminal = function()
     end
 end
 
--- New: toggle lazygit floating terminal
-local toggle_lazygit = function()
-    if not vim.api.nvim_win_is_valid(state.lazygit.win) then
-        -- Create floating window with custom title and size
-        state.lazygit = create_floating_window({
-            buf = state.lazygit.buf,
-            width = math.floor(vim.o.columns * 0.9),
-            height = math.floor(vim.o.lines * 0.9),
-            title = "LAZYGIT",
-            title_pos = "center",
-        })
 
-        -- Start lazygit in the terminal buffer
-        vim.fn.termopen("lazygit", {
-            on_exit = function()
-                if vim.api.nvim_win_is_valid(state.lazygit.win) then
-                    vim.api.nvim_win_close(state.lazygit.win, true)
-                    state.lazygit.win = -1
-                    state.lazygit.buf = -1
-                end
-            end,
-        })
-
-        vim.cmd("startinsert")
-    else
-        vim.api.nvim_win_hide(state.lazygit.win)
-    end
-end
-
--- Commands
 vim.api.nvim_create_user_command("Floaterminal", toggle_terminal, {})
 vim.api.nvim_create_user_command("Underterminal", toggle_bottom_terminal, {})
-vim.api.nvim_create_user_command("LazyGit", toggle_lazygit, {})
 
 -- Keymaps
 vim.keymap.set({ "n", "t" }, "<C-j>", toggle_terminal, { desc = "Toggle floating terminal" })
 vim.keymap.set({ "n", "t" }, "<C-k>", toggle_bottom_terminal, { desc = "Toggle bottom terminal" })
-vim.keymap.set({ "n", "t" }, "<leader>gg", toggle_lazygit, { desc = "Toggle lazygit floating terminal" })
