@@ -142,6 +142,6 @@ vim.api.nvim_create_user_command("Underterminal", toggle_bottom_terminal, {})
 vim.api.nvim_create_user_command("LazyGit", toggle_lazygit, {})
 
 -- Keymaps
-vim.keymap.set({ "n", "t" }, "<C-j>", toggle_terminal, {})
-vim.keymap.set({ "n", "t" }, "<C-k>", toggle_bottom_terminal, {})
+vim.keymap.set({ "n", "t" }, "<C-j>", toggle_terminal, { desc = "Toggle floating terminal" })
+vim.keymap.set({ "n", "t" }, "<C-k>", toggle_bottom_terminal, { desc = "Toggle bottom terminal" })
 vim.keymap.set({ "n", "t" }, "<leader>gg", toggle_lazygit, { desc = "Toggle lazygit floating terminal" })
