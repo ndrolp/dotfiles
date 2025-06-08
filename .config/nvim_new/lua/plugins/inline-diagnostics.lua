@@ -1,7 +1,7 @@
 return {
     "rachartier/tiny-inline-diagnostic.nvim",
     event = "VeryLazy", -- Or `LspAttach`
-    priority = 1000, -- needs to be loaded in first
+    priority = 1000,    -- needs to be loaded in first
     config = function()
         -- Default configuration
         require("tiny-inline-diagnostic").setup({
@@ -15,10 +15,10 @@ return {
 
             hi = {
                 error = "DiagnosticError", -- Highlight group for error messages
-                warn = "DiagnosticWarn", -- Highlight group for warning messages
-                info = "DiagnosticInfo", -- Highlight group for informational messages
-                hint = "DiagnosticHint", -- Highlight group for hint or suggestion messages
-                arrow = "NonText", -- Highlight group for diagnostic arrows
+                warn = "DiagnosticWarn",   -- Highlight group for warning messages
+                info = "DiagnosticInfo",   -- Highlight group for informational messages
+                hint = "DiagnosticHint",   -- Highlight group for hint or suggestion messages
+                arrow = "NonText",         -- Highlight group for diagnostic arrows
 
                 -- Background color for diagnostics
                 -- Can be a highlight group or a hexadecimal color (#RRGGBB)
@@ -132,7 +132,7 @@ return {
                 -- You should not change this unless the plugin does not work with your configuration
                 overwrite_events = nil,
             },
-            disabled_ft = {},                    -- List of filetypes to disable the plugin
+            disabled_ft = {},                          -- List of filetypes to disable the plugin
         })
         vim.diagnostic.config({ virtual_text = true }) -- Only if needed in your configuration, if you already have native LSP diagnostics
     end,

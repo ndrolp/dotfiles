@@ -62,13 +62,11 @@ return {
         },
         config = function(_, opts)
             local lspconfig = require("lspconfig")
-            vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-            vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
-            vim.keymap.set("n", "<leader>la", vim.lsp.buf.code_action, {})
             for server, config in pairs(opts.servers) do
                 config.capabilities = require("blink.cmp").get_lsp_capabilities(config.capabilities)
                 lspconfig[server].setup(config)
             end
+
             vim.diagnostic.config({
                 signs = {
                     text = {

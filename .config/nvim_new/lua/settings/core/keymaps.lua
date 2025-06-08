@@ -12,3 +12,8 @@ vim.keymap.set("n", "<C-h>", ":bprevious<CR>", { desc = "Go to previus buffer", 
 vim.keymap.set("n", "<leader>ba", ":BDelete all<CR>", { desc = "Close all buffers", silent = true })
 vim.keymap.set("n", "<leader>bh", ":BDelete hidden<CR>", { desc = "Close non visible buffers", silent = true })
 vim.keymap.set("n", "<leader>bo", ":BDelete other<CR>", { desc = "Close all buffers except current", silent = true })
+
+vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
+vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
+vim.keymap.set("n", "<leader>la", vim.lsp.buf.code_action, { desc = "Code actions" })
+vim.keymap.set("n", "<leader>ld", vim.diagnostic.open_float, { desc = "Line diagnostics" })
