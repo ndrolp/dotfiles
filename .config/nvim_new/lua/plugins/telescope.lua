@@ -15,9 +15,11 @@ return {
                 },
             })
             require("telescope").load_extension("ui-select")
-            vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", {})
-            vim.keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>", {})
         end,
+        keys = {
+            {"<leader>ff", ":Telescope find_files theme=dropdown<CR>", desc = "Find files"},
+            {"<leader>fg", ":Telescope live_grep<CR>", desc = "Find grep"}
+        }
     },
     {
         "nvim-telescope/telescope-ui-select.nvim",
