@@ -1,8 +1,8 @@
-vim.keymap.set("n", "<leader>w", ":w<CR>", {})
+vim.keymap.set("n", "<leader>w", ":w<CR>", { desc = "Save file" })
 vim.keymap.set("n", "<leader>q", ":q<CR>", {})
 vim.keymap.set("n", "<leader>vs", ":vs<CR>", {})
 vim.keymap.set("n", "<leader>vv", ":split<CR>", {})
-vim.keymap.set("n", "<leader>h", ":noh<CR>")
+vim.keymap.set("n", "<leader>h", ":noh<CR>", { desc = "Hide highlight" })
 
 vim.keymap.set("n", "<leader>bq", ":bd<CR>", { desc = "Close the current buffer", silent = true })
 vim.keymap.set("n", "<leader>bn", ":bnext<CR>", { desc = "Go to next buffer", silent = true })
