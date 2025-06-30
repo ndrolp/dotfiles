@@ -306,9 +306,9 @@ label:focus {
 
 #tray {
     background-color: alpha(@surface0, 0.4);
-    margin: 4px 8px;
+    margin: 4px 4px;
     border-radius: 5px;
-    padding: 0px 10px;
+    padding: 5px 10px;
 }
 
 #tray>.passive {
